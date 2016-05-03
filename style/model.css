@@ -1,0 +1,11 @@
+﻿#content{ width:1004px; height:auto; margin:auto;}
+#top{width:1004px; height:203px; overflow:hidden; margin-bottom:5px;}
+#main{width:1004px; height:auto;}
+#main-left{ float:left; width:200px; height:auto; padding-left:5px;}
+#video{ width:200px; height:235px;}
+#notice{width:200px; height:175px;margin-top:5px; padding-top:52px;}
+#other{width:198px; height:360px; border:1px #004fa8 solid; padding-top:5px;}
+#main-right{float:left; width:789px; height:auto; padding-left:10px;}
+#link{margin-top:5px; width:1004px; height:auto;}
+#foot{ margin-top:5px; width:1004px; height:86px; padding-top:25px;}
+#bar{ width:786px; height:50px; overflow:visible;}

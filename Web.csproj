@@ -1,0 +1,2847 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5B535162-10C2-4238-BC56-193B968E1834}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>JDJS.Web</RootNamespace>
+    <AssemblyName>JDJS.Web</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Discuz.Common, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Discuz.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetTextBox, Version=3.5.0.0, Culture=neutral, PublicKeyToken=4577255b0d2d7147, processorArchitecture=MSIL" />
+    <Reference Include="LTP.Accounts, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\LTP.Accounts.dll</HintPath>
+    </Reference>
+    <Reference Include="LtpPageControl, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\Lib\LtpPageControl.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.UI.WebControls, Version=1.0.2.226, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\Microsoft.Web.UI.WebControls.dll</HintPath>
+    </Reference>
+    <Reference Include="PageControl, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Documents and Settings\Administrator\桌面\PageControl\bin\Debug\PageControl.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions.Design, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="Ucfar.Data, Version=0.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Documents and Settings\Administrator\桌面\分页\Ucfar.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="UcfarPager, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Documents and Settings\Administrator\桌面\分页\UcfarPager.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Global.asax" />
+    <Content Include="Gys.aspx" />
+    <Content Include="Quite.aspx" />
+    <Content Include="RealDetail.aspx" />
+    <Content Include="Rgxj.aspx" />
+    <Content Include="style\images\clxq-tl.gif" />
+    <Content Include="style\images\nophoto.gif" />
+    <Content Include="style\images\rgxj-tl.gif" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutUs.aspx.cs">
+      <DependentUpon>AboutUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AboutUs.aspx.designer.cs">
+      <DependentUpon>AboutUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\adv.ascx.cs">
+      <DependentUpon>adv.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\adv.ascx.designer.cs">
+      <DependentUpon>adv.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\bar.ascx.cs">
+      <DependentUpon>bar.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\bar.ascx.designer.cs">
+      <DependentUpon>bar.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Enterprise.ascx.cs">
+      <DependentUpon>Enterprise.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Enterprise.ascx.designer.cs">
+      <DependentUpon>Enterprise.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\foot.ascx.cs">
+      <DependentUpon>foot.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\foot.ascx.designer.cs">
+      <DependentUpon>foot.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Information.ascx.cs">
+      <DependentUpon>Information.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Information.ascx.designer.cs">
+      <DependentUpon>Information.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\left.ascx.cs">
+      <DependentUpon>left.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\left.ascx.designer.cs">
+      <DependentUpon>left.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\link.ascx.cs">
+      <DependentUpon>link.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\link.ascx.designer.cs">
+      <DependentUpon>link.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\news.ascx.cs">
+      <DependentUpon>news.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\news.ascx.designer.cs">
+      <DependentUpon>news.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\notice.ascx.cs">
+      <DependentUpon>notice.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\notice.ascx.designer.cs">
+      <DependentUpon>notice.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\other.ascx.cs">
+      <DependentUpon>other.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\other.ascx.designer.cs">
+      <DependentUpon>other.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SelectMonth.ashx.cs">
+      <DependentUpon>SelectMonth.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SubGG.ascx.cs">
+      <DependentUpon>SubGG.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\SubGG.ascx.designer.cs">
+      <DependentUpon>SubGG.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Successful.ascx.cs">
+      <DependentUpon>Successful.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Successful.ascx.designer.cs">
+      <DependentUpon>Successful.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Tender.ascx.cs">
+      <DependentUpon>Tender.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Tender.ascx.designer.cs">
+      <DependentUpon>Tender.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\top.ascx.cs">
+      <DependentUpon>top.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\top.ascx.designer.cs">
+      <DependentUpon>top.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\video.ascx.cs">
+      <DependentUpon>video.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\video.ascx.designer.cs">
+      <DependentUpon>video.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Corner.aspx.cs">
+      <DependentUpon>Corner.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Corner.aspx.designer.cs">
+      <DependentUpon>Corner.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CornerDetail.aspx.cs">
+      <DependentUpon>CornerDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CornerDetail.aspx.designer.cs">
+      <DependentUpon>CornerDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CornerList.aspx.cs">
+      <DependentUpon>CornerList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CornerList.aspx.designer.cs">
+      <DependentUpon>CornerList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Download.aspx.cs">
+      <DependentUpon>Download.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Download.aspx.designer.cs">
+      <DependentUpon>Download.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DownloadDetail.aspx.cs">
+      <DependentUpon>DownloadDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DownloadDetail.aspx.designer.cs">
+      <DependentUpon>DownloadDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forgot.aspx.cs">
+      <DependentUpon>Forgot.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forgot.aspx.designer.cs">
+      <DependentUpon>Forgot.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Gys.aspx.cs">
+      <DependentUpon>Gys.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Gys.aspx.designer.cs">
+      <DependentUpon>Gys.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PageList.aspx.cs">
+      <DependentUpon>PageList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PageList.aspx.designer.cs">
+      <DependentUpon>PageList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Market.aspx.cs">
+      <DependentUpon>Market.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Market.aspx.designer.cs">
+      <DependentUpon>Market.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MarketDetail.aspx.cs">
+      <DependentUpon>MarketDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MarketDetail.aspx.designer.cs">
+      <DependentUpon>MarketDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MarketList.aspx.cs">
+      <DependentUpon>MarketList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MarketList.aspx.designer.cs">
+      <DependentUpon>MarketList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MarketPrice.aspx.cs">
+      <DependentUpon>MarketPrice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MarketPrice.aspx.designer.cs">
+      <DependentUpon>MarketPrice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage.master.cs">
+      <DependentUpon>MasterPage.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage.master.designer.cs">
+      <DependentUpon>MasterPage.master</DependentUpon>
+    </Compile>
+    <Compile Include="News.aspx.cs">
+      <DependentUpon>News.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="News.aspx.designer.cs">
+      <DependentUpon>News.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NewsDetail.aspx.cs">
+      <DependentUpon>NewsDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NewsDetail.aspx.designer.cs">
+      <DependentUpon>NewsDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NewsList.aspx.cs">
+      <DependentUpon>NewsList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NewsList.aspx.designer.cs">
+      <DependentUpon>NewsList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Notice.aspx.cs">
+      <DependentUpon>Notice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Notice.aspx.designer.cs">
+      <DependentUpon>Notice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Policy.aspx.cs">
+      <DependentUpon>Policy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Policy.aspx.designer.cs">
+      <DependentUpon>Policy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PolicyDetail.aspx.cs">
+      <DependentUpon>PolicyDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PolicyDetail.aspx.designer.cs">
+      <DependentUpon>PolicyDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PolicyList.aspx.cs">
+      <DependentUpon>PolicyList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PolicyList.aspx.designer.cs">
+      <DependentUpon>PolicyList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Project.aspx.cs">
+      <DependentUpon>Project.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Project.aspx.designer.cs">
+      <DependentUpon>Project.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectDetail.aspx.cs">
+      <DependentUpon>ProjectDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProjectDetail.aspx.designer.cs">
+      <DependentUpon>ProjectDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectList.aspx.cs">
+      <DependentUpon>ProjectList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProjectList.aspx.designer.cs">
+      <DependentUpon>ProjectList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Qkjj.aspx.cs">
+      <DependentUpon>Qkjj.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Qkjj.aspx.designer.cs">
+      <DependentUpon>Qkjj.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Quite.aspx.cs">
+      <DependentUpon>Quite.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Quite.aspx.designer.cs">
+      <DependentUpon>Quite.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RealDetail.aspx.cs">
+      <DependentUpon>RealDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RealDetail.aspx.designer.cs">
+      <DependentUpon>RealDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Registration.aspx.cs">
+      <DependentUpon>Registration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registration.aspx.designer.cs">
+      <DependentUpon>Registration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Rgxj.aspx.cs">
+      <DependentUpon>Rgxj.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Rgxj.aspx.designer.cs">
+      <DependentUpon>Rgxj.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Seach.aspx.cs">
+      <DependentUpon>Seach.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Seach.aspx.designer.cs">
+      <DependentUpon>Seach.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SeachForAdmin.aspx.cs">
+      <DependentUpon>SeachForAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SeachForAdmin.aspx.designer.cs">
+      <DependentUpon>SeachForAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SeachReal.aspx.cs">
+      <DependentUpon>SeachReal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SeachReal.aspx.designer.cs">
+      <DependentUpon>SeachReal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Supply.aspx.cs">
+      <DependentUpon>Supply.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Supply.aspx.designer.cs">
+      <DependentUpon>Supply.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SupplyAdd.aspx.cs">
+      <DependentUpon>SupplyAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SupplyAdd.aspx.designer.cs">
+      <DependentUpon>SupplyAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SupplyDetail.aspx.cs">
+      <DependentUpon>SupplyDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SupplyDetail.aspx.designer.cs">
+      <DependentUpon>SupplyDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SupplyList.aspx.cs">
+      <DependentUpon>SupplyList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SupplyList.aspx.designer.cs">
+      <DependentUpon>SupplyList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ValidateCode.aspx.cs">
+      <DependentUpon>ValidateCode.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ValidateCode.aspx.designer.cs">
+      <DependentUpon>ValidateCode.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebManager\Add.aspx.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebManager\Add.aspx.designer.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebManager\ChangePwd.aspx.cs">
+      <DependentUpon>ChangePwd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebManager\ChangePwd.aspx.designer.cs">
+      <DependentUpon>ChangePwd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebManager\Content.aspx.cs">
+      <DependentUpon>Content.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebManager\Content.aspx.designer.cs">
+      <DependentUpon>Content.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebManager\Edit.aspx.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebManager\Edit.aspx.designer.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebManager\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebManager\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebManager\Main.aspx.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebManager\Main.aspx.designer.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wykd.aspx.cs">
+      <DependentUpon>Wykd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wykd.aspx.designer.cs">
+      <DependentUpon>Wykd.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{38D7AA58-C95B-449B-86C6-A8073A56E11F}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{E3D8759A-C5EB-402D-9F10-F5C6029A8D1A}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{53995DBB-9836-4647-AD22-865884FDEB9E}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AboutUs.aspx" />
+    <Content Include="bin\COM.Excel.dll" />
+    <Content Include="bin\Discuz.Aggregation.dll" />
+    <Content Include="bin\Discuz.Cache.dll" />
+    <Content Include="bin\Discuz.Common.dll" />
+    <Content Include="bin\Discuz.Config.dll" />
+    <Content Include="bin\Discuz.Control.dll" />
+    <Content Include="bin\Discuz.Data.dll" />
+    <Content Include="bin\Discuz.Data.SqlServer.dll" />
+    <Content Include="bin\Discuz.Entity.dll" />
+    <Content Include="bin\Discuz.Event.dll" />
+    <Content Include="bin\Discuz.Forum.dll" />
+    <Content Include="bin\Discuz.Install.dll" />
+    <Content Include="bin\Discuz.Plugin.dll" />
+    <Content Include="bin\Discuz.Plugin.Mail.SysMail.dll" />
+    <Content Include="bin\Discuz.Plugin.PasswordMode.dll" />
+    <Content Include="bin\Discuz.Plugin.Preview.Jpg.dll" />
+    <Content Include="bin\Discuz.Plugin.Spread.dll" />
+    <Content Include="bin\Discuz.Web.Admin.dll" />
+    <Content Include="bin\Discuz.Web.dll" />
+    <Content Include="bin\Discuz.Web.Services.dll" />
+    <Content Include="bin\Excel.dll" />
+    <Content Include="bin\IBatisNet.Common.dll" />
+    <Content Include="bin\IBatisNet.DataMapper.dll" />
+    <Content Include="bin\ICSharpCode.SharpZipLib.dll" />
+    <Content Include="bin\Interop.SQLDMO.dll" />
+    <Content Include="bin\JDJS.BLL.dll" />
+    <Content Include="bin\JDJS.BLL.pdb" />
+    <Content Include="bin\JDJS.DAL.dll" />
+    <Content Include="bin\JDJS.DAL.pdb" />
+    <Content Include="bin\JDJS.DBUtility.dll" />
+    <Content Include="bin\JDJS.DBUtility.pdb" />
+    <Content Include="bin\JDJS.Model.dll" />
+    <Content Include="bin\JDJS.Model.pdb" />
+    <Content Include="bin\JDJS.Web.dll" />
+    <Content Include="bin\JDJS.Web.pdb" />
+    <Content Include="bin\LTP.Accounts.dll" />
+    <Content Include="bin\LTP.Common.dll" />
+    <Content Include="bin\LTP.Common.pdb" />
+    <Content Include="bin\LtpPageControl.dll" />
+    <Content Include="bin\Microsoft.Vbe.Interop.dll" />
+    <Content Include="bin\Microsoft.Web.UI.WebControls.dll" />
+    <Content Include="bin\MySql.Data.dll" />
+    <Content Include="bin\office.dll" />
+    <Content Include="bin\OpenSmtp.dll" />
+    <Content Include="bin\OWC10Chart.dll" />
+    <Content Include="bin\PageControl.dll" />
+    <Content Include="bin\PageControl.pdb" />
+    <Content Include="bin\Ucfar.Data.dll" />
+    <Content Include="bin\UcfarPager.dll" />
+    <Content Include="ChangePassword.aspx" />
+    <Content Include="Contact.aspx" />
+    <Content Include="Controls\adv.ascx" />
+    <Content Include="Controls\bar.ascx" />
+    <Content Include="Controls\Enterprise.ascx" />
+    <Content Include="Controls\foot.ascx" />
+    <Content Include="Controls\Information.ascx" />
+    <Content Include="Controls\left.ascx" />
+    <Content Include="Controls\link.ascx" />
+    <Content Include="Controls\news.ascx" />
+    <Content Include="Controls\notice.ascx" />
+    <Content Include="Controls\other.ascx" />
+    <Content Include="Controls\SubGG.ascx" />
+    <Content Include="Controls\Successful.ascx" />
+    <Content Include="Controls\Tender.ascx" />
+    <Content Include="Controls\top.ascx" />
+    <Content Include="Controls\video.ascx" />
+    <Content Include="Corner.aspx" />
+    <Content Include="CornerDetail.aspx" />
+    <Content Include="CornerList.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="Download.aspx" />
+    <Content Include="DownloadDetail.aspx" />
+    <Content Include="files\0004.jpg" />
+    <Content Include="files\0006.jpg" />
+    <Content Include="files\0010.jpg" />
+    <Content Include="files\bak\1234567890.txt" />
+    <Content Include="files\bak\图表语句.txt" />
+    <Content Include="files\bak\新建 文本文档.txt" />
+    <Content Include="files\bookshop\0005.jpg" />
+    <Content Include="files\bookshop\Untitled-1.jpg" />
+    <Content Include="files\bookshop\wssc_yyrj_dtwx.jpg" />
+    <Content Include="files\bookshop\wssc_yyrj_xxdq.jpg" />
+    <Content Include="files\DTRJ\Setup_up10.EXE" />
+    <Content Include="files\qkgl\200612_jgxx_1.htm" />
+    <Content Include="files\qkgl\200612_jgxx_2.htm" />
+    <Content Include="files\qkgl\200612_jgxx_2_1.gif" />
+    <Content Include="files\qkgl\200612_jgxx_2_2.gif" />
+    <Content Include="files\qkgl\200612_jgxx_2_3.gif" />
+    <Content Include="files\qkgl\200612_jgxx_2_4.gif" />
+    <Content Include="files\qkgl\200612_jgxx_2_5.gif" />
+    <Content Include="files\qkgl\200612_jgxx_2_6.gif" />
+    <Content Include="files\qkgl\200612_jgxx_2_7.gif" />
+    <Content Include="files\qkgl\200612_jgxx_2_8.gif" />
+    <Content Include="files\QYZC\jdjs2008数据库.txt" />
+    <Content Include="files\rongyu.jpg" />
+    <Content Include="files\Untitled-1.jpg" />
+    <Content Include="files\upgrade\0212.exe" />
+    <Content Include="files\upgrade\0301.exe" />
+    <Content Include="files\upgrade\0302.exe" />
+    <Content Include="files\upgrade\0303.exe" />
+    <Content Include="files\upgrade\0304.exe" />
+    <Content Include="files\upgrade\0305.exe" />
+    <Content Include="files\upgrade\0306.exe" />
+    <Content Include="files\upgrade\0307.exe" />
+    <Content Include="files\upgrade\0308.exe" />
+    <Content Include="files\upgrade\0309.exe" />
+    <Content Include="files\upgrade\0310.exe" />
+    <Content Include="files\upgrade\0311.exe" />
+    <Content Include="files\upgrade\0312.exe" />
+    <Content Include="files\upgrade\0401.exe" />
+    <Content Include="files\upgrade\0402.exe" />
+    <Content Include="files\upgrade\0403.exe" />
+    <Content Include="files\upgrade\0404.exe" />
+    <Content Include="files\upgrade\0405.exe" />
+    <Content Include="files\upgrade\0406.exe" />
+    <Content Include="files\upgrade\0407.exe" />
+    <Content Include="files\upgrade\0408.exe" />
+    <Content Include="files\upgrade\0409.exe" />
+    <Content Include="files\upgrade\0410.exe" />
+    <Content Include="files\upgrade\0411.exe" />
+    <Content Include="files\upgrade\0412.exe" />
+    <Content Include="files\upgrade\0501.exe" />
+    <Content Include="files\upgrade\0502.exe" />
+    <Content Include="files\upgrade\0503.exe" />
+    <Content Include="files\upgrade\0504.exe" />
+    <Content Include="files\upgrade\0505.exe" />
+    <Content Include="files\upgrade\0506.exe" />
+    <Content Include="files\upgrade\0507.exe" />
+    <Content Include="files\upgrade\0508.exe" />
+    <Content Include="files\upgrade\0509.exe" />
+    <Content Include="files\upgrade\0510.exe" />
+    <Content Include="files\upgrade\0511.exe" />
+    <Content Include="files\upgrade\0512.exe" />
+    <Content Include="files\upgrade\0601.exe" />
+    <Content Include="files\upgrade\0602.exe" />
+    <Content Include="files\upgrade\0603.exe" />
+    <Content Include="files\upgrade\0604.exe" />
+    <Content Include="files\upgrade\0605.exe" />
+    <Content Include="files\upgrade\0606.exe" />
+    <Content Include="files\upgrade\0607.exe" />
+    <Content Include="files\upgrade\0608.exe" />
+    <Content Include="files\upgrade\0609.exe" />
+    <Content Include="files\upgrade\0610.exe" />
+    <Content Include="files\upgrade\0611.exe" />
+    <Content Include="files\wssc_yyrj_dtwx.jpg" />
+    <Content Include="files\wssc_yyrj_xxdq.jpg" />
+    <Content Include="files\xcl\引领电缆桥架新潮流 铸就桥架行业新标准.JPG" />
+    <Content Include="files\xcl\引领电缆桥架新潮流 铸就桥架行业新标准——节能型轻质高强电缆桥架简介.jpg" />
+    <Content Include="files\xcl\引领电缆桥架新潮流 铸就桥架行业新标准——节能型轻质高强电缆桥架简介2.jpg" />
+    <Content Include="files\xcl\彩钢保温夹芯幕墙板.JPG" />
+    <Content Include="files\xcl\现浇砼空心楼盖及CHF玻纤增强复合筒芯技术.jpg" />
+    <Content Include="files\xcl\简述节能型轻质高强电缆桥架（1）.jpg" />
+    <Content Include="files\xcl\简述节能型轻质高强电缆桥架（1）1.JPG" />
+    <Content Include="files\xcl\简述节能型轻质高强电缆桥架（2）.jpg" />
+    <Content Include="files\xcl\简述节能型轻质高强电缆桥架（2）2.jpg" />
+    <Content Include="files\xcl\简述节能型轻质高强电缆桥架（3）.JPG" />
+    <Content Include="files\xtgg\2006ljtz.htm" />
+    <Content Include="files\xtgg\2006_rw.asp" />
+    <Content Include="files\xtgg\2006_rw.jpg" />
+    <Content Include="files\xtgg\jfgz.htm" />
+    <Content Include="files\xtgg\rongyu.html" />
+    <Content Include="files\xtgg\rongyu.jpg" />
+    <Content Include="files\xxdq_update\0212.exe" />
+    <Content Include="files\yqlj\3.swf" />
+    <Content Include="files\yqlj\ebm.gif" />
+    <Content Include="files\yqlj\jsb.gif" />
+    <Content Include="files\yqlj\net.gif" />
+    <Content Include="files\yqlj\shceci.jpg" />
+    <Content Include="files\zwtp.jpg" />
+    <Content Include="Forgot.aspx" />
+    <Content Include="js\jquery-1.4.2.js" />
+    <Content Include="js\jquery.core.js" />
+    <Content Include="js\jquery.datePicker.js" />
+    <Content Include="style\datePicker.css" />
+    <Content Include="style\images\cjj.jpg" />
+    <Content Include="style\images\favicon.ico" />
+    <Content Include="js\hoverIntent.js" />
+    <Content Include="js\imagechange.js" />
+    <Content Include="js\jquery.mcdropdown.min.js" />
+    <Content Include="PageList.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="Market.aspx" />
+    <Content Include="MarketDetail.aspx" />
+    <Content Include="MarketList.aspx" />
+    <Content Include="MarketPrice.aspx" />
+    <Content Include="MasterPage.master" />
+    <Content Include="News.aspx" />
+    <Content Include="NewsDetail.aspx" />
+    <Content Include="NewsList.aspx" />
+    <Content Include="Notice.aspx" />
+    <Content Include="obj\Debug\JDJS.Web.dll" />
+    <Content Include="obj\Debug\JDJS.Web.pdb" />
+    <Content Include="obj\Debug\Web.csproj.FileListAbsolute.txt" />
+    <Content Include="PolicyDetail.aspx" />
+    <Content Include="PolicyList.aspx" />
+    <Content Include="ProjectDetail.aspx" />
+    <Content Include="ProjectList.aspx" />
+    <Content Include="Registration.aspx" />
+    <Content Include="SeachForAdmin.aspx" />
+    <Content Include="SeachReal.aspx" />
+    <Content Include="style\dropdown.css" />
+    <Content Include="style\images\back.jpg" />
+    <Content Include="style\images\del-icon.gif" />
+    <Content Include="style\images\edit-icon.gif" />
+    <Content Include="style\images\forget.gif" />
+    <Content Include="style\images\gg4.gif" />
+    <Content Include="style\images\mcdropdown\mcdd_icon_hover.gif" />
+    <Content Include="style\images\mcdropdown\mcdd_icon_normal.gif" />
+    <Content Include="style\images\mcdropdown\mcdd_select_button_sprite.gif" />
+    <Content Include="style\images\mcdropdown\shadow.png" />
+    <Content Include="style\images\new-md5.gif" />
+    <Content Include="style\images\regend.gif" />
+    <Content Include="style\images\regtop.jpg" />
+    <Content Include="style\images\subInBody.jpg" />
+    <Content Include="style\images\subInCk.gif" />
+    <Content Include="style\images\subInFoot.jpg" />
+    <Content Include="style\images\subInTop.jpg" />
+    <Content Include="style\images\subTop.gif" />
+    <Content Include="style\images\ui-anim_basic_16x16.gif" />
+    <Content Include="style\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="style\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="style\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="style\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="style\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="style\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="style\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="style\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="style\images\ui-icons_222222_256x240.png" />
+    <Content Include="style\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="style\images\ui-icons_454545_256x240.png" />
+    <Content Include="style\images\ui-icons_888888_256x240.png" />
+    <Content Include="style\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="style\images\user-tl.gif" />
+    <Content Include="style\images\vip.gif" />
+    <Content Include="style\page.css" />
+    <Content Include="Policy.aspx" />
+    <Content Include="Project.aspx" />
+    <Content Include="Seach.aspx" />
+    <Content Include="style\base.css" />
+    <Content Include="style\images\aboutus-tl.gif" />
+    <Content Include="style\images\barbg.gif" />
+    <Content Include="style\images\blank.gif" />
+    <Content Include="style\images\Contact-tl.gif" />
+    <Content Include="style\images\Corner-md1.gif" />
+    <Content Include="style\images\Corner-md2.gif" />
+    <Content Include="style\images\Corner-md3.gif" />
+    <Content Include="style\images\Corner-md4.gif" />
+    <Content Include="style\images\Corner-md5.gif" />
+    <Content Include="style\images\Corner-md6.gif" />
+    <Content Include="style\images\Corner-tl.gif" />
+    <Content Include="style\images\Download-tl.gif" />
+    <Content Include="style\images\download1.gif" />
+    <Content Include="style\images\download2.gif" />
+    <Content Include="style\images\download3.gif" />
+    <Content Include="style\images\download4.gif" />
+    <Content Include="style\images\Enterprise.gif" />
+    <Content Include="style\images\footbg.gif" />
+    <Content Include="style\images\ggbg.gif" />
+    <Content Include="style\images\icon-1.jpg" />
+    <Content Include="style\images\icon-2.jpg" />
+    <Content Include="style\images\icon.gif" />
+    <Content Include="style\images\Information-md1.gif" />
+    <Content Include="style\images\Information-md2.gif" />
+    <Content Include="style\images\Information-md3.gif" />
+    <Content Include="style\images\Information-md4.gif" />
+    <Content Include="style\images\Information-md5.gif" />
+    <Content Include="style\images\Information-md6.gif" />
+    <Content Include="style\images\Information-tl.gif" />
+    <Content Include="style\images\integralbg.gif" />
+    <Content Include="style\images\link-bdbg.gif" />
+    <Content Include="style\images\link-ftbg.gif" />
+    <Content Include="style\images\link-tlbg.gif" />
+    <Content Include="style\images\link.gif" />
+    <Content Include="style\images\map.jpg" />
+    <Content Include="style\images\Market-md1.gif" />
+    <Content Include="style\images\Market-md2.gif" />
+    <Content Include="style\images\Market-md3.gif" />
+    <Content Include="style\images\Market-md4.gif" />
+    <Content Include="style\images\market-tl-bg.gif" />
+    <Content Include="style\images\Market-tl.gif" />
+    <Content Include="style\images\Material-tl-bg.gif" />
+    <Content Include="style\images\Material-tl.gif" />
+    <Content Include="style\images\new-md1.gif" />
+    <Content Include="style\images\new-md2.gif" />
+    <Content Include="style\images\new-md3.gif" />
+    <Content Include="style\images\new-md4.gif" />
+    <Content Include="style\images\new-tl.gif" />
+    <Content Include="style\images\News-tl.gif" />
+    <Content Include="style\images\notice-tl.gif" />
+    <Content Include="style\images\Policy-md1.gif" />
+    <Content Include="style\images\Policy-md2.gif" />
+    <Content Include="style\images\Policy-md3.gif" />
+    <Content Include="style\images\Policy-tl.gif" />
+    <Content Include="style\images\Project-md1.gif" />
+    <Content Include="style\images\Project-md2.gif" />
+    <Content Include="style\images\Project-tl.gif" />
+    <Content Include="style\images\seach.gif" />
+    <Content Include="style\images\subbody.gif" />
+    <Content Include="style\images\subfoot.gif" />
+    <Content Include="style\images\Successful.gif" />
+    <Content Include="style\images\Supply-md1.gif" />
+    <Content Include="style\images\Supply-md2.gif" />
+    <Content Include="style\images\Supply-tl.gif" />
+    <Content Include="style\images\Tender.gif" />
+    <Content Include="style\images\top.gif" />
+    <Content Include="style\images\video-tl.gif" />
+    <Content Include="style\layout.css" />
+    <Content Include="style\model.css" />
+    <Content Include="Supply.aspx" />
+    <Content Include="SupplyAdd.aspx" />
+    <Content Include="SupplyDetail.aspx" />
+    <Content Include="SupplyList.aspx" />
+    <Content Include="uploads\aboutus.gif" />
+    <Content Include="uploads\fm-01.jpg" />
+    <Content Include="uploads\fm-02.jpg" />
+    <Content Include="uploads\fm-03.jpg" />
+    <Content Include="uploads\fm-04.jpg" />
+    <Content Include="uploads\fm-05.jpg" />
+    <Content Include="uploads\gg1.gif" />
+    <Content Include="uploads\gg2.gif" />
+    <Content Include="uploads\gg3.gif" />
+    <Content Include="uploads\gg4.gif" />
+    <Content Include="uploads\images\3.gif" />
+    <Content Include="uploads\images\ebm.gif" />
+    <Content Include="uploads\images\jsb.gif" />
+    <Content Include="uploads\images\luban.jpg" />
+    <Content Include="uploads\images\mii.jpg" />
+    <Content Include="uploads\images\net.gif" />
+    <Content Include="uploads\images\shceci.jpg" />
+    <Content Include="uploads\images\shhjxh.jpg" />
+    <Content Include="ValidateCode.aspx" />
+    <Content Include="webctrl_client\1_0\images\folder.gif" />
+    <Content Include="webctrl_client\1_0\images\folderopen.gif" />
+    <Content Include="webctrl_client\1_0\images\html.gif" />
+    <Content Include="webctrl_client\1_0\images\root.gif" />
+    <Content Include="webctrl_client\1_0\MultiPage.htc" />
+    <Content Include="webctrl_client\1_0\TabStrip.htc" />
+    <Content Include="webctrl_client\1_0\toolbar.htc" />
+    <Content Include="webctrl_client\1_0\treeimages\f.gif" />
+    <Content Include="webctrl_client\1_0\treeimages\fminus.gif" />
+    <Content Include="webctrl_client\1_0\treeimages\fplus.gif" />
+    <Content Include="webctrl_client\1_0\treeimages\i.gif" />
+    <Content Include="webctrl_client\1_0\treeimages\L.gif" />
+    <Content Include="webctrl_client\1_0\treeimages\Lminus.gif" />
+    <Content Include="webctrl_client\1_0\treeimages\Lplus.gif" />
+    <Content Include="webctrl_client\1_0\treeimages\minus.gif" />
+    <Content Include="webctrl_client\1_0\treeimages\plus.gif" />
+    <Content Include="webctrl_client\1_0\treeimages\r.gif" />
+    <Content Include="webctrl_client\1_0\treeimages\Rminus.gif" />
+    <Content Include="webctrl_client\1_0\treeimages\Rplus.gif" />
+    <Content Include="webctrl_client\1_0\treeimages\rtl\F.gif" />
+    <Content Include="webctrl_client\1_0\treeimages\rtl\Fminus.gif" />
+    <Content Include="webctrl_client\1_0\treeimages\rtl\Fplus.gif" />
+    <Content Include="webctrl_client\1_0\treeimages\rtl\I.gif" />
+    <Content Include="webctrl_client\1_0\treeimages\rtl\L.gif" />
+    <Content Include="webctrl_client\1_0\treeimages\rtl\Lminus.gif" />
+    <Content Include="webctrl_client\1_0\treeimages\rtl\Lplus.gif" />
+    <Content Include="webctrl_client\1_0\treeimages\rtl\minus.gif" />
+    <Content Include="webctrl_client\1_0\treeimages\rtl\plus.gif" />
+    <Content Include="webctrl_client\1_0\treeimages\rtl\r.gif" />
+    <Content Include="webctrl_client\1_0\treeimages\rtl\Rminus.gif" />
+    <Content Include="webctrl_client\1_0\treeimages\rtl\Rplus.gif" />
+    <Content Include="webctrl_client\1_0\treeimages\rtl\T.gif" />
+    <Content Include="webctrl_client\1_0\treeimages\rtl\Tminus.gif" />
+    <Content Include="webctrl_client\1_0\treeimages\rtl\Tplus.gif" />
+    <Content Include="webctrl_client\1_0\treeimages\rtl\white.gif" />
+    <Content Include="webctrl_client\1_0\treeimages\T.gif" />
+    <Content Include="webctrl_client\1_0\treeimages\Tminus.gif" />
+    <Content Include="webctrl_client\1_0\treeimages\Tplus.gif" />
+    <Content Include="webctrl_client\1_0\treeimages\white.gif" />
+    <Content Include="webctrl_client\1_0\treeview.htc" />
+    <Content Include="webctrl_client\1_0\webservice.htc" />
+    <Content Include="webctrl_client\1_0\webserviced.htc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\DotNetTextBox.dll" />
+    <Content Include="bin\Newtonsoft.Json.dll" />
+    <Content Include="DNT.config" />
+    <Content Include="error.htm" />
+    <Content Include="Qkjj.aspx" />
+    <Content Include="style\images\404.jpg" />
+    <Content Include="style\images\EspPrice-tl.gif" />
+    <Content Include="style\images\logo.gif" />
+    <Content Include="style\images\logo.png" />
+    <Content Include="style\images\top-bg.jpg" />
+    <Content Include="system_dntb\calculator.aspx" />
+    <Content Include="system_dntb\calendar.aspx" />
+    <Content Include="system_dntb\collection.aspx" />
+    <Content Include="system_dntb\color.aspx" />
+    <Content Include="system_dntb\custom.aspx" />
+    <Content Include="system_dntb\div.aspx" />
+    <Content Include="system_dntb\en-uk\Resources.xml" />
+    <Content Include="system_dntb\en-us\Resources.xml" />
+    <Content Include="system_dntb\en\Resources.xml" />
+    <Content Include="system_dntb\find.aspx" />
+    <Content Include="system_dntb\flv.swf" />
+    <Content Include="system_dntb\help\about.htm" />
+    <Content Include="system_dntb\help\edit.htm" />
+    <Content Include="system_dntb\help\face.htm" />
+    <Content Include="system_dntb\help\function.htm" />
+    <Content Include="system_dntb\help\main.htm" />
+    <Content Include="system_dntb\help\menu.htm" />
+    <Content Include="system_dntb\help\question.htm" />
+    <Content Include="system_dntb\help\skill.htm" />
+    <Content Include="system_dntb\help\state.htm" />
+    <Content Include="system_dntb\help\top.htm" />
+    <Content Include="system_dntb\img\arrow.gif" />
+    <Content Include="system_dntb\img\arrow1.gif" />
+    <Content Include="system_dntb\img\aspnet2.gif" />
+    <Content Include="system_dntb\img\close.gif" />
+    <Content Include="system_dntb\img\delete.gif" />
+    <Content Include="system_dntb\img\drag.gif" />
+    <Content Include="system_dntb\img\drag1.gif" />
+    <Content Include="system_dntb\img\drag2.gif" />
+    <Content Include="system_dntb\img\dragleft.gif" />
+    <Content Include="system_dntb\img\filetype\aac.gif" />
+    <Content Include="system_dntb\img\filetype\ace.gif" />
+    <Content Include="system_dntb\img\filetype\ai.gif" />
+    <Content Include="system_dntb\img\filetype\ain.gif" />
+    <Content Include="system_dntb\img\filetype\amr.gif" />
+    <Content Include="system_dntb\img\filetype\app.gif" />
+    <Content Include="system_dntb\img\filetype\arj.gif" />
+    <Content Include="system_dntb\img\filetype\asf.gif" />
+    <Content Include="system_dntb\img\filetype\asp.gif" />
+    <Content Include="system_dntb\img\filetype\aspx.gif" />
+    <Content Include="system_dntb\img\filetype\av.gif" />
+    <Content Include="system_dntb\img\filetype\avi.gif" />
+    <Content Include="system_dntb\img\filetype\bin.gif" />
+    <Content Include="system_dntb\img\filetype\bmp.gif" />
+    <Content Include="system_dntb\img\filetype\cab.gif" />
+    <Content Include="system_dntb\img\filetype\cad.gif" />
+    <Content Include="system_dntb\img\filetype\cat.gif" />
+    <Content Include="system_dntb\img\filetype\cdr.gif" />
+    <Content Include="system_dntb\img\filetype\chm.gif" />
+    <Content Include="system_dntb\img\filetype\com.gif" />
+    <Content Include="system_dntb\img\filetype\css.gif" />
+    <Content Include="system_dntb\img\filetype\cur.gif" />
+    <Content Include="system_dntb\img\filetype\dat.gif" />
+    <Content Include="system_dntb\img\filetype\dll.gif" />
+    <Content Include="system_dntb\img\filetype\dmv.gif" />
+    <Content Include="system_dntb\img\filetype\doc.gif" />
+    <Content Include="system_dntb\img\filetype\dot.gif" />
+    <Content Include="system_dntb\img\filetype\dps.gif" />
+    <Content Include="system_dntb\img\filetype\dpt.gif" />
+    <Content Include="system_dntb\img\filetype\dwg.gif" />
+    <Content Include="system_dntb\img\filetype\dxf.gif" />
+    <Content Include="system_dntb\img\filetype\emf.gif" />
+    <Content Include="system_dntb\img\filetype\eps.gif" />
+    <Content Include="system_dntb\img\filetype\et.gif" />
+    <Content Include="system_dntb\img\filetype\ett.gif" />
+    <Content Include="system_dntb\img\filetype\exe.gif" />
+    <Content Include="system_dntb\img\filetype\fla.gif" />
+    <Content Include="system_dntb\img\filetype\flv.gif" />
+    <Content Include="system_dntb\img\filetype\folder.gif" />
+    <Content Include="system_dntb\img\filetype\ftp.gif" />
+    <Content Include="system_dntb\img\filetype\gif.gif" />
+    <Content Include="system_dntb\img\filetype\hlp.gif" />
+    <Content Include="system_dntb\img\filetype\htm.gif" />
+    <Content Include="system_dntb\img\filetype\html.gif" />
+    <Content Include="system_dntb\img\filetype\icl.gif" />
+    <Content Include="system_dntb\img\filetype\ico.gif" />
+    <Content Include="system_dntb\img\filetype\img.gif" />
+    <Content Include="system_dntb\img\filetype\inf.gif" />
+    <Content Include="system_dntb\img\filetype\ini.gif" />
+    <Content Include="system_dntb\img\filetype\iso.gif" />
+    <Content Include="system_dntb\img\filetype\jpeg.gif" />
+    <Content Include="system_dntb\img\filetype\jpg.gif" />
+    <Content Include="system_dntb\img\filetype\js.gif" />
+    <Content Include="system_dntb\img\filetype\m3u.gif" />
+    <Content Include="system_dntb\img\filetype\max.gif" />
+    <Content Include="system_dntb\img\filetype\mdb.gif" />
+    <Content Include="system_dntb\img\filetype\mde.gif" />
+    <Content Include="system_dntb\img\filetype\mht.gif" />
+    <Content Include="system_dntb\img\filetype\mid.gif" />
+    <Content Include="system_dntb\img\filetype\midi.gif" />
+    <Content Include="system_dntb\img\filetype\mov.gif" />
+    <Content Include="system_dntb\img\filetype\mp3.gif" />
+    <Content Include="system_dntb\img\filetype\mp4.gif" />
+    <Content Include="system_dntb\img\filetype\mpeg.gif" />
+    <Content Include="system_dntb\img\filetype\mpg.gif" />
+    <Content Include="system_dntb\img\filetype\msi.gif" />
+    <Content Include="system_dntb\img\filetype\nrg.gif" />
+    <Content Include="system_dntb\img\filetype\ocx.gif" />
+    <Content Include="system_dntb\img\filetype\ogg.gif" />
+    <Content Include="system_dntb\img\filetype\ogm.gif" />
+    <Content Include="system_dntb\img\filetype\pdf.gif" />
+    <Content Include="system_dntb\img\filetype\png.gif" />
+    <Content Include="system_dntb\img\filetype\pot.gif" />
+    <Content Include="system_dntb\img\filetype\ppt.gif" />
+    <Content Include="system_dntb\img\filetype\psd.gif" />
+    <Content Include="system_dntb\img\filetype\pub.gif" />
+    <Content Include="system_dntb\img\filetype\qt.gif" />
+    <Content Include="system_dntb\img\filetype\ra.gif" />
+    <Content Include="system_dntb\img\filetype\ram.gif" />
+    <Content Include="system_dntb\img\filetype\rar.gif" />
+    <Content Include="system_dntb\img\filetype\rm.gif" />
+    <Content Include="system_dntb\img\filetype\rmvb.gif" />
+    <Content Include="system_dntb\img\filetype\rtf.gif" />
+    <Content Include="system_dntb\img\filetype\swf.gif" />
+    <Content Include="system_dntb\img\filetype\tar.gif" />
+    <Content Include="system_dntb\img\filetype\tif.gif" />
+    <Content Include="system_dntb\img\filetype\tiff.gif" />
+    <Content Include="system_dntb\img\filetype\txt.gif" />
+    <Content Include="system_dntb\img\filetype\unknown.gif" />
+    <Content Include="system_dntb\img\filetype\url.gif" />
+    <Content Include="system_dntb\img\filetype\vbs.gif" />
+    <Content Include="system_dntb\img\filetype\vsd.gif" />
+    <Content Include="system_dntb\img\filetype\vss.gif" />
+    <Content Include="system_dntb\img\filetype\vst.gif" />
+    <Content Include="system_dntb\img\filetype\wav.gif" />
+    <Content Include="system_dntb\img\filetype\wave.gif" />
+    <Content Include="system_dntb\img\filetype\wm.gif" />
+    <Content Include="system_dntb\img\filetype\wma.gif" />
+    <Content Include="system_dntb\img\filetype\wmd.gif" />
+    <Content Include="system_dntb\img\filetype\wmf.gif" />
+    <Content Include="system_dntb\img\filetype\wmv.gif" />
+    <Content Include="system_dntb\img\filetype\wps.gif" />
+    <Content Include="system_dntb\img\filetype\wpt.gif" />
+    <Content Include="system_dntb\img\filetype\xls.gif" />
+    <Content Include="system_dntb\img\filetype\xlt.gif" />
+    <Content Include="system_dntb\img\filetype\xml.gif" />
+    <Content Include="system_dntb\img\filetype\zip.gif" />
+    <Content Include="system_dntb\img\logo_s.png" />
+    <Content Include="system_dntb\img\newfolder.gif" />
+    <Content Include="system_dntb\img\paper\Birthday.GIF" />
+    <Content Include="system_dntb\img\paper\children1.GIF" />
+    <Content Include="system_dntb\img\paper\christmas.GIF" />
+    <Content Include="system_dntb\img\paper\Citrus.gif" />
+    <Content Include="system_dntb\img\paper\Clear.jpg" />
+    <Content Include="system_dntb\img\paper\Fiesta.jpg" />
+    <Content Include="system_dntb\img\paper\Flower.GIF" />
+    <Content Include="system_dntb\img\paper\Gathering.JPG" />
+    <Content Include="system_dntb\img\paper\Glacier.jpg" />
+    <Content Include="system_dntb\img\paper\grid.gif" />
+    <Content Include="system_dntb\img\paper\Hearts.GIF" />
+    <Content Include="system_dntb\img\paper\Ivy.gif" />
+    <Content Include="system_dntb\img\paper\Maize.jpg" />
+    <Content Include="system_dntb\img\paper\Nature.jpg" />
+    <Content Include="system_dntb\img\paper\Network.gif" />
+    <Content Include="system_dntb\img\paper\tech.gif" />
+    <Content Include="system_dntb\img\parentfolder.gif" />
+    <Content Include="system_dntb\img\rename.gif" />
+    <Content Include="system_dntb\img\search.gif" />
+    <Content Include="system_dntb\img\selcolor.gif" />
+    <Content Include="system_dntb\img\selectall.gif" />
+    <Content Include="system_dntb\img\unselect.gif" />
+    <Content Include="system_dntb\link.aspx" />
+    <Content Include="system_dntb\mp3player.swf" />
+    <Content Include="system_dntb\onlinecode.aspx" />
+    <Content Include="system_dntb\onlineHelp.aspx" />
+    <Content Include="system_dntb\PasteCode.aspx" />
+    <Content Include="system_dntb\search.aspx" />
+    <Content Include="system_dntb\skin\default\editor.css" />
+    <Content Include="system_dntb\skin\default\emot.aspx" />
+    <Content Include="system_dntb\skin\default\face\other1\001.gif" />
+    <Content Include="system_dntb\skin\default\face\other1\002.gif" />
+    <Content Include="system_dntb\skin\default\face\other1\003.gif" />
+    <Content Include="system_dntb\skin\default\face\other1\004.gif" />
+    <Content Include="system_dntb\skin\default\face\other1\005.gif" />
+    <Content Include="system_dntb\skin\default\face\other1\006.gif" />
+    <Content Include="system_dntb\skin\default\face\other1\007.gif" />
+    <Content Include="system_dntb\skin\default\face\other1\008.gif" />
+    <Content Include="system_dntb\skin\default\face\other1\009.gif" />
+    <Content Include="system_dntb\skin\default\face\other1\010.gif" />
+    <Content Include="system_dntb\skin\default\face\other1\011.gif" />
+    <Content Include="system_dntb\skin\default\face\other1\012.gif" />
+    <Content Include="system_dntb\skin\default\face\other1\013.gif" />
+    <Content Include="system_dntb\skin\default\face\other1\014.gif" />
+    <Content Include="system_dntb\skin\default\face\other1\015.gif" />
+    <Content Include="system_dntb\skin\default\face\other1\016.gif" />
+    <Content Include="system_dntb\skin\default\face\other1\017.gif" />
+    <Content Include="system_dntb\skin\default\face\other1\018.gif" />
+    <Content Include="system_dntb\skin\default\face\other1\019.gif" />
+    <Content Include="system_dntb\skin\default\face\other1\020.gif" />
+    <Content Include="system_dntb\skin\default\face\other1\021.gif" />
+    <Content Include="system_dntb\skin\default\face\other1\022.gif" />
+    <Content Include="system_dntb\skin\default\face\other1\023.gif" />
+    <Content Include="system_dntb\skin\default\face\other1\024.gif" />
+    <Content Include="system_dntb\skin\default\face\other1\025.gif" />
+    <Content Include="system_dntb\skin\default\face\other1\026.gif" />
+    <Content Include="system_dntb\skin\default\face\other1\027.gif" />
+    <Content Include="system_dntb\skin\default\face\other1\028.gif" />
+    <Content Include="system_dntb\skin\default\face\other1\029.gif" />
+    <Content Include="system_dntb\skin\default\face\other1\030.gif" />
+    <Content Include="system_dntb\skin\default\face\other1\031.gif" />
+    <Content Include="system_dntb\skin\default\face\other1\032.gif" />
+    <Content Include="system_dntb\skin\default\face\other1\033.gif" />
+    <Content Include="system_dntb\skin\default\face\other1\034.gif" />
+    <Content Include="system_dntb\skin\default\face\other1\035.gif" />
+    <Content Include="system_dntb\skin\default\face\other1\036.gif" />
+    <Content Include="system_dntb\skin\default\face\other1\037.gif" />
+    <Content Include="system_dntb\skin\default\face\other1\038.gif" />
+    <Content Include="system_dntb\skin\default\face\other1\039.gif" />
+    <Content Include="system_dntb\skin\default\face\other1\040.gif" />
+    <Content Include="system_dntb\skin\default\face\other1\041.gif" />
+    <Content Include="system_dntb\skin\default\face\other1\042.gif" />
+    <Content Include="system_dntb\skin\default\face\other1\043.gif" />
+    <Content Include="system_dntb\skin\default\face\other1\044.gif" />
+    <Content Include="system_dntb\skin\default\face\other1\045.gif" />
+    <Content Include="system_dntb\skin\default\face\other2\001.gif" />
+    <Content Include="system_dntb\skin\default\face\other2\002.gif" />
+    <Content Include="system_dntb\skin\default\face\other2\003.gif" />
+    <Content Include="system_dntb\skin\default\face\other2\004.gif" />
+    <Content Include="system_dntb\skin\default\face\other2\005.gif" />
+    <Content Include="system_dntb\skin\default\face\other2\006.gif" />
+    <Content Include="system_dntb\skin\default\face\other2\007.gif" />
+    <Content Include="system_dntb\skin\default\face\other2\008.gif" />
+    <Content Include="system_dntb\skin\default\face\other2\009.gif" />
+    <Content Include="system_dntb\skin\default\face\other2\010.gif" />
+    <Content Include="system_dntb\skin\default\face\other2\011.gif" />
+    <Content Include="system_dntb\skin\default\face\other2\012.gif" />
+    <Content Include="system_dntb\skin\default\face\other2\013.gif" />
+    <Content Include="system_dntb\skin\default\face\other2\014.gif" />
+    <Content Include="system_dntb\skin\default\face\other2\015.gif" />
+    <Content Include="system_dntb\skin\default\face\other2\016.gif" />
+    <Content Include="system_dntb\skin\default\face\other2\017.gif" />
+    <Content Include="system_dntb\skin\default\face\other2\018.gif" />
+    <Content Include="system_dntb\skin\default\face\other2\019.gif" />
+    <Content Include="system_dntb\skin\default\face\other2\020.gif" />
+    <Content Include="system_dntb\skin\default\face\other2\021.gif" />
+    <Content Include="system_dntb\skin\default\face\other2\022.gif" />
+    <Content Include="system_dntb\skin\default\face\other2\023.gif" />
+    <Content Include="system_dntb\skin\default\face\other2\024.gif" />
+    <Content Include="system_dntb\skin\default\face\other2\025.gif" />
+    <Content Include="system_dntb\skin\default\face\other2\026.gif" />
+    <Content Include="system_dntb\skin\default\face\other2\027.gif" />
+    <Content Include="system_dntb\skin\default\face\other2\028.gif" />
+    <Content Include="system_dntb\skin\default\face\other2\029.gif" />
+    <Content Include="system_dntb\skin\default\face\other2\030.gif" />
+    <Content Include="system_dntb\skin\default\face\other2\031.gif" />
+    <Content Include="system_dntb\skin\default\face\other2\032.gif" />
+    <Content Include="system_dntb\skin\default\face\other2\033.gif" />
+    <Content Include="system_dntb\skin\default\face\other2\034.gif" />
+    <Content Include="system_dntb\skin\default\face\other2\035.gif" />
+    <Content Include="system_dntb\skin\default\face\other2\036.gif" />
+    <Content Include="system_dntb\skin\default\face\other2\037.gif" />
+    <Content Include="system_dntb\skin\default\face\other2\038.gif" />
+    <Content Include="system_dntb\skin\default\face\other2\039.gif" />
+    <Content Include="system_dntb\skin\default\face\other2\040.gif" />
+    <Content Include="system_dntb\skin\default\face\other2\041.gif" />
+    <Content Include="system_dntb\skin\default\face\other2\042.gif" />
+    <Content Include="system_dntb\skin\default\face\other2\043.gif" />
+    <Content Include="system_dntb\skin\default\face\other2\044.gif" />
+    <Content Include="system_dntb\skin\default\face\other2\045.gif" />
+    <Content Include="system_dntb\skin\default\face\qq\001.gif" />
+    <Content Include="system_dntb\skin\default\face\qq\002.gif" />
+    <Content Include="system_dntb\skin\default\face\qq\003.gif" />
+    <Content Include="system_dntb\skin\default\face\qq\004.gif" />
+    <Content Include="system_dntb\skin\default\face\qq\005.gif" />
+    <Content Include="system_dntb\skin\default\face\qq\006.gif" />
+    <Content Include="system_dntb\skin\default\face\qq\007.gif" />
+    <Content Include="system_dntb\skin\default\face\qq\008.gif" />
+    <Content Include="system_dntb\skin\default\face\qq\009.gif" />
+    <Content Include="system_dntb\skin\default\face\qq\010.gif" />
+    <Content Include="system_dntb\skin\default\face\qq\011.gif" />
+    <Content Include="system_dntb\skin\default\face\qq\012.gif" />
+    <Content Include="system_dntb\skin\default\face\qq\013.gif" />
+    <Content Include="system_dntb\skin\default\face\qq\014.gif" />
+    <Content Include="system_dntb\skin\default\face\qq\015.gif" />
+    <Content Include="system_dntb\skin\default\face\qq\016.gif" />
+    <Content Include="system_dntb\skin\default\face\qq\017.gif" />
+    <Content Include="system_dntb\skin\default\face\qq\018.gif" />
+    <Content Include="system_dntb\skin\default\face\qq\019.gif" />
+    <Content Include="system_dntb\skin\default\face\qq\020.gif" />
+    <Content Include="system_dntb\skin\default\face\qq\021.gif" />
+    <Content Include="system_dntb\skin\default\face\qq\022.gif" />
+    <Content Include="system_dntb\skin\default\face\qq\023.gif" />
+    <Content Include="system_dntb\skin\default\face\qq\024.gif" />
+    <Content Include="system_dntb\skin\default\face\qq\025.gif" />
+    <Content Include="system_dntb\skin\default\face\qq\026.gif" />
+    <Content Include="system_dntb\skin\default\face\qq\027.gif" />
+    <Content Include="system_dntb\skin\default\face\qq\028.gif" />
+    <Content Include="system_dntb\skin\default\face\qq\029.gif" />
+    <Content Include="system_dntb\skin\default\face\qq\030.gif" />
+    <Content Include="system_dntb\skin\default\face\qq\031.gif" />
+    <Content Include="system_dntb\skin\default\face\qq\032.gif" />
+    <Content Include="system_dntb\skin\default\face\qq\033.gif" />
+    <Content Include="system_dntb\skin\default\face\qq\034.gif" />
+    <Content Include="system_dntb\skin\default\face\qq\035.gif" />
+    <Content Include="system_dntb\skin\default\face\qq\036.gif" />
+    <Content Include="system_dntb\skin\default\face\qq\037.gif" />
+    <Content Include="system_dntb\skin\default\face\qq\038.gif" />
+    <Content Include="system_dntb\skin\default\face\qq\039.gif" />
+    <Content Include="system_dntb\skin\default\face\qq\040.gif" />
+    <Content Include="system_dntb\skin\default\face\qq\041.gif" />
+    <Content Include="system_dntb\skin\default\face\qq\042.gif" />
+    <Content Include="system_dntb\skin\default\face\qq\043.gif" />
+    <Content Include="system_dntb\skin\default\face\qq\044.gif" />
+    <Content Include="system_dntb\skin\default\face\qq\045.gif" />
+    <Content Include="system_dntb\skin\default\img\arrow.gif" />
+    <Content Include="system_dntb\skin\default\img\aspnet2.gif" />
+    <Content Include="system_dntb\skin\default\img\bgcolor.gif" />
+    <Content Include="system_dntb\skin\default\img\bold.gif" />
+    <Content Include="system_dntb\skin\default\img\browser-support.gif" />
+    <Content Include="system_dntb\skin\default\img\Calculator.gif" />
+    <Content Include="system_dntb\skin\default\img\code.gif" />
+    <Content Include="system_dntb\skin\default\img\code2.GIF" />
+    <Content Include="system_dntb\skin\default\img\copy.gif" />
+    <Content Include="system_dntb\skin\default\img\createlink.gif" />
+    <Content Include="system_dntb\skin\default\img\cut.gif" />
+    <Content Include="system_dntb\skin\default\img\date.gif" />
+    <Content Include="system_dntb\skin\default\img\date1.gif" />
+    <Content Include="system_dntb\skin\default\img\delete.gif" />
+    <Content Include="system_dntb\skin\default\img\div.gif" />
+    <Content Include="system_dntb\skin\default\img\EDIT.gif" />
+    <Content Include="system_dntb\skin\default\img\edit1.gif" />
+    <Content Include="system_dntb\skin\default\img\edit_en-us.gif" />
+    <Content Include="system_dntb\skin\default\img\edit_zh-cn.gif" />
+    <Content Include="system_dntb\skin\default\img\edit_zh-tw.gif" />
+    <Content Include="system_dntb\skin\default\img\emot.gif" />
+    <Content Include="system_dntb\skin\default\img\emot1.gif" />
+    <Content Include="system_dntb\skin\default\img\excel.gif" />
+    <Content Include="system_dntb\skin\default\img\excel1.GIF" />
+    <Content Include="system_dntb\skin\default\img\fieldset.gif" />
+    <Content Include="system_dntb\skin\default\img\font.gif" />
+    <Content Include="system_dntb\skin\default\img\font1.gif" />
+    <Content Include="system_dntb\skin\default\img\forecolor.gif" />
+    <Content Include="system_dntb\skin\default\img\formatstripper.gif" />
+    <Content Include="system_dntb\skin\default\img\fullscreen.gif" />
+    <Content Include="system_dntb\skin\default\img\getpage.gif" />
+    <Content Include="system_dntb\skin\default\img\getpage1.gif" />
+    <Content Include="system_dntb\skin\default\img\help-1.gif" />
+    <Content Include="system_dntb\skin\default\img\help.gif" />
+    <Content Include="system_dntb\skin\default\img\help1.gif" />
+    <Content Include="system_dntb\skin\default\img\helplogo.gif" />
+    <Content Include="system_dntb\skin\default\img\hide.gif" />
+    <Content Include="system_dntb\skin\default\img\icq.gif" />
+    <Content Include="system_dntb\skin\default\img\icq1.gif" />
+    <Content Include="system_dntb\skin\default\img\indent.gif" />
+    <Content Include="system_dntb\skin\default\img\inserthorizontalrule.gif" />
+    <Content Include="system_dntb\skin\default\img\insertimage.gif" />
+    <Content Include="system_dntb\skin\default\img\insertimage3.gif" />
+    <Content Include="system_dntb\skin\default\img\insertorderedlist.gif" />
+    <Content Include="system_dntb\skin\default\img\insertunorderedlist.gif" />
+    <Content Include="system_dntb\skin\default\img\italic.gif" />
+    <Content Include="system_dntb\skin\default\img\justifycenter.gif" />
+    <Content Include="system_dntb\skin\default\img\justifyleft.gif" />
+    <Content Include="system_dntb\skin\default\img\justifyright.gif" />
+    <Content Include="system_dntb\skin\default\img\logo.gif" />
+    <Content Include="system_dntb\skin\default\img\logo.png" />
+    <Content Include="system_dntb\skin\default\img\logo1.gif" />
+    <Content Include="system_dntb\skin\default\img\media.gif" />
+    <Content Include="system_dntb\skin\default\img\media1.gif" />
+    <Content Include="system_dntb\skin\default\img\min.gif" />
+    <Content Include="system_dntb\skin\default\img\msn.gif" />
+    <Content Include="system_dntb\skin\default\img\msn1.gif" />
+    <Content Include="system_dntb\skin\default\img\next.gif" />
+    <Content Include="system_dntb\skin\default\img\nowtime.gif" />
+    <Content Include="system_dntb\skin\default\img\outdent.gif" />
+    <Content Include="system_dntb\skin\default\img\pagebreak.gif" />
+    <Content Include="system_dntb\skin\default\img\pageoutput.gif" />
+    <Content Include="system_dntb\skin\default\img\palette.gif" />
+    <Content Include="system_dntb\skin\default\img\paste.gif" />
+    <Content Include="system_dntb\skin\default\img\pastetext.gif" />
+    <Content Include="system_dntb\skin\default\img\pasteword.gif" />
+    <Content Include="system_dntb\skin\default\img\plus.gif" />
+    <Content Include="system_dntb\skin\default\img\poweredby_aspnet.gif" />
+    <Content Include="system_dntb\skin\default\img\prev.gif" />
+    <Content Include="system_dntb\skin\default\img\preview1.gif" />
+    <Content Include="system_dntb\skin\default\img\preview_en-us.gif" />
+    <Content Include="system_dntb\skin\default\img\preview_zh-cn.gif" />
+    <Content Include="system_dntb\skin\default\img\preview_zh-tw.gif" />
+    <Content Include="system_dntb\skin\default\img\print.gif" />
+    <Content Include="system_dntb\skin\default\img\printer.gif" />
+    <Content Include="system_dntb\skin\default\img\printer1.gif" />
+    <Content Include="system_dntb\skin\default\img\printpage.gif" />
+    <Content Include="system_dntb\skin\default\img\properties.gif" />
+    <Content Include="system_dntb\skin\default\img\qq.gif" />
+    <Content Include="system_dntb\skin\default\img\qq1.gif" />
+    <Content Include="system_dntb\skin\default\img\quote.gif" />
+    <Content Include="system_dntb\skin\default\img\quote1.gif" />
+    <Content Include="system_dntb\skin\default\img\Rar.gif" />
+    <Content Include="system_dntb\skin\default\img\rar1.gif" />
+    <Content Include="system_dntb\skin\default\img\redo.gif" />
+    <Content Include="system_dntb\skin\default\img\removeformat.gif" />
+    <Content Include="system_dntb\skin\default\img\resettoolbar.GIF" />
+    <Content Include="system_dntb\skin\default\img\save.gif" />
+    <Content Include="system_dntb\skin\default\img\search.gif" />
+    <Content Include="system_dntb\skin\default\img\selectall.gif" />
+    <Content Include="system_dntb\skin\default\img\show.gif" />
+    <Content Include="system_dntb\skin\default\img\source.gif" />
+    <Content Include="system_dntb\skin\default\img\source1.gif" />
+    <Content Include="system_dntb\skin\default\img\source_en-us.gif" />
+    <Content Include="system_dntb\skin\default\img\source_zh-cn.gif" />
+    <Content Include="system_dntb\skin\default\img\source_zh-tw.gif" />
+    <Content Include="system_dntb\skin\default\img\specialfont.gif" />
+    <Content Include="system_dntb\skin\default\img\sub.gif" />
+    <Content Include="system_dntb\skin\default\img\sup.gif" />
+    <Content Include="system_dntb\skin\default\img\table.gif" />
+    <Content Include="system_dntb\skin\default\img\template.GIF" />
+    <Content Include="system_dntb\skin\default\img\textarea.gif" />
+    <Content Include="system_dntb\skin\default\img\time1.gif" />
+    <Content Include="system_dntb\skin\default\img\underline.gif" />
+    <Content Include="system_dntb\skin\default\img\undo.gif" />
+    <Content Include="system_dntb\skin\default\img\upload.gif" />
+    <Content Include="system_dntb\skin\default\img\upload1.gif" />
+    <Content Include="system_dntb\skin\default\img\url.gif" />
+    <Content Include="system_dntb\skin\default\img\VIEW.gif" />
+    <Content Include="system_dntb\skin\default\img\winclose.gif" />
+    <Content Include="system_dntb\skin\default\img\word.gif" />
+    <Content Include="system_dntb\skin\default\img\Zip.gif" />
+    <Content Include="system_dntb\skin\default\toolbar.css" />
+    <Content Include="system_dntb\skin\default\toolbar_moz.css" />
+    <Content Include="system_dntb\skin\default\toolbar_moz3.css" />
+    <Content Include="system_dntb\skin\default\toolbar_opera.css" />
+    <Content Include="system_dntb\skin\XP\editor.css" />
+    <Content Include="system_dntb\skin\XP\emot.aspx" />
+    <Content Include="system_dntb\skin\XP\face\other1\001.gif" />
+    <Content Include="system_dntb\skin\XP\face\other1\002.gif" />
+    <Content Include="system_dntb\skin\XP\face\other1\003.gif" />
+    <Content Include="system_dntb\skin\XP\face\other1\004.gif" />
+    <Content Include="system_dntb\skin\XP\face\other1\005.gif" />
+    <Content Include="system_dntb\skin\XP\face\other1\006.gif" />
+    <Content Include="system_dntb\skin\XP\face\other1\007.gif" />
+    <Content Include="system_dntb\skin\XP\face\other1\008.gif" />
+    <Content Include="system_dntb\skin\XP\face\other1\009.gif" />
+    <Content Include="system_dntb\skin\XP\face\other1\010.gif" />
+    <Content Include="system_dntb\skin\XP\face\other1\011.gif" />
+    <Content Include="system_dntb\skin\XP\face\other1\012.gif" />
+    <Content Include="system_dntb\skin\XP\face\other1\013.gif" />
+    <Content Include="system_dntb\skin\XP\face\other1\014.gif" />
+    <Content Include="system_dntb\skin\XP\face\other1\015.gif" />
+    <Content Include="system_dntb\skin\XP\face\other1\016.gif" />
+    <Content Include="system_dntb\skin\XP\face\other1\017.gif" />
+    <Content Include="system_dntb\skin\XP\face\other1\018.gif" />
+    <Content Include="system_dntb\skin\XP\face\other1\019.gif" />
+    <Content Include="system_dntb\skin\XP\face\other1\020.gif" />
+    <Content Include="system_dntb\skin\XP\face\other1\021.gif" />
+    <Content Include="system_dntb\skin\XP\face\other1\022.gif" />
+    <Content Include="system_dntb\skin\XP\face\other1\023.gif" />
+    <Content Include="system_dntb\skin\XP\face\other1\024.gif" />
+    <Content Include="system_dntb\skin\XP\face\other1\025.gif" />
+    <Content Include="system_dntb\skin\XP\face\other1\026.gif" />
+    <Content Include="system_dntb\skin\XP\face\other1\027.gif" />
+    <Content Include="system_dntb\skin\XP\face\other1\028.gif" />
+    <Content Include="system_dntb\skin\XP\face\other1\029.gif" />
+    <Content Include="system_dntb\skin\XP\face\other1\030.gif" />
+    <Content Include="system_dntb\skin\XP\face\other1\031.gif" />
+    <Content Include="system_dntb\skin\XP\face\other1\032.gif" />
+    <Content Include="system_dntb\skin\XP\face\other1\033.gif" />
+    <Content Include="system_dntb\skin\XP\face\other1\034.gif" />
+    <Content Include="system_dntb\skin\XP\face\other1\035.gif" />
+    <Content Include="system_dntb\skin\XP\face\other1\036.gif" />
+    <Content Include="system_dntb\skin\XP\face\other1\037.gif" />
+    <Content Include="system_dntb\skin\XP\face\other1\038.gif" />
+    <Content Include="system_dntb\skin\XP\face\other1\039.gif" />
+    <Content Include="system_dntb\skin\XP\face\other1\040.gif" />
+    <Content Include="system_dntb\skin\XP\face\other1\041.gif" />
+    <Content Include="system_dntb\skin\XP\face\other1\042.gif" />
+    <Content Include="system_dntb\skin\XP\face\other1\043.gif" />
+    <Content Include="system_dntb\skin\XP\face\other1\044.gif" />
+    <Content Include="system_dntb\skin\XP\face\other1\045.gif" />
+    <Content Include="system_dntb\skin\XP\face\other2\001.gif" />
+    <Content Include="system_dntb\skin\XP\face\other2\002.gif" />
+    <Content Include="system_dntb\skin\XP\face\other2\003.gif" />
+    <Content Include="system_dntb\skin\XP\face\other2\004.gif" />
+    <Content Include="system_dntb\skin\XP\face\other2\005.gif" />
+    <Content Include="system_dntb\skin\XP\face\other2\006.gif" />
+    <Content Include="system_dntb\skin\XP\face\other2\007.gif" />
+    <Content Include="system_dntb\skin\XP\face\other2\008.gif" />
+    <Content Include="system_dntb\skin\XP\face\other2\009.gif" />
+    <Content Include="system_dntb\skin\XP\face\other2\010.gif" />
+    <Content Include="system_dntb\skin\XP\face\other2\011.gif" />
+    <Content Include="system_dntb\skin\XP\face\other2\012.gif" />
+    <Content Include="system_dntb\skin\XP\face\other2\013.gif" />
+    <Content Include="system_dntb\skin\XP\face\other2\014.gif" />
+    <Content Include="system_dntb\skin\XP\face\other2\015.gif" />
+    <Content Include="system_dntb\skin\XP\face\other2\016.gif" />
+    <Content Include="system_dntb\skin\XP\face\other2\017.gif" />
+    <Content Include="system_dntb\skin\XP\face\other2\018.gif" />
+    <Content Include="system_dntb\skin\XP\face\other2\019.gif" />
+    <Content Include="system_dntb\skin\XP\face\other2\020.gif" />
+    <Content Include="system_dntb\skin\XP\face\other2\021.gif" />
+    <Content Include="system_dntb\skin\XP\face\other2\022.gif" />
+    <Content Include="system_dntb\skin\XP\face\other2\023.gif" />
+    <Content Include="system_dntb\skin\XP\face\other2\024.gif" />
+    <Content Include="system_dntb\skin\XP\face\other2\025.gif" />
+    <Content Include="system_dntb\skin\XP\face\other2\026.gif" />
+    <Content Include="system_dntb\skin\XP\face\other2\027.gif" />
+    <Content Include="system_dntb\skin\XP\face\other2\028.gif" />
+    <Content Include="system_dntb\skin\XP\face\other2\029.gif" />
+    <Content Include="system_dntb\skin\XP\face\other2\030.gif" />
+    <Content Include="system_dntb\skin\XP\face\other2\031.gif" />
+    <Content Include="system_dntb\skin\XP\face\other2\032.gif" />
+    <Content Include="system_dntb\skin\XP\face\other2\033.gif" />
+    <Content Include="system_dntb\skin\XP\face\other2\034.gif" />
+    <Content Include="system_dntb\skin\XP\face\other2\035.gif" />
+    <Content Include="system_dntb\skin\XP\face\other2\036.gif" />
+    <Content Include="system_dntb\skin\XP\face\other2\037.gif" />
+    <Content Include="system_dntb\skin\XP\face\other2\038.gif" />
+    <Content Include="system_dntb\skin\XP\face\other2\039.gif" />
+    <Content Include="system_dntb\skin\XP\face\other2\040.gif" />
+    <Content Include="system_dntb\skin\XP\face\other2\041.gif" />
+    <Content Include="system_dntb\skin\XP\face\other2\042.gif" />
+    <Content Include="system_dntb\skin\XP\face\other2\043.gif" />
+    <Content Include="system_dntb\skin\XP\face\other2\044.gif" />
+    <Content Include="system_dntb\skin\XP\face\other2\045.gif" />
+    <Content Include="system_dntb\skin\XP\face\qq\001.gif" />
+    <Content Include="system_dntb\skin\XP\face\qq\002.gif" />
+    <Content Include="system_dntb\skin\XP\face\qq\003.gif" />
+    <Content Include="system_dntb\skin\XP\face\qq\004.gif" />
+    <Content Include="system_dntb\skin\XP\face\qq\005.gif" />
+    <Content Include="system_dntb\skin\XP\face\qq\006.gif" />
+    <Content Include="system_dntb\skin\XP\face\qq\007.gif" />
+    <Content Include="system_dntb\skin\XP\face\qq\008.gif" />
+    <Content Include="system_dntb\skin\XP\face\qq\009.gif" />
+    <Content Include="system_dntb\skin\XP\face\qq\010.gif" />
+    <Content Include="system_dntb\skin\XP\face\qq\011.gif" />
+    <Content Include="system_dntb\skin\XP\face\qq\012.gif" />
+    <Content Include="system_dntb\skin\XP\face\qq\013.gif" />
+    <Content Include="system_dntb\skin\XP\face\qq\014.gif" />
+    <Content Include="system_dntb\skin\XP\face\qq\015.gif" />
+    <Content Include="system_dntb\skin\XP\face\qq\016.gif" />
+    <Content Include="system_dntb\skin\XP\face\qq\017.gif" />
+    <Content Include="system_dntb\skin\XP\face\qq\018.gif" />
+    <Content Include="system_dntb\skin\XP\face\qq\019.gif" />
+    <Content Include="system_dntb\skin\XP\face\qq\020.gif" />
+    <Content Include="system_dntb\skin\XP\face\qq\021.gif" />
+    <Content Include="system_dntb\skin\XP\face\qq\022.gif" />
+    <Content Include="system_dntb\skin\XP\face\qq\023.gif" />
+    <Content Include="system_dntb\skin\XP\face\qq\024.gif" />
+    <Content Include="system_dntb\skin\XP\face\qq\025.gif" />
+    <Content Include="system_dntb\skin\XP\face\qq\026.gif" />
+    <Content Include="system_dntb\skin\XP\face\qq\027.gif" />
+    <Content Include="system_dntb\skin\XP\face\qq\028.gif" />
+    <Content Include="system_dntb\skin\XP\face\qq\029.gif" />
+    <Content Include="system_dntb\skin\XP\face\qq\030.gif" />
+    <Content Include="system_dntb\skin\XP\face\qq\031.gif" />
+    <Content Include="system_dntb\skin\XP\face\qq\032.gif" />
+    <Content Include="system_dntb\skin\XP\face\qq\033.gif" />
+    <Content Include="system_dntb\skin\XP\face\qq\034.gif" />
+    <Content Include="system_dntb\skin\XP\face\qq\035.gif" />
+    <Content Include="system_dntb\skin\XP\face\qq\036.gif" />
+    <Content Include="system_dntb\skin\XP\face\qq\037.gif" />
+    <Content Include="system_dntb\skin\XP\face\qq\038.gif" />
+    <Content Include="system_dntb\skin\XP\face\qq\039.gif" />
+    <Content Include="system_dntb\skin\XP\face\qq\040.gif" />
+    <Content Include="system_dntb\skin\XP\face\qq\041.gif" />
+    <Content Include="system_dntb\skin\XP\face\qq\042.gif" />
+    <Content Include="system_dntb\skin\XP\face\qq\043.gif" />
+    <Content Include="system_dntb\skin\XP\face\qq\044.gif" />
+    <Content Include="system_dntb\skin\XP\face\qq\045.gif" />
+    <Content Include="system_dntb\skin\XP\img\arrow.gif" />
+    <Content Include="system_dntb\skin\XP\img\aspnet2.gif" />
+    <Content Include="system_dntb\skin\XP\img\bgcolor.gif" />
+    <Content Include="system_dntb\skin\XP\img\bold.gif" />
+    <Content Include="system_dntb\skin\XP\img\browser-support.gif" />
+    <Content Include="system_dntb\skin\XP\img\Calculator.gif" />
+    <Content Include="system_dntb\skin\XP\img\close.gif" />
+    <Content Include="system_dntb\skin\XP\img\code.gif" />
+    <Content Include="system_dntb\skin\XP\img\code2.gif" />
+    <Content Include="system_dntb\skin\XP\img\copy.gif" />
+    <Content Include="system_dntb\skin\XP\img\createlink.gif" />
+    <Content Include="system_dntb\skin\XP\img\cut.gif" />
+    <Content Include="system_dntb\skin\XP\img\date.gif" />
+    <Content Include="system_dntb\skin\XP\img\delete.gif" />
+    <Content Include="system_dntb\skin\XP\img\div.gif" />
+    <Content Include="system_dntb\skin\XP\img\EDIT.gif" />
+    <Content Include="system_dntb\skin\XP\img\edit1.gif" />
+    <Content Include="system_dntb\skin\XP\img\edit_en-us.gif" />
+    <Content Include="system_dntb\skin\XP\img\edit_zh-cn.gif" />
+    <Content Include="system_dntb\skin\XP\img\edit_zh-tw.gif" />
+    <Content Include="system_dntb\skin\XP\img\emot.gif" />
+    <Content Include="system_dntb\skin\XP\img\excel.gif" />
+    <Content Include="system_dntb\skin\XP\img\fieldset.gif" />
+    <Content Include="system_dntb\skin\XP\img\font.gif" />
+    <Content Include="system_dntb\skin\XP\img\forecolor.gif" />
+    <Content Include="system_dntb\skin\XP\img\formatstripper.gif" />
+    <Content Include="system_dntb\skin\XP\img\fullscreen.gif" />
+    <Content Include="system_dntb\skin\XP\img\getpage.gif" />
+    <Content Include="system_dntb\skin\XP\img\help-1.gif" />
+    <Content Include="system_dntb\skin\XP\img\help.gif" />
+    <Content Include="system_dntb\skin\XP\img\help1.gif" />
+    <Content Include="system_dntb\skin\XP\img\hide.gif" />
+    <Content Include="system_dntb\skin\XP\img\icq.gif" />
+    <Content Include="system_dntb\skin\XP\img\indent.gif" />
+    <Content Include="system_dntb\skin\XP\img\inserthorizontalrule.gif" />
+    <Content Include="system_dntb\skin\XP\img\insertimage.gif" />
+    <Content Include="system_dntb\skin\XP\img\insertorderedlist.gif" />
+    <Content Include="system_dntb\skin\XP\img\insertunorderedlist.gif" />
+    <Content Include="system_dntb\skin\XP\img\italic.gif" />
+    <Content Include="system_dntb\skin\XP\img\justifycenter.gif" />
+    <Content Include="system_dntb\skin\XP\img\justifyleft.gif" />
+    <Content Include="system_dntb\skin\XP\img\justifyright.gif" />
+    <Content Include="system_dntb\skin\XP\img\logo.gif" />
+    <Content Include="system_dntb\skin\XP\img\logo.png" />
+    <Content Include="system_dntb\skin\XP\img\logo1.gif" />
+    <Content Include="system_dntb\skin\XP\img\logo_s.GIF" />
+    <Content Include="system_dntb\skin\XP\img\media.gif" />
+    <Content Include="system_dntb\skin\XP\img\min.gif" />
+    <Content Include="system_dntb\skin\XP\img\msn.gif" />
+    <Content Include="system_dntb\skin\XP\img\next.gif" />
+    <Content Include="system_dntb\skin\XP\img\nowtime.gif" />
+    <Content Include="system_dntb\skin\XP\img\outdent.gif" />
+    <Content Include="system_dntb\skin\XP\img\pagebreak.gif" />
+    <Content Include="system_dntb\skin\XP\img\pageoutput.gif" />
+    <Content Include="system_dntb\skin\XP\img\palette.gif" />
+    <Content Include="system_dntb\skin\XP\img\paste.gif" />
+    <Content Include="system_dntb\skin\XP\img\pastetext.gif" />
+    <Content Include="system_dntb\skin\XP\img\pasteword.gif" />
+    <Content Include="system_dntb\skin\XP\img\pleasewait.gif" />
+    <Content Include="system_dntb\skin\XP\img\plus.gif" />
+    <Content Include="system_dntb\skin\XP\img\poweredby_aspnet.gif" />
+    <Content Include="system_dntb\skin\XP\img\prev.gif" />
+    <Content Include="system_dntb\skin\XP\img\preview1.gif" />
+    <Content Include="system_dntb\skin\XP\img\preview_en-us.gif" />
+    <Content Include="system_dntb\skin\XP\img\preview_zh-cn.gif" />
+    <Content Include="system_dntb\skin\XP\img\preview_zh-tw.gif" />
+    <Content Include="system_dntb\skin\XP\img\print.gif" />
+    <Content Include="system_dntb\skin\XP\img\printer.gif" />
+    <Content Include="system_dntb\skin\XP\img\printpage.gif" />
+    <Content Include="system_dntb\skin\XP\img\properties.gif" />
+    <Content Include="system_dntb\skin\XP\img\qq.gif" />
+    <Content Include="system_dntb\skin\XP\img\qq1.gif" />
+    <Content Include="system_dntb\skin\XP\img\quote.gif" />
+    <Content Include="system_dntb\skin\XP\img\quote1.gif" />
+    <Content Include="system_dntb\skin\XP\img\Rar.gif" />
+    <Content Include="system_dntb\skin\XP\img\rar1.gif" />
+    <Content Include="system_dntb\skin\XP\img\redo.gif" />
+    <Content Include="system_dntb\skin\XP\img\removeformat.gif" />
+    <Content Include="system_dntb\skin\XP\img\resettoolbar.GIF" />
+    <Content Include="system_dntb\skin\XP\img\save.gif" />
+    <Content Include="system_dntb\skin\XP\img\search.gif" />
+    <Content Include="system_dntb\skin\XP\img\selectall.gif" />
+    <Content Include="system_dntb\skin\XP\img\show.gif" />
+    <Content Include="system_dntb\skin\XP\img\source.gif" />
+    <Content Include="system_dntb\skin\XP\img\source1.gif" />
+    <Content Include="system_dntb\skin\XP\img\source_en-us.gif" />
+    <Content Include="system_dntb\skin\XP\img\source_zh-cn.gif" />
+    <Content Include="system_dntb\skin\XP\img\source_zh-tw.gif" />
+    <Content Include="system_dntb\skin\XP\img\specialfont.gif" />
+    <Content Include="system_dntb\skin\XP\img\sub.gif" />
+    <Content Include="system_dntb\skin\XP\img\sup.gif" />
+    <Content Include="system_dntb\skin\XP\img\table.gif" />
+    <Content Include="system_dntb\skin\XP\img\template.GIF" />
+    <Content Include="system_dntb\skin\XP\img\textarea.gif" />
+    <Content Include="system_dntb\skin\XP\img\underline.gif" />
+    <Content Include="system_dntb\skin\XP\img\undo.gif" />
+    <Content Include="system_dntb\skin\XP\img\upload.gif" />
+    <Content Include="system_dntb\skin\XP\img\upload1.gif" />
+    <Content Include="system_dntb\skin\XP\img\url.gif" />
+    <Content Include="system_dntb\skin\XP\img\VIEW.gif" />
+    <Content Include="system_dntb\skin\XP\img\winclose.gif" />
+    <Content Include="system_dntb\skin\XP\img\word.gif" />
+    <Content Include="system_dntb\skin\XP\img\wordpaste.gif" />
+    <Content Include="system_dntb\skin\XP\img\Zip.gif" />
+    <Content Include="system_dntb\skin\XP\toolbar.css" />
+    <Content Include="system_dntb\skin\XP\toolbar_moz.css" />
+    <Content Include="system_dntb\skin\XP\toolbar_moz3.css" />
+    <Content Include="system_dntb\skin\XP\toolbar_opera.css" />
+    <Content Include="system_dntb\specialfont.aspx" />
+    <Content Include="system_dntb\stylesheet.css" />
+    <Content Include="system_dntb\stylesheet2.css" />
+    <Content Include="system_dntb\stylesheet3.css" />
+    <Content Include="system_dntb\table.aspx" />
+    <Content Include="system_dntb\uploadFile.aspx" />
+    <Content Include="system_dntb\uploadImg.aspx" />
+    <Content Include="system_dntb\uploadMedia.aspx" />
+    <Content Include="system_dntb\uploadTemplate.aspx" />
+    <Content Include="system_dntb\upload\1.jpg" />
+    <Content Include="system_dntb\upload\2.jpg" />
+    <Content Include="system_dntb\upload\test.swf" />
+    <Content Include="system_dntb\upload\信纸-冰河.html" />
+    <Content Include="system_dntb\upload\信纸-圣诞节.html" />
+    <Content Include="system_dntb\upload\信纸-常春藤.html" />
+    <Content Include="system_dntb\upload\信纸-心型.html" />
+    <Content Include="system_dntb\upload\信纸-技术型.html" />
+    <Content Include="system_dntb\upload\信纸-晴朗.html" />
+    <Content Include="system_dntb\upload\信纸-生日.html" />
+    <Content Include="system_dntb\upload\信纸-秋叶.html" />
+    <Content Include="system_dntb\upload\信纸-绿色方格.html" />
+    <Content Include="system_dntb\upload\信纸-自然.html" />
+    <Content Include="system_dntb\upload\信纸-节日.html" />
+    <Content Include="system_dntb\upload\信纸-花纹.html" />
+    <Content Include="system_dntb\upload\信纸-雪花.html" />
+    <Content Include="system_dntb\upload\信纸-鲜花.html" />
+    <Content Include="system_dntb\upload\信纸-黄色旋纹.html" />
+    <Content Include="system_dntb\zh-cn\Resources.xml" />
+    <Content Include="system_dntb\zh-tw\Resources.xml" />
+    <Content Include="uploads\fm-06.jpg" />
+    <Content Include="uploads\gg4-1.gif" />
+    <Content Include="uploads\gg4-2.gif" />
+    <Content Include="uploads\gg4-3.gif" />
+    <Content Include="uploads\topflash.swf" />
+    <Content Include="uploads\qkjj.htm" />
+    <Content Include="uploads\wykd.htm" />
+    <Content Include="WebForm1.aspx" />
+    <Content Include="WebManager\Add.aspx" />
+    <Content Include="WebManager\ChangePwd.aspx" />
+    <Content Include="WebManager\Content.aspx" />
+    <Content Include="WebManager\Edit.aspx" />
+    <Content Include="WebManager\js\jquery-1.4.2.min.js" />
+    <Content Include="WebManager\js\onload.js" />
+    <Content Include="WebManager\Login.aspx" />
+    <Content Include="WebManager\Main.aspx" />
+    <Content Include="WebManager\style\base.css" />
+    <Content Include="WebManager\style\Icons\icon001a0.gif" />
+    <Content Include="WebManager\style\Icons\icon001a1.gif" />
+    <Content Include="WebManager\style\Icons\icon001a10.gif" />
+    <Content Include="WebManager\style\Icons\icon001a11.gif" />
+    <Content Include="WebManager\style\Icons\icon001a12.gif" />
+    <Content Include="WebManager\style\Icons\icon001a13.gif" />
+    <Content Include="WebManager\style\Icons\icon001a14.gif" />
+    <Content Include="WebManager\style\Icons\icon001a15.gif" />
+    <Content Include="WebManager\style\Icons\icon001a16.gif" />
+    <Content Include="WebManager\style\Icons\icon001a17.gif" />
+    <Content Include="WebManager\style\Icons\icon001a2.gif" />
+    <Content Include="WebManager\style\Icons\icon001a3.gif" />
+    <Content Include="WebManager\style\Icons\icon001a4.gif" />
+    <Content Include="WebManager\style\Icons\icon001a5.gif" />
+    <Content Include="WebManager\style\Icons\icon001a6.gif" />
+    <Content Include="WebManager\style\Icons\icon001a7.gif" />
+    <Content Include="WebManager\style\Icons\icon001a8.gif" />
+    <Content Include="WebManager\style\Icons\icon001a9.gif" />
+    <Content Include="WebManager\style\Icons\icon002a1.gif" />
+    <Content Include="WebManager\style\Icons\icon002a10.gif" />
+    <Content Include="WebManager\style\Icons\icon002a11.gif" />
+    <Content Include="WebManager\style\Icons\icon002a12.gif" />
+    <Content Include="WebManager\style\Icons\icon002a13.gif" />
+    <Content Include="WebManager\style\Icons\icon002a14.gif" />
+    <Content Include="WebManager\style\Icons\icon002a15.gif" />
+    <Content Include="WebManager\style\Icons\icon002a16.gif" />
+    <Content Include="WebManager\style\Icons\icon002a17.gif" />
+    <Content Include="WebManager\style\Icons\icon002a18.gif" />
+    <Content Include="WebManager\style\Icons\icon002a19.gif" />
+    <Content Include="WebManager\style\Icons\icon002a2.gif" />
+    <Content Include="WebManager\style\Icons\icon002a20.gif" />
+    <Content Include="WebManager\style\Icons\icon002a21.gif" />
+    <Content Include="WebManager\style\Icons\icon002a22.gif" />
+    <Content Include="WebManager\style\Icons\icon002a3.gif" />
+    <Content Include="WebManager\style\Icons\icon002a4.gif" />
+    <Content Include="WebManager\style\Icons\icon002a5.gif" />
+    <Content Include="WebManager\style\Icons\icon002a6.gif" />
+    <Content Include="WebManager\style\Icons\icon002a7.gif" />
+    <Content Include="WebManager\style\Icons\icon002a8.gif" />
+    <Content Include="WebManager\style\Icons\icon002a9.gif" />
+    <Content Include="WebManager\style\Icons\icon003a1.gif" />
+    <Content Include="WebManager\style\Icons\icon003a10.gif" />
+    <Content Include="WebManager\style\Icons\icon003a11.gif" />
+    <Content Include="WebManager\style\Icons\icon003a12.gif" />
+    <Content Include="WebManager\style\Icons\icon003a13.gif" />
+    <Content Include="WebManager\style\Icons\icon003a14.gif" />
+    <Content Include="WebManager\style\Icons\icon003a15.gif" />
+    <Content Include="WebManager\style\Icons\icon003a16.gif" />
+    <Content Include="WebManager\style\Icons\icon003a17.gif" />
+    <Content Include="WebManager\style\Icons\icon003a18.gif" />
+    <Content Include="WebManager\style\Icons\icon003a19.gif" />
+    <Content Include="WebManager\style\Icons\icon003a2.gif" />
+    <Content Include="WebManager\style\Icons\icon003a20.gif" />
+    <Content Include="WebManager\style\Icons\icon003a21.gif" />
+    <Content Include="WebManager\style\Icons\icon003a22.gif" />
+    <Content Include="WebManager\style\Icons\icon003a3.gif" />
+    <Content Include="WebManager\style\Icons\icon003a4.gif" />
+    <Content Include="WebManager\style\Icons\icon003a5.gif" />
+    <Content Include="WebManager\style\Icons\icon003a6.gif" />
+    <Content Include="WebManager\style\Icons\icon003a7.gif" />
+    <Content Include="WebManager\style\Icons\icon003a8.gif" />
+    <Content Include="WebManager\style\Icons\icon003a9.gif" />
+    <Content Include="WebManager\style\Icons\icon004a1.gif" />
+    <Content Include="WebManager\style\Icons\icon004a10.gif" />
+    <Content Include="WebManager\style\Icons\icon004a11.gif" />
+    <Content Include="WebManager\style\Icons\icon004a12.gif" />
+    <Content Include="WebManager\style\Icons\icon004a13.gif" />
+    <Content Include="WebManager\style\Icons\icon004a14.gif" />
+    <Content Include="WebManager\style\Icons\icon004a15.gif" />
+    <Content Include="WebManager\style\Icons\icon004a16.gif" />
+    <Content Include="WebManager\style\Icons\icon004a17.gif" />
+    <Content Include="WebManager\style\Icons\icon004a18.gif" />
+    <Content Include="WebManager\style\Icons\icon004a19.gif" />
+    <Content Include="WebManager\style\Icons\icon004a2.gif" />
+    <Content Include="WebManager\style\Icons\icon004a20.gif" />
+    <Content Include="WebManager\style\Icons\icon004a21.gif" />
+    <Content Include="WebManager\style\Icons\icon004a3.gif" />
+    <Content Include="WebManager\style\Icons\icon004a4.gif" />
+    <Content Include="WebManager\style\Icons\icon004a5.gif" />
+    <Content Include="WebManager\style\Icons\icon004a6.gif" />
+    <Content Include="WebManager\style\Icons\icon004a7.gif" />
+    <Content Include="WebManager\style\Icons\icon004a8.gif" />
+    <Content Include="WebManager\style\Icons\icon004a9.gif" />
+    <Content Include="WebManager\style\Icons\icon005a1.gif" />
+    <Content Include="WebManager\style\Icons\icon005a10.gif" />
+    <Content Include="WebManager\style\Icons\icon005a11.gif" />
+    <Content Include="WebManager\style\Icons\icon005a12.gif" />
+    <Content Include="WebManager\style\Icons\icon005a13.gif" />
+    <Content Include="WebManager\style\Icons\icon005a14.gif" />
+    <Content Include="WebManager\style\Icons\icon005a15.gif" />
+    <Content Include="WebManager\style\Icons\icon005a16.gif" />
+    <Content Include="WebManager\style\Icons\icon005a17.gif" />
+    <Content Include="WebManager\style\Icons\icon005a18.gif" />
+    <Content Include="WebManager\style\Icons\icon005a19.gif" />
+    <Content Include="WebManager\style\Icons\icon005a2.gif" />
+    <Content Include="WebManager\style\Icons\icon005a20.gif" />
+    <Content Include="WebManager\style\Icons\icon005a21.gif" />
+    <Content Include="WebManager\style\Icons\icon005a22.gif" />
+    <Content Include="WebManager\style\Icons\icon005a3.gif" />
+    <Content Include="WebManager\style\Icons\icon005a4.gif" />
+    <Content Include="WebManager\style\Icons\icon005a5.gif" />
+    <Content Include="WebManager\style\Icons\icon005a6.gif" />
+    <Content Include="WebManager\style\Icons\icon005a7.gif" />
+    <Content Include="WebManager\style\Icons\icon005a8.gif" />
+    <Content Include="WebManager\style\Icons\icon005a9.gif" />
+    <Content Include="WebManager\style\Icons\icon006a1.gif" />
+    <Content Include="WebManager\style\Icons\icon006a10.gif" />
+    <Content Include="WebManager\style\Icons\icon006a11.gif" />
+    <Content Include="WebManager\style\Icons\icon006a12.gif" />
+    <Content Include="WebManager\style\Icons\icon006a13.gif" />
+    <Content Include="WebManager\style\Icons\icon006a14.gif" />
+    <Content Include="WebManager\style\Icons\icon006a15.gif" />
+    <Content Include="WebManager\style\Icons\icon006a16.gif" />
+    <Content Include="WebManager\style\Icons\icon006a17.gif" />
+    <Content Include="WebManager\style\Icons\icon006a18.gif" />
+    <Content Include="WebManager\style\Icons\icon006a19.gif" />
+    <Content Include="WebManager\style\Icons\icon006a2.gif" />
+    <Content Include="WebManager\style\Icons\icon006a20.gif" />
+    <Content Include="WebManager\style\Icons\icon006a21.gif" />
+    <Content Include="WebManager\style\Icons\icon006a3.gif" />
+    <Content Include="WebManager\style\Icons\icon006a4.gif" />
+    <Content Include="WebManager\style\Icons\icon006a5.gif" />
+    <Content Include="WebManager\style\Icons\icon006a6.gif" />
+    <Content Include="WebManager\style\Icons\icon006a7.gif" />
+    <Content Include="WebManager\style\Icons\icon006a8.gif" />
+    <Content Include="WebManager\style\Icons\icon006a9.gif" />
+    <Content Include="WebManager\style\Icons\icon007a1.gif" />
+    <Content Include="WebManager\style\Icons\icon007a10.gif" />
+    <Content Include="WebManager\style\Icons\icon007a11.gif" />
+    <Content Include="WebManager\style\Icons\icon007a12.gif" />
+    <Content Include="WebManager\style\Icons\icon007a13.gif" />
+    <Content Include="WebManager\style\Icons\icon007a14.gif" />
+    <Content Include="WebManager\style\Icons\icon007a15.gif" />
+    <Content Include="WebManager\style\Icons\icon007a16.gif" />
+    <Content Include="WebManager\style\Icons\icon007a17.gif" />
+    <Content Include="WebManager\style\Icons\icon007a2.gif" />
+    <Content Include="WebManager\style\Icons\icon007a3.gif" />
+    <Content Include="WebManager\style\Icons\icon007a4.gif" />
+    <Content Include="WebManager\style\Icons\icon007a5.gif" />
+    <Content Include="WebManager\style\Icons\icon007a6.gif" />
+    <Content Include="WebManager\style\Icons\icon007a7.gif" />
+    <Content Include="WebManager\style\Icons\icon007a8.gif" />
+    <Content Include="WebManager\style\Icons\icon007a9.gif" />
+    <Content Include="WebManager\style\Icons\icon008a1.gif" />
+    <Content Include="WebManager\style\Icons\icon008a10.gif" />
+    <Content Include="WebManager\style\Icons\icon008a11.gif" />
+    <Content Include="WebManager\style\Icons\icon008a12.gif" />
+    <Content Include="WebManager\style\Icons\icon008a13.gif" />
+    <Content Include="WebManager\style\Icons\icon008a14.gif" />
+    <Content Include="WebManager\style\Icons\icon008a15.gif" />
+    <Content Include="WebManager\style\Icons\icon008a16.gif" />
+    <Content Include="WebManager\style\Icons\icon008a17.gif" />
+    <Content Include="WebManager\style\Icons\icon008a18.gif" />
+    <Content Include="WebManager\style\Icons\icon008a19.gif" />
+    <Content Include="WebManager\style\Icons\icon008a2.gif" />
+    <Content Include="WebManager\style\Icons\icon008a20.gif" />
+    <Content Include="WebManager\style\Icons\icon008a3.gif" />
+    <Content Include="WebManager\style\Icons\icon008a4.gif" />
+    <Content Include="WebManager\style\Icons\icon008a5.gif" />
+    <Content Include="WebManager\style\Icons\icon008a6.gif" />
+    <Content Include="WebManager\style\Icons\icon008a7.gif" />
+    <Content Include="WebManager\style\Icons\icon008a8.gif" />
+    <Content Include="WebManager\style\Icons\icon008a9.gif" />
+    <Content Include="WebManager\style\Icons\icon009a1.gif" />
+    <Content Include="WebManager\style\Icons\icon009a10.gif" />
+    <Content Include="WebManager\style\Icons\icon009a11.gif" />
+    <Content Include="WebManager\style\Icons\icon009a12.gif" />
+    <Content Include="WebManager\style\Icons\icon009a13.gif" />
+    <Content Include="WebManager\style\Icons\icon009a14.gif" />
+    <Content Include="WebManager\style\Icons\icon009a15.gif" />
+    <Content Include="WebManager\style\Icons\icon009a16.gif" />
+    <Content Include="WebManager\style\Icons\icon009a17.gif" />
+    <Content Include="WebManager\style\Icons\icon009a18.gif" />
+    <Content Include="WebManager\style\Icons\icon009a2.gif" />
+    <Content Include="WebManager\style\Icons\icon009a3.gif" />
+    <Content Include="WebManager\style\Icons\icon009a4.gif" />
+    <Content Include="WebManager\style\Icons\icon009a5.gif" />
+    <Content Include="WebManager\style\Icons\icon009a6.gif" />
+    <Content Include="WebManager\style\Icons\icon009a7.gif" />
+    <Content Include="WebManager\style\Icons\icon009a8.gif" />
+    <Content Include="WebManager\style\Icons\icon009a9.gif" />
+    <Content Include="WebManager\style\Icons\icon010a1.gif" />
+    <Content Include="WebManager\style\Icons\icon010a10.gif" />
+    <Content Include="WebManager\style\Icons\icon010a11.gif" />
+    <Content Include="WebManager\style\Icons\icon010a12.gif" />
+    <Content Include="WebManager\style\Icons\icon010a13.gif" />
+    <Content Include="WebManager\style\Icons\icon010a14.gif" />
+    <Content Include="WebManager\style\Icons\icon010a15.gif" />
+    <Content Include="WebManager\style\Icons\icon010a16.gif" />
+    <Content Include="WebManager\style\Icons\icon010a17.gif" />
+    <Content Include="WebManager\style\Icons\icon010a18.gif" />
+    <Content Include="WebManager\style\Icons\icon010a19.gif" />
+    <Content Include="WebManager\style\Icons\icon010a2.gif" />
+    <Content Include="WebManager\style\Icons\icon010a20.gif" />
+    <Content Include="WebManager\style\Icons\icon010a3.gif" />
+    <Content Include="WebManager\style\Icons\icon010a4.gif" />
+    <Content Include="WebManager\style\Icons\icon010a5.gif" />
+    <Content Include="WebManager\style\Icons\icon010a6.gif" />
+    <Content Include="WebManager\style\Icons\icon010a7.gif" />
+    <Content Include="WebManager\style\Icons\icon010a8.gif" />
+    <Content Include="WebManager\style\Icons\icon010a9.gif" />
+    <Content Include="WebManager\style\Icons\icon011a1.gif" />
+    <Content Include="WebManager\style\Icons\icon011a10.gif" />
+    <Content Include="WebManager\style\Icons\icon011a11.gif" />
+    <Content Include="WebManager\style\Icons\icon011a12.gif" />
+    <Content Include="WebManager\style\Icons\icon011a13.gif" />
+    <Content Include="WebManager\style\Icons\icon011a14.gif" />
+    <Content Include="WebManager\style\Icons\icon011a15.gif" />
+    <Content Include="WebManager\style\Icons\icon011a16.gif" />
+    <Content Include="WebManager\style\Icons\icon011a17.gif" />
+    <Content Include="WebManager\style\Icons\icon011a2.gif" />
+    <Content Include="WebManager\style\Icons\icon011a3.gif" />
+    <Content Include="WebManager\style\Icons\icon011a4.gif" />
+    <Content Include="WebManager\style\Icons\icon011a5.gif" />
+    <Content Include="WebManager\style\Icons\icon011a6.gif" />
+    <Content Include="WebManager\style\Icons\icon011a7.gif" />
+    <Content Include="WebManager\style\Icons\icon011a8.gif" />
+    <Content Include="WebManager\style\Icons\icon011a9.gif" />
+    <Content Include="WebManager\style\Icons\icon012a1.gif" />
+    <Content Include="WebManager\style\Icons\icon012a10.gif" />
+    <Content Include="WebManager\style\Icons\icon012a11.gif" />
+    <Content Include="WebManager\style\Icons\icon012a12.gif" />
+    <Content Include="WebManager\style\Icons\icon012a13.gif" />
+    <Content Include="WebManager\style\Icons\icon012a14.gif" />
+    <Content Include="WebManager\style\Icons\icon012a15.gif" />
+    <Content Include="WebManager\style\Icons\icon012a16.gif" />
+    <Content Include="WebManager\style\Icons\icon012a17.gif" />
+    <Content Include="WebManager\style\Icons\icon012a2.gif" />
+    <Content Include="WebManager\style\Icons\icon012a3.gif" />
+    <Content Include="WebManager\style\Icons\icon012a4.gif" />
+    <Content Include="WebManager\style\Icons\icon012a5.gif" />
+    <Content Include="WebManager\style\Icons\icon012a6.gif" />
+    <Content Include="WebManager\style\Icons\icon012a7.gif" />
+    <Content Include="WebManager\style\Icons\icon012a8.gif" />
+    <Content Include="WebManager\style\Icons\icon012a9.gif" />
+    <Content Include="WebManager\style\Icons\icon013a1.gif" />
+    <Content Include="WebManager\style\Icons\icon013a10.gif" />
+    <Content Include="WebManager\style\Icons\icon013a11.gif" />
+    <Content Include="WebManager\style\Icons\icon013a12.gif" />
+    <Content Include="WebManager\style\Icons\icon013a13.gif" />
+    <Content Include="WebManager\style\Icons\icon013a14.gif" />
+    <Content Include="WebManager\style\Icons\icon013a15.gif" />
+    <Content Include="WebManager\style\Icons\icon013a16.gif" />
+    <Content Include="WebManager\style\Icons\icon013a17.gif" />
+    <Content Include="WebManager\style\Icons\icon013a18.gif" />
+    <Content Include="WebManager\style\Icons\icon013a2.gif" />
+    <Content Include="WebManager\style\Icons\icon013a3.gif" />
+    <Content Include="WebManager\style\Icons\icon013a4.gif" />
+    <Content Include="WebManager\style\Icons\icon013a5.gif" />
+    <Content Include="WebManager\style\Icons\icon013a6.gif" />
+    <Content Include="WebManager\style\Icons\icon013a7.gif" />
+    <Content Include="WebManager\style\Icons\icon013a8.gif" />
+    <Content Include="WebManager\style\Icons\icon013a9.gif" />
+    <Content Include="WebManager\style\Icons\icon014a1.gif" />
+    <Content Include="WebManager\style\Icons\icon014a10.gif" />
+    <Content Include="WebManager\style\Icons\icon014a11.gif" />
+    <Content Include="WebManager\style\Icons\icon014a12.gif" />
+    <Content Include="WebManager\style\Icons\icon014a13.gif" />
+    <Content Include="WebManager\style\Icons\icon014a14.gif" />
+    <Content Include="WebManager\style\Icons\icon014a15.gif" />
+    <Content Include="WebManager\style\Icons\icon014a16.gif" />
+    <Content Include="WebManager\style\Icons\icon014a17.gif" />
+    <Content Include="WebManager\style\Icons\icon014a18.gif" />
+    <Content Include="WebManager\style\Icons\icon014a2.gif" />
+    <Content Include="WebManager\style\Icons\icon014a3.gif" />
+    <Content Include="WebManager\style\Icons\icon014a4.gif" />
+    <Content Include="WebManager\style\Icons\icon014a5.gif" />
+    <Content Include="WebManager\style\Icons\icon014a6.gif" />
+    <Content Include="WebManager\style\Icons\icon014a7.gif" />
+    <Content Include="WebManager\style\Icons\icon014a8.gif" />
+    <Content Include="WebManager\style\Icons\icon014a9.gif" />
+    <Content Include="WebManager\style\Icons\icon015a1.gif" />
+    <Content Include="WebManager\style\Icons\icon015a10.gif" />
+    <Content Include="WebManager\style\Icons\icon015a11.gif" />
+    <Content Include="WebManager\style\Icons\icon015a12.gif" />
+    <Content Include="WebManager\style\Icons\icon015a13.gif" />
+    <Content Include="WebManager\style\Icons\icon015a14.gif" />
+    <Content Include="WebManager\style\Icons\icon015a15.gif" />
+    <Content Include="WebManager\style\Icons\icon015a16.gif" />
+    <Content Include="WebManager\style\Icons\icon015a17.gif" />
+    <Content Include="WebManager\style\Icons\icon015a2.gif" />
+    <Content Include="WebManager\style\Icons\icon015a3.gif" />
+    <Content Include="WebManager\style\Icons\icon015a4.gif" />
+    <Content Include="WebManager\style\Icons\icon015a5.gif" />
+    <Content Include="WebManager\style\Icons\icon015a6.gif" />
+    <Content Include="WebManager\style\Icons\icon015a7.gif" />
+    <Content Include="WebManager\style\Icons\icon015a8.gif" />
+    <Content Include="WebManager\style\Icons\icon015a9.gif" />
+    <Content Include="WebManager\style\Icons\icon016a1.gif" />
+    <Content Include="WebManager\style\Icons\icon016a10.gif" />
+    <Content Include="WebManager\style\Icons\icon016a11.gif" />
+    <Content Include="WebManager\style\Icons\icon016a12.gif" />
+    <Content Include="WebManager\style\Icons\icon016a13.gif" />
+    <Content Include="WebManager\style\Icons\icon016a14.gif" />
+    <Content Include="WebManager\style\Icons\icon016a15.gif" />
+    <Content Include="WebManager\style\Icons\icon016a16.gif" />
+    <Content Include="WebManager\style\Icons\icon016a17.gif" />
+    <Content Include="WebManager\style\Icons\icon016a18.gif" />
+    <Content Include="WebManager\style\Icons\icon016a2.gif" />
+    <Content Include="WebManager\style\Icons\icon016a3.gif" />
+    <Content Include="WebManager\style\Icons\icon016a4.gif" />
+    <Content Include="WebManager\style\Icons\icon016a5.gif" />
+    <Content Include="WebManager\style\Icons\icon016a6.gif" />
+    <Content Include="WebManager\style\Icons\icon016a7.gif" />
+    <Content Include="WebManager\style\Icons\icon016a8.gif" />
+    <Content Include="WebManager\style\Icons\icon016a9.gif" />
+    <Content Include="WebManager\style\Icons\icon017a1.gif" />
+    <Content Include="WebManager\style\Icons\icon017a10.gif" />
+    <Content Include="WebManager\style\Icons\icon017a11.gif" />
+    <Content Include="WebManager\style\Icons\icon017a12.gif" />
+    <Content Include="WebManager\style\Icons\icon017a13.gif" />
+    <Content Include="WebManager\style\Icons\icon017a14.gif" />
+    <Content Include="WebManager\style\Icons\icon017a15.gif" />
+    <Content Include="WebManager\style\Icons\icon017a16.gif" />
+    <Content Include="WebManager\style\Icons\icon017a2.gif" />
+    <Content Include="WebManager\style\Icons\icon017a3.gif" />
+    <Content Include="WebManager\style\Icons\icon017a4.gif" />
+    <Content Include="WebManager\style\Icons\icon017a5.gif" />
+    <Content Include="WebManager\style\Icons\icon017a6.gif" />
+    <Content Include="WebManager\style\Icons\icon017a7.gif" />
+    <Content Include="WebManager\style\Icons\icon017a8.gif" />
+    <Content Include="WebManager\style\Icons\icon017a9.gif" />
+    <Content Include="WebManager\style\Icons\icon018a1.gif" />
+    <Content Include="WebManager\style\Icons\icon018a10.gif" />
+    <Content Include="WebManager\style\Icons\icon018a11.gif" />
+    <Content Include="WebManager\style\Icons\icon018a12.gif" />
+    <Content Include="WebManager\style\Icons\icon018a13.gif" />
+    <Content Include="WebManager\style\Icons\icon018a14.gif" />
+    <Content Include="WebManager\style\Icons\icon018a15.gif" />
+    <Content Include="WebManager\style\Icons\icon018a16.gif" />
+    <Content Include="WebManager\style\Icons\icon018a17.gif" />
+    <Content Include="WebManager\style\Icons\icon018a18.gif" />
+    <Content Include="WebManager\style\Icons\icon018a19.gif" />
+    <Content Include="WebManager\style\Icons\icon018a2.gif" />
+    <Content Include="WebManager\style\Icons\icon018a20.gif" />
+    <Content Include="WebManager\style\Icons\icon018a3.gif" />
+    <Content Include="WebManager\style\Icons\icon018a4.gif" />
+    <Content Include="WebManager\style\Icons\icon018a5.gif" />
+    <Content Include="WebManager\style\Icons\icon018a6.gif" />
+    <Content Include="WebManager\style\Icons\icon018a7.gif" />
+    <Content Include="WebManager\style\Icons\icon018a8.gif" />
+    <Content Include="WebManager\style\Icons\icon018a9.gif" />
+    <Content Include="WebManager\style\Icons\icon019a1.gif" />
+    <Content Include="WebManager\style\Icons\icon019a10.gif" />
+    <Content Include="WebManager\style\Icons\icon019a11.gif" />
+    <Content Include="WebManager\style\Icons\icon019a12.gif" />
+    <Content Include="WebManager\style\Icons\icon019a13.gif" />
+    <Content Include="WebManager\style\Icons\icon019a14.gif" />
+    <Content Include="WebManager\style\Icons\icon019a15.gif" />
+    <Content Include="WebManager\style\Icons\icon019a16.gif" />
+    <Content Include="WebManager\style\Icons\icon019a2.gif" />
+    <Content Include="WebManager\style\Icons\icon019a3.gif" />
+    <Content Include="WebManager\style\Icons\icon019a4.gif" />
+    <Content Include="WebManager\style\Icons\icon019a5.gif" />
+    <Content Include="WebManager\style\Icons\icon019a6.gif" />
+    <Content Include="WebManager\style\Icons\icon019a7.gif" />
+    <Content Include="WebManager\style\Icons\icon019a8.gif" />
+    <Content Include="WebManager\style\Icons\icon019a9.gif" />
+    <Content Include="WebManager\style\Icons\icon020a1.gif" />
+    <Content Include="WebManager\style\Icons\icon020a10.gif" />
+    <Content Include="WebManager\style\Icons\icon020a11.gif" />
+    <Content Include="WebManager\style\Icons\icon020a12.gif" />
+    <Content Include="WebManager\style\Icons\icon020a13.gif" />
+    <Content Include="WebManager\style\Icons\icon020a14.gif" />
+    <Content Include="WebManager\style\Icons\icon020a15.gif" />
+    <Content Include="WebManager\style\Icons\icon020a16.gif" />
+    <Content Include="WebManager\style\Icons\icon020a17.gif" />
+    <Content Include="WebManager\style\Icons\icon020a18.gif" />
+    <Content Include="WebManager\style\Icons\icon020a19.gif" />
+    <Content Include="WebManager\style\Icons\icon020a2.gif" />
+    <Content Include="WebManager\style\Icons\icon020a20.gif" />
+    <Content Include="WebManager\style\Icons\icon020a3.gif" />
+    <Content Include="WebManager\style\Icons\icon020a4.gif" />
+    <Content Include="WebManager\style\Icons\icon020a5.gif" />
+    <Content Include="WebManager\style\Icons\icon020a6.gif" />
+    <Content Include="WebManager\style\Icons\icon020a7.gif" />
+    <Content Include="WebManager\style\Icons\icon020a8.gif" />
+    <Content Include="WebManager\style\Icons\icon020a9.gif" />
+    <Content Include="WebManager\style\Icons\icon021a1.gif" />
+    <Content Include="WebManager\style\Icons\icon021a10.gif" />
+    <Content Include="WebManager\style\Icons\icon021a11.gif" />
+    <Content Include="WebManager\style\Icons\icon021a12.gif" />
+    <Content Include="WebManager\style\Icons\icon021a13.gif" />
+    <Content Include="WebManager\style\Icons\icon021a14.gif" />
+    <Content Include="WebManager\style\Icons\icon021a15.gif" />
+    <Content Include="WebManager\style\Icons\icon021a16.gif" />
+    <Content Include="WebManager\style\Icons\icon021a17.gif" />
+    <Content Include="WebManager\style\Icons\icon021a18.gif" />
+    <Content Include="WebManager\style\Icons\icon021a19.gif" />
+    <Content Include="WebManager\style\Icons\icon021a2.gif" />
+    <Content Include="WebManager\style\Icons\icon021a20.gif" />
+    <Content Include="WebManager\style\Icons\icon021a21.gif" />
+    <Content Include="WebManager\style\Icons\icon021a22.gif" />
+    <Content Include="WebManager\style\Icons\icon021a3.gif" />
+    <Content Include="WebManager\style\Icons\icon021a4.gif" />
+    <Content Include="WebManager\style\Icons\icon021a5.gif" />
+    <Content Include="WebManager\style\Icons\icon021a6.gif" />
+    <Content Include="WebManager\style\Icons\icon021a7.gif" />
+    <Content Include="WebManager\style\Icons\icon021a8.gif" />
+    <Content Include="WebManager\style\Icons\icon021a9.gif" />
+    <Content Include="WebManager\style\Icons\icon022a1.gif" />
+    <Content Include="WebManager\style\Icons\icon022a10.gif" />
+    <Content Include="WebManager\style\Icons\icon022a11.gif" />
+    <Content Include="WebManager\style\Icons\icon022a12.gif" />
+    <Content Include="WebManager\style\Icons\icon022a13.gif" />
+    <Content Include="WebManager\style\Icons\icon022a14.gif" />
+    <Content Include="WebManager\style\Icons\icon022a15.gif" />
+    <Content Include="WebManager\style\Icons\icon022a16.gif" />
+    <Content Include="WebManager\style\Icons\icon022a2.gif" />
+    <Content Include="WebManager\style\Icons\icon022a3.gif" />
+    <Content Include="WebManager\style\Icons\icon022a4.gif" />
+    <Content Include="WebManager\style\Icons\icon022a5.gif" />
+    <Content Include="WebManager\style\Icons\icon022a6.gif" />
+    <Content Include="WebManager\style\Icons\icon022a7.gif" />
+    <Content Include="WebManager\style\Icons\icon022a8.gif" />
+    <Content Include="WebManager\style\Icons\icon022a9.gif" />
+    <Content Include="WebManager\style\Icons\icon023a1.gif" />
+    <Content Include="WebManager\style\Icons\icon023a10.gif" />
+    <Content Include="WebManager\style\Icons\icon023a11.gif" />
+    <Content Include="WebManager\style\Icons\icon023a12.gif" />
+    <Content Include="WebManager\style\Icons\icon023a13.gif" />
+    <Content Include="WebManager\style\Icons\icon023a14.gif" />
+    <Content Include="WebManager\style\Icons\icon023a15.gif" />
+    <Content Include="WebManager\style\Icons\icon023a16.gif" />
+    <Content Include="WebManager\style\Icons\icon023a2.gif" />
+    <Content Include="WebManager\style\Icons\icon023a3.gif" />
+    <Content Include="WebManager\style\Icons\icon023a4.gif" />
+    <Content Include="WebManager\style\Icons\icon023a5.gif" />
+    <Content Include="WebManager\style\Icons\icon023a6.gif" />
+    <Content Include="WebManager\style\Icons\icon023a7.gif" />
+    <Content Include="WebManager\style\Icons\icon023a8.gif" />
+    <Content Include="WebManager\style\Icons\icon023a9.gif" />
+    <Content Include="WebManager\style\Icons\icon024a1.gif" />
+    <Content Include="WebManager\style\Icons\icon024a10.gif" />
+    <Content Include="WebManager\style\Icons\icon024a11.gif" />
+    <Content Include="WebManager\style\Icons\icon024a12.gif" />
+    <Content Include="WebManager\style\Icons\icon024a13.gif" />
+    <Content Include="WebManager\style\Icons\icon024a14.gif" />
+    <Content Include="WebManager\style\Icons\icon024a15.gif" />
+    <Content Include="WebManager\style\Icons\icon024a16.gif" />
+    <Content Include="WebManager\style\Icons\icon024a17.gif" />
+    <Content Include="WebManager\style\Icons\icon024a2.gif" />
+    <Content Include="WebManager\style\Icons\icon024a3.gif" />
+    <Content Include="WebManager\style\Icons\icon024a4.gif" />
+    <Content Include="WebManager\style\Icons\icon024a5.gif" />
+    <Content Include="WebManager\style\Icons\icon024a6.gif" />
+    <Content Include="WebManager\style\Icons\icon024a7.gif" />
+    <Content Include="WebManager\style\Icons\icon024a8.gif" />
+    <Content Include="WebManager\style\Icons\icon024a9.gif" />
+    <Content Include="WebManager\style\Icons\icon025a1.gif" />
+    <Content Include="WebManager\style\Icons\icon025a10.gif" />
+    <Content Include="WebManager\style\Icons\icon025a11.gif" />
+    <Content Include="WebManager\style\Icons\icon025a12.gif" />
+    <Content Include="WebManager\style\Icons\icon025a13.gif" />
+    <Content Include="WebManager\style\Icons\icon025a14.gif" />
+    <Content Include="WebManager\style\Icons\icon025a15.gif" />
+    <Content Include="WebManager\style\Icons\icon025a16.gif" />
+    <Content Include="WebManager\style\Icons\icon025a2.gif" />
+    <Content Include="WebManager\style\Icons\icon025a3.gif" />
+    <Content Include="WebManager\style\Icons\icon025a4.gif" />
+    <Content Include="WebManager\style\Icons\icon025a5.gif" />
+    <Content Include="WebManager\style\Icons\icon025a6.gif" />
+    <Content Include="WebManager\style\Icons\icon025a7.gif" />
+    <Content Include="WebManager\style\Icons\icon025a8.gif" />
+    <Content Include="WebManager\style\Icons\icon025a9.gif" />
+    <Content Include="WebManager\style\Icons\icon026a1.gif" />
+    <Content Include="WebManager\style\Icons\icon026a10.gif" />
+    <Content Include="WebManager\style\Icons\icon026a11.gif" />
+    <Content Include="WebManager\style\Icons\icon026a12.gif" />
+    <Content Include="WebManager\style\Icons\icon026a13.gif" />
+    <Content Include="WebManager\style\Icons\icon026a14.gif" />
+    <Content Include="WebManager\style\Icons\icon026a15.gif" />
+    <Content Include="WebManager\style\Icons\icon026a16.gif" />
+    <Content Include="WebManager\style\Icons\icon026a17.gif" />
+    <Content Include="WebManager\style\Icons\icon026a18.gif" />
+    <Content Include="WebManager\style\Icons\icon026a19.gif" />
+    <Content Include="WebManager\style\Icons\icon026a2.gif" />
+    <Content Include="WebManager\style\Icons\icon026a20.gif" />
+    <Content Include="WebManager\style\Icons\icon026a21.gif" />
+    <Content Include="WebManager\style\Icons\icon026a22.gif" />
+    <Content Include="WebManager\style\Icons\icon026a3.gif" />
+    <Content Include="WebManager\style\Icons\icon026a4.gif" />
+    <Content Include="WebManager\style\Icons\icon026a5.gif" />
+    <Content Include="WebManager\style\Icons\icon026a6.gif" />
+    <Content Include="WebManager\style\Icons\icon026a7.gif" />
+    <Content Include="WebManager\style\Icons\icon026a8.gif" />
+    <Content Include="WebManager\style\Icons\icon026a9.gif" />
+    <Content Include="WebManager\style\Icons\icon027a1.gif" />
+    <Content Include="WebManager\style\Icons\icon027a10.gif" />
+    <Content Include="WebManager\style\Icons\icon027a11.gif" />
+    <Content Include="WebManager\style\Icons\icon027a12.gif" />
+    <Content Include="WebManager\style\Icons\icon027a13.gif" />
+    <Content Include="WebManager\style\Icons\icon027a14.gif" />
+    <Content Include="WebManager\style\Icons\icon027a15.gif" />
+    <Content Include="WebManager\style\Icons\icon027a16.gif" />
+    <Content Include="WebManager\style\Icons\icon027a2.gif" />
+    <Content Include="WebManager\style\Icons\icon027a3.gif" />
+    <Content Include="WebManager\style\Icons\icon027a4.gif" />
+    <Content Include="WebManager\style\Icons\icon027a5.gif" />
+    <Content Include="WebManager\style\Icons\icon027a6.gif" />
+    <Content Include="WebManager\style\Icons\icon027a7.gif" />
+    <Content Include="WebManager\style\Icons\icon027a8.gif" />
+    <Content Include="WebManager\style\Icons\icon027a9.gif" />
+    <Content Include="WebManager\style\Icons\icon028a1.gif" />
+    <Content Include="WebManager\style\Icons\icon028a10.gif" />
+    <Content Include="WebManager\style\Icons\icon028a11.gif" />
+    <Content Include="WebManager\style\Icons\icon028a12.gif" />
+    <Content Include="WebManager\style\Icons\icon028a13.gif" />
+    <Content Include="WebManager\style\Icons\icon028a14.gif" />
+    <Content Include="WebManager\style\Icons\icon028a15.gif" />
+    <Content Include="WebManager\style\Icons\icon028a16.gif" />
+    <Content Include="WebManager\style\Icons\icon028a2.gif" />
+    <Content Include="WebManager\style\Icons\icon028a3.gif" />
+    <Content Include="WebManager\style\Icons\icon028a4.gif" />
+    <Content Include="WebManager\style\Icons\icon028a5.gif" />
+    <Content Include="WebManager\style\Icons\icon028a6.gif" />
+    <Content Include="WebManager\style\Icons\icon028a7.gif" />
+    <Content Include="WebManager\style\Icons\icon028a8.gif" />
+    <Content Include="WebManager\style\Icons\icon028a9.gif" />
+    <Content Include="WebManager\style\Icons\icon029a1.gif" />
+    <Content Include="WebManager\style\Icons\icon029a10.gif" />
+    <Content Include="WebManager\style\Icons\icon029a11.gif" />
+    <Content Include="WebManager\style\Icons\icon029a12.gif" />
+    <Content Include="WebManager\style\Icons\icon029a13.gif" />
+    <Content Include="WebManager\style\Icons\icon029a14.gif" />
+    <Content Include="WebManager\style\Icons\icon029a15.gif" />
+    <Content Include="WebManager\style\Icons\icon029a16.gif" />
+    <Content Include="WebManager\style\Icons\icon029a17.gif" />
+    <Content Include="WebManager\style\Icons\icon029a18.gif" />
+    <Content Include="WebManager\style\Icons\icon029a19.gif" />
+    <Content Include="WebManager\style\Icons\icon029a2.gif" />
+    <Content Include="WebManager\style\Icons\icon029a20.gif" />
+    <Content Include="WebManager\style\Icons\icon029a21.gif" />
+    <Content Include="WebManager\style\Icons\icon029a22.gif" />
+    <Content Include="WebManager\style\Icons\icon029a23.gif" />
+    <Content Include="WebManager\style\Icons\icon029a24.gif" />
+    <Content Include="WebManager\style\Icons\icon029a25.gif" />
+    <Content Include="WebManager\style\Icons\icon029a26.gif" />
+    <Content Include="WebManager\style\Icons\icon029a27.gif" />
+    <Content Include="WebManager\style\Icons\icon029a28.gif" />
+    <Content Include="WebManager\style\Icons\icon029a29.gif" />
+    <Content Include="WebManager\style\Icons\icon029a3.gif" />
+    <Content Include="WebManager\style\Icons\icon029a30.gif" />
+    <Content Include="WebManager\style\Icons\icon029a31.gif" />
+    <Content Include="WebManager\style\Icons\icon029a32.gif" />
+    <Content Include="WebManager\style\Icons\icon029a33.gif" />
+    <Content Include="WebManager\style\Icons\icon029a34.gif" />
+    <Content Include="WebManager\style\Icons\icon029a35.gif" />
+    <Content Include="WebManager\style\Icons\icon029a4.gif" />
+    <Content Include="WebManager\style\Icons\icon029a5.gif" />
+    <Content Include="WebManager\style\Icons\icon029a6.gif" />
+    <Content Include="WebManager\style\Icons\icon029a7.gif" />
+    <Content Include="WebManager\style\Icons\icon029a8.gif" />
+    <Content Include="WebManager\style\Icons\icon029a9.gif" />
+    <Content Include="WebManager\style\Icons\icon030a1.gif" />
+    <Content Include="WebManager\style\Icons\icon030a10.gif" />
+    <Content Include="WebManager\style\Icons\icon030a11.gif" />
+    <Content Include="WebManager\style\Icons\icon030a12.gif" />
+    <Content Include="WebManager\style\Icons\icon030a13.gif" />
+    <Content Include="WebManager\style\Icons\icon030a14.gif" />
+    <Content Include="WebManager\style\Icons\icon030a15.gif" />
+    <Content Include="WebManager\style\Icons\icon030a16.gif" />
+    <Content Include="WebManager\style\Icons\icon030a2.gif" />
+    <Content Include="WebManager\style\Icons\icon030a3.gif" />
+    <Content Include="WebManager\style\Icons\icon030a4.gif" />
+    <Content Include="WebManager\style\Icons\icon030a5.gif" />
+    <Content Include="WebManager\style\Icons\icon030a6.gif" />
+    <Content Include="WebManager\style\Icons\icon030a7.gif" />
+    <Content Include="WebManager\style\Icons\icon030a8.gif" />
+    <Content Include="WebManager\style\Icons\icon030a9.gif" />
+    <Content Include="WebManager\style\Icons\icon031a1.gif" />
+    <Content Include="WebManager\style\Icons\icon031a10.gif" />
+    <Content Include="WebManager\style\Icons\icon031a11.gif" />
+    <Content Include="WebManager\style\Icons\icon031a12.gif" />
+    <Content Include="WebManager\style\Icons\icon031a13.gif" />
+    <Content Include="WebManager\style\Icons\icon031a14.gif" />
+    <Content Include="WebManager\style\Icons\icon031a15.gif" />
+    <Content Include="WebManager\style\Icons\icon031a16.gif" />
+    <Content Include="WebManager\style\Icons\icon031a2.gif" />
+    <Content Include="WebManager\style\Icons\icon031a3.gif" />
+    <Content Include="WebManager\style\Icons\icon031a4.gif" />
+    <Content Include="WebManager\style\Icons\icon031a5.gif" />
+    <Content Include="WebManager\style\Icons\icon031a6.gif" />
+    <Content Include="WebManager\style\Icons\icon031a7.gif" />
+    <Content Include="WebManager\style\Icons\icon031a8.gif" />
+    <Content Include="WebManager\style\Icons\icon031a9.gif" />
+    <Content Include="WebManager\style\Icons\icon032a1.gif" />
+    <Content Include="WebManager\style\Icons\icon032a10.gif" />
+    <Content Include="WebManager\style\Icons\icon032a11.gif" />
+    <Content Include="WebManager\style\Icons\icon032a12.gif" />
+    <Content Include="WebManager\style\Icons\icon032a13.gif" />
+    <Content Include="WebManager\style\Icons\icon032a14.gif" />
+    <Content Include="WebManager\style\Icons\icon032a15.gif" />
+    <Content Include="WebManager\style\Icons\icon032a16.gif" />
+    <Content Include="WebManager\style\Icons\icon032a2.gif" />
+    <Content Include="WebManager\style\Icons\icon032a3.gif" />
+    <Content Include="WebManager\style\Icons\icon032a4.gif" />
+    <Content Include="WebManager\style\Icons\icon032a5.gif" />
+    <Content Include="WebManager\style\Icons\icon032a6.gif" />
+    <Content Include="WebManager\style\Icons\icon032a7.gif" />
+    <Content Include="WebManager\style\Icons\icon032a8.gif" />
+    <Content Include="WebManager\style\Icons\icon032a9.gif" />
+    <Content Include="WebManager\style\Icons\icon033a1.gif" />
+    <Content Include="WebManager\style\Icons\icon033a10.gif" />
+    <Content Include="WebManager\style\Icons\icon033a11.gif" />
+    <Content Include="WebManager\style\Icons\icon033a12.gif" />
+    <Content Include="WebManager\style\Icons\icon033a13.gif" />
+    <Content Include="WebManager\style\Icons\icon033a14.gif" />
+    <Content Include="WebManager\style\Icons\icon033a15.gif" />
+    <Content Include="WebManager\style\Icons\icon033a16.gif" />
+    <Content Include="WebManager\style\Icons\icon033a17.gif" />
+    <Content Include="WebManager\style\Icons\icon033a2.gif" />
+    <Content Include="WebManager\style\Icons\icon033a3.gif" />
+    <Content Include="WebManager\style\Icons\icon033a4.gif" />
+    <Content Include="WebManager\style\Icons\icon033a5.gif" />
+    <Content Include="WebManager\style\Icons\icon033a6.gif" />
+    <Content Include="WebManager\style\Icons\icon033a7.gif" />
+    <Content Include="WebManager\style\Icons\icon033a8.gif" />
+    <Content Include="WebManager\style\Icons\icon033a9.gif" />
+    <Content Include="WebManager\style\Icons\icon034a1.gif" />
+    <Content Include="WebManager\style\Icons\icon034a10.gif" />
+    <Content Include="WebManager\style\Icons\icon034a11.gif" />
+    <Content Include="WebManager\style\Icons\icon034a12.gif" />
+    <Content Include="WebManager\style\Icons\icon034a13.gif" />
+    <Content Include="WebManager\style\Icons\icon034a14.gif" />
+    <Content Include="WebManager\style\Icons\icon034a15.gif" />
+    <Content Include="WebManager\style\Icons\icon034a16.gif" />
+    <Content Include="WebManager\style\Icons\icon034a17.gif" />
+    <Content Include="WebManager\style\Icons\icon034a18.gif" />
+    <Content Include="WebManager\style\Icons\icon034a2.gif" />
+    <Content Include="WebManager\style\Icons\icon034a3.gif" />
+    <Content Include="WebManager\style\Icons\icon034a4.gif" />
+    <Content Include="WebManager\style\Icons\icon034a5.gif" />
+    <Content Include="WebManager\style\Icons\icon034a6.gif" />
+    <Content Include="WebManager\style\Icons\icon034a7.gif" />
+    <Content Include="WebManager\style\Icons\icon034a8.gif" />
+    <Content Include="WebManager\style\Icons\icon034a9.gif" />
+    <Content Include="WebManager\style\Icons\icon035a1.gif" />
+    <Content Include="WebManager\style\Icons\icon035a10.gif" />
+    <Content Include="WebManager\style\Icons\icon035a11.gif" />
+    <Content Include="WebManager\style\Icons\icon035a12.gif" />
+    <Content Include="WebManager\style\Icons\icon035a13.gif" />
+    <Content Include="WebManager\style\Icons\icon035a14.gif" />
+    <Content Include="WebManager\style\Icons\icon035a15.gif" />
+    <Content Include="WebManager\style\Icons\icon035a16.gif" />
+    <Content Include="WebManager\style\Icons\icon035a2.gif" />
+    <Content Include="WebManager\style\Icons\icon035a3.gif" />
+    <Content Include="WebManager\style\Icons\icon035a4.gif" />
+    <Content Include="WebManager\style\Icons\icon035a5.gif" />
+    <Content Include="WebManager\style\Icons\icon035a6.gif" />
+    <Content Include="WebManager\style\Icons\icon035a7.gif" />
+    <Content Include="WebManager\style\Icons\icon035a8.gif" />
+    <Content Include="WebManager\style\Icons\icon035a9.gif" />
+    <Content Include="WebManager\style\Icons\icon036a1.gif" />
+    <Content Include="WebManager\style\Icons\icon036a10.gif" />
+    <Content Include="WebManager\style\Icons\icon036a11.gif" />
+    <Content Include="WebManager\style\Icons\icon036a12.gif" />
+    <Content Include="WebManager\style\Icons\icon036a13.gif" />
+    <Content Include="WebManager\style\Icons\icon036a14.gif" />
+    <Content Include="WebManager\style\Icons\icon036a15.gif" />
+    <Content Include="WebManager\style\Icons\icon036a16.gif" />
+    <Content Include="WebManager\style\Icons\icon036a2.gif" />
+    <Content Include="WebManager\style\Icons\icon036a3.gif" />
+    <Content Include="WebManager\style\Icons\icon036a4.gif" />
+    <Content Include="WebManager\style\Icons\icon036a5.gif" />
+    <Content Include="WebManager\style\Icons\icon036a6.gif" />
+    <Content Include="WebManager\style\Icons\icon036a7.gif" />
+    <Content Include="WebManager\style\Icons\icon036a8.gif" />
+    <Content Include="WebManager\style\Icons\icon036a9.gif" />
+    <Content Include="WebManager\style\Icons\icon037a1.gif" />
+    <Content Include="WebManager\style\Icons\icon037a10.gif" />
+    <Content Include="WebManager\style\Icons\icon037a11.gif" />
+    <Content Include="WebManager\style\Icons\icon037a12.gif" />
+    <Content Include="WebManager\style\Icons\icon037a13.gif" />
+    <Content Include="WebManager\style\Icons\icon037a14.gif" />
+    <Content Include="WebManager\style\Icons\icon037a15.gif" />
+    <Content Include="WebManager\style\Icons\icon037a16.gif" />
+    <Content Include="WebManager\style\Icons\icon037a17.gif" />
+    <Content Include="WebManager\style\Icons\icon037a18.gif" />
+    <Content Include="WebManager\style\Icons\icon037a19.gif" />
+    <Content Include="WebManager\style\Icons\icon037a2.gif" />
+    <Content Include="WebManager\style\Icons\icon037a3.gif" />
+    <Content Include="WebManager\style\Icons\icon037a4.gif" />
+    <Content Include="WebManager\style\Icons\icon037a5.gif" />
+    <Content Include="WebManager\style\Icons\icon037a6.gif" />
+    <Content Include="WebManager\style\Icons\icon037a7.gif" />
+    <Content Include="WebManager\style\Icons\icon037a8.gif" />
+    <Content Include="WebManager\style\Icons\icon037a9.gif" />
+    <Content Include="WebManager\style\Icons\icon038a1.gif" />
+    <Content Include="WebManager\style\Icons\icon038a10.gif" />
+    <Content Include="WebManager\style\Icons\icon038a11.gif" />
+    <Content Include="WebManager\style\Icons\icon038a12.gif" />
+    <Content Include="WebManager\style\Icons\icon038a13.gif" />
+    <Content Include="WebManager\style\Icons\icon038a14.gif" />
+    <Content Include="WebManager\style\Icons\icon038a15.gif" />
+    <Content Include="WebManager\style\Icons\icon038a16.gif" />
+    <Content Include="WebManager\style\Icons\icon038a17.gif" />
+    <Content Include="WebManager\style\Icons\icon038a2.gif" />
+    <Content Include="WebManager\style\Icons\icon038a3.gif" />
+    <Content Include="WebManager\style\Icons\icon038a4.gif" />
+    <Content Include="WebManager\style\Icons\icon038a5.gif" />
+    <Content Include="WebManager\style\Icons\icon038a6.gif" />
+    <Content Include="WebManager\style\Icons\icon038a7.gif" />
+    <Content Include="WebManager\style\Icons\icon038a8.gif" />
+    <Content Include="WebManager\style\Icons\icon038a9.gif" />
+    <Content Include="WebManager\style\Icons\icon039a1.gif" />
+    <Content Include="WebManager\style\Icons\icon039a10.gif" />
+    <Content Include="WebManager\style\Icons\icon039a11.gif" />
+    <Content Include="WebManager\style\Icons\icon039a12.gif" />
+    <Content Include="WebManager\style\Icons\icon039a13.gif" />
+    <Content Include="WebManager\style\Icons\icon039a14.gif" />
+    <Content Include="WebManager\style\Icons\icon039a15.gif" />
+    <Content Include="WebManager\style\Icons\icon039a16.gif" />
+    <Content Include="WebManager\style\Icons\icon039a2.gif" />
+    <Content Include="WebManager\style\Icons\icon039a3.gif" />
+    <Content Include="WebManager\style\Icons\icon039a4.gif" />
+    <Content Include="WebManager\style\Icons\icon039a5.gif" />
+    <Content Include="WebManager\style\Icons\icon039a6.gif" />
+    <Content Include="WebManager\style\Icons\icon039a7.gif" />
+    <Content Include="WebManager\style\Icons\icon039a8.gif" />
+    <Content Include="WebManager\style\Icons\icon039a9.gif" />
+    <Content Include="WebManager\style\Icons\icon040a1.gif" />
+    <Content Include="WebManager\style\Icons\icon040a10.gif" />
+    <Content Include="WebManager\style\Icons\icon040a11.gif" />
+    <Content Include="WebManager\style\Icons\icon040a12.gif" />
+    <Content Include="WebManager\style\Icons\icon040a13.gif" />
+    <Content Include="WebManager\style\Icons\icon040a14.gif" />
+    <Content Include="WebManager\style\Icons\icon040a15.gif" />
+    <Content Include="WebManager\style\Icons\icon040a16.gif" />
+    <Content Include="WebManager\style\Icons\icon040a2.gif" />
+    <Content Include="WebManager\style\Icons\icon040a3.gif" />
+    <Content Include="WebManager\style\Icons\icon040a4.gif" />
+    <Content Include="WebManager\style\Icons\icon040a5.gif" />
+    <Content Include="WebManager\style\Icons\icon040a6.gif" />
+    <Content Include="WebManager\style\Icons\icon040a7.gif" />
+    <Content Include="WebManager\style\Icons\icon040a8.gif" />
+    <Content Include="WebManager\style\Icons\icon040a9.gif" />
+    <Content Include="WebManager\style\Icons\icon041a1.gif" />
+    <Content Include="WebManager\style\Icons\icon041a10.gif" />
+    <Content Include="WebManager\style\Icons\icon041a11.gif" />
+    <Content Include="WebManager\style\Icons\icon041a12.gif" />
+    <Content Include="WebManager\style\Icons\icon041a13.gif" />
+    <Content Include="WebManager\style\Icons\icon041a14.gif" />
+    <Content Include="WebManager\style\Icons\icon041a15.gif" />
+    <Content Include="WebManager\style\Icons\icon041a16.gif" />
+    <Content Include="WebManager\style\Icons\icon041a2.gif" />
+    <Content Include="WebManager\style\Icons\icon041a3.gif" />
+    <Content Include="WebManager\style\Icons\icon041a4.gif" />
+    <Content Include="WebManager\style\Icons\icon041a5.gif" />
+    <Content Include="WebManager\style\Icons\icon041a6.gif" />
+    <Content Include="WebManager\style\Icons\icon041a7.gif" />
+    <Content Include="WebManager\style\Icons\icon041a8.gif" />
+    <Content Include="WebManager\style\Icons\icon041a9.gif" />
+    <Content Include="WebManager\style\Icons\icon042a1.gif" />
+    <Content Include="WebManager\style\Icons\icon042a10.gif" />
+    <Content Include="WebManager\style\Icons\icon042a11.gif" />
+    <Content Include="WebManager\style\Icons\icon042a12.gif" />
+    <Content Include="WebManager\style\Icons\icon042a13.gif" />
+    <Content Include="WebManager\style\Icons\icon042a14.gif" />
+    <Content Include="WebManager\style\Icons\icon042a15.gif" />
+    <Content Include="WebManager\style\Icons\icon042a16.gif" />
+    <Content Include="WebManager\style\Icons\icon042a17.gif" />
+    <Content Include="WebManager\style\Icons\icon042a18.gif" />
+    <Content Include="WebManager\style\Icons\icon042a2.gif" />
+    <Content Include="WebManager\style\Icons\icon042a3.gif" />
+    <Content Include="WebManager\style\Icons\icon042a4.gif" />
+    <Content Include="WebManager\style\Icons\icon042a5.gif" />
+    <Content Include="WebManager\style\Icons\icon042a6.gif" />
+    <Content Include="WebManager\style\Icons\icon042a7.gif" />
+    <Content Include="WebManager\style\Icons\icon042a8.gif" />
+    <Content Include="WebManager\style\Icons\icon042a9.gif" />
+    <Content Include="WebManager\style\Icons\icon043a1.gif" />
+    <Content Include="WebManager\style\Icons\icon043a10.gif" />
+    <Content Include="WebManager\style\Icons\icon043a11.gif" />
+    <Content Include="WebManager\style\Icons\icon043a12.gif" />
+    <Content Include="WebManager\style\Icons\icon043a13.gif" />
+    <Content Include="WebManager\style\Icons\icon043a14.gif" />
+    <Content Include="WebManager\style\Icons\icon043a15.gif" />
+    <Content Include="WebManager\style\Icons\icon043a16.gif" />
+    <Content Include="WebManager\style\Icons\icon043a17.gif" />
+    <Content Include="WebManager\style\Icons\icon043a2.gif" />
+    <Content Include="WebManager\style\Icons\icon043a3.gif" />
+    <Content Include="WebManager\style\Icons\icon043a4.gif" />
+    <Content Include="WebManager\style\Icons\icon043a5.gif" />
+    <Content Include="WebManager\style\Icons\icon043a6.gif" />
+    <Content Include="WebManager\style\Icons\icon043a7.gif" />
+    <Content Include="WebManager\style\Icons\icon043a8.gif" />
+    <Content Include="WebManager\style\Icons\icon043a9.gif" />
+    <Content Include="WebManager\style\Icons\icon044a1.gif" />
+    <Content Include="WebManager\style\Icons\icon044a10.gif" />
+    <Content Include="WebManager\style\Icons\icon044a11.gif" />
+    <Content Include="WebManager\style\Icons\icon044a12.gif" />
+    <Content Include="WebManager\style\Icons\icon044a13.gif" />
+    <Content Include="WebManager\style\Icons\icon044a14.gif" />
+    <Content Include="WebManager\style\Icons\icon044a15.gif" />
+    <Content Include="WebManager\style\Icons\icon044a16.gif" />
+    <Content Include="WebManager\style\Icons\icon044a17.gif" />
+    <Content Include="WebManager\style\Icons\icon044a18.gif" />
+    <Content Include="WebManager\style\Icons\icon044a19.gif" />
+    <Content Include="WebManager\style\Icons\icon044a2.gif" />
+    <Content Include="WebManager\style\Icons\icon044a20.gif" />
+    <Content Include="WebManager\style\Icons\icon044a21.gif" />
+    <Content Include="WebManager\style\Icons\icon044a22.gif" />
+    <Content Include="WebManager\style\Icons\icon044a3.gif" />
+    <Content Include="WebManager\style\Icons\icon044a4.gif" />
+    <Content Include="WebManager\style\Icons\icon044a5.gif" />
+    <Content Include="WebManager\style\Icons\icon044a6.gif" />
+    <Content Include="WebManager\style\Icons\icon044a7.gif" />
+    <Content Include="WebManager\style\Icons\icon044a8.gif" />
+    <Content Include="WebManager\style\Icons\icon044a9.gif" />
+    <Content Include="WebManager\style\Icons\icon045a1.gif" />
+    <Content Include="WebManager\style\Icons\icon045a10.gif" />
+    <Content Include="WebManager\style\Icons\icon045a11.gif" />
+    <Content Include="WebManager\style\Icons\icon045a12.gif" />
+    <Content Include="WebManager\style\Icons\icon045a13.gif" />
+    <Content Include="WebManager\style\Icons\icon045a14.gif" />
+    <Content Include="WebManager\style\Icons\icon045a15.gif" />
+    <Content Include="WebManager\style\Icons\icon045a16.gif" />
+    <Content Include="WebManager\style\Icons\icon045a2.gif" />
+    <Content Include="WebManager\style\Icons\icon045a3.gif" />
+    <Content Include="WebManager\style\Icons\icon045a4.gif" />
+    <Content Include="WebManager\style\Icons\icon045a5.gif" />
+    <Content Include="WebManager\style\Icons\icon045a6.gif" />
+    <Content Include="WebManager\style\Icons\icon045a7.gif" />
+    <Content Include="WebManager\style\Icons\icon045a8.gif" />
+    <Content Include="WebManager\style\Icons\icon045a9.gif" />
+    <Content Include="WebManager\style\Icons\icon046a1.gif" />
+    <Content Include="WebManager\style\Icons\icon046a10.gif" />
+    <Content Include="WebManager\style\Icons\icon046a11.gif" />
+    <Content Include="WebManager\style\Icons\icon046a12.gif" />
+    <Content Include="WebManager\style\Icons\icon046a13.gif" />
+    <Content Include="WebManager\style\Icons\icon046a14.gif" />
+    <Content Include="WebManager\style\Icons\icon046a15.gif" />
+    <Content Include="WebManager\style\Icons\icon046a16.gif" />
+    <Content Include="WebManager\style\Icons\icon046a17.gif" />
+    <Content Include="WebManager\style\Icons\icon046a2.gif" />
+    <Content Include="WebManager\style\Icons\icon046a3.gif" />
+    <Content Include="WebManager\style\Icons\icon046a4.gif" />
+    <Content Include="WebManager\style\Icons\icon046a5.gif" />
+    <Content Include="WebManager\style\Icons\icon046a6.gif" />
+    <Content Include="WebManager\style\Icons\icon046a7.gif" />
+    <Content Include="WebManager\style\Icons\icon046a8.gif" />
+    <Content Include="WebManager\style\Icons\icon046a9.gif" />
+    <Content Include="WebManager\style\Icons\icon047a1.gif" />
+    <Content Include="WebManager\style\Icons\icon047a10.gif" />
+    <Content Include="WebManager\style\Icons\icon047a11.gif" />
+    <Content Include="WebManager\style\Icons\icon047a12.gif" />
+    <Content Include="WebManager\style\Icons\icon047a13.gif" />
+    <Content Include="WebManager\style\Icons\icon047a14.gif" />
+    <Content Include="WebManager\style\Icons\icon047a15.gif" />
+    <Content Include="WebManager\style\Icons\icon047a16.gif" />
+    <Content Include="WebManager\style\Icons\icon047a17.gif" />
+    <Content Include="WebManager\style\Icons\icon047a18.gif" />
+    <Content Include="WebManager\style\Icons\icon047a19.gif" />
+    <Content Include="WebManager\style\Icons\icon047a2.gif" />
+    <Content Include="WebManager\style\Icons\icon047a20.gif" />
+    <Content Include="WebManager\style\Icons\icon047a21.gif" />
+    <Content Include="WebManager\style\Icons\icon047a22.gif" />
+    <Content Include="WebManager\style\Icons\icon047a3.gif" />
+    <Content Include="WebManager\style\Icons\icon047a4.gif" />
+    <Content Include="WebManager\style\Icons\icon047a5.gif" />
+    <Content Include="WebManager\style\Icons\icon047a6.gif" />
+    <Content Include="WebManager\style\Icons\icon047a7.gif" />
+    <Content Include="WebManager\style\Icons\icon047a8.gif" />
+    <Content Include="WebManager\style\Icons\icon047a9.gif" />
+    <Content Include="WebManager\style\Icons\icon048a1.gif" />
+    <Content Include="WebManager\style\Icons\icon048a10.gif" />
+    <Content Include="WebManager\style\Icons\icon048a11.gif" />
+    <Content Include="WebManager\style\Icons\icon048a12.gif" />
+    <Content Include="WebManager\style\Icons\icon048a13.gif" />
+    <Content Include="WebManager\style\Icons\icon048a14.gif" />
+    <Content Include="WebManager\style\Icons\icon048a15.gif" />
+    <Content Include="WebManager\style\Icons\icon048a16.gif" />
+    <Content Include="WebManager\style\Icons\icon048a2.gif" />
+    <Content Include="WebManager\style\Icons\icon048a3.gif" />
+    <Content Include="WebManager\style\Icons\icon048a4.gif" />
+    <Content Include="WebManager\style\Icons\icon048a5.gif" />
+    <Content Include="WebManager\style\Icons\icon048a6.gif" />
+    <Content Include="WebManager\style\Icons\icon048a7.gif" />
+    <Content Include="WebManager\style\Icons\icon048a8.gif" />
+    <Content Include="WebManager\style\Icons\icon048a9.gif" />
+    <Content Include="WebManager\style\Icons\icon049a1.gif" />
+    <Content Include="WebManager\style\Icons\icon049a10.gif" />
+    <Content Include="WebManager\style\Icons\icon049a11.gif" />
+    <Content Include="WebManager\style\Icons\icon049a12.gif" />
+    <Content Include="WebManager\style\Icons\icon049a13.gif" />
+    <Content Include="WebManager\style\Icons\icon049a14.gif" />
+    <Content Include="WebManager\style\Icons\icon049a15.gif" />
+    <Content Include="WebManager\style\Icons\icon049a16.gif" />
+    <Content Include="WebManager\style\Icons\icon049a2.gif" />
+    <Content Include="WebManager\style\Icons\icon049a3.gif" />
+    <Content Include="WebManager\style\Icons\icon049a4.gif" />
+    <Content Include="WebManager\style\Icons\icon049a5.gif" />
+    <Content Include="WebManager\style\Icons\icon049a6.gif" />
+    <Content Include="WebManager\style\Icons\icon049a7.gif" />
+    <Content Include="WebManager\style\Icons\icon049a8.gif" />
+    <Content Include="WebManager\style\Icons\icon049a9.gif" />
+    <Content Include="WebManager\style\Icons\icon050a1.gif" />
+    <Content Include="WebManager\style\Icons\icon050a10.gif" />
+    <Content Include="WebManager\style\Icons\icon050a11.gif" />
+    <Content Include="WebManager\style\Icons\icon050a12.gif" />
+    <Content Include="WebManager\style\Icons\icon050a13.gif" />
+    <Content Include="WebManager\style\Icons\icon050a14.gif" />
+    <Content Include="WebManager\style\Icons\icon050a15.gif" />
+    <Content Include="WebManager\style\Icons\icon050a16.gif" />
+    <Content Include="WebManager\style\Icons\icon050a17.gif" />
+    <Content Include="WebManager\style\Icons\icon050a18.gif" />
+    <Content Include="WebManager\style\Icons\icon050a2.gif" />
+    <Content Include="WebManager\style\Icons\icon050a3.gif" />
+    <Content Include="WebManager\style\Icons\icon050a4.gif" />
+    <Content Include="WebManager\style\Icons\icon050a5.gif" />
+    <Content Include="WebManager\style\Icons\icon050a6.gif" />
+    <Content Include="WebManager\style\Icons\icon050a7.gif" />
+    <Content Include="WebManager\style\Icons\icon050a8.gif" />
+    <Content Include="WebManager\style\Icons\icon050a9.gif" />
+    <Content Include="WebManager\style\Icons\icon051a1.gif" />
+    <Content Include="WebManager\style\Icons\icon051a10.gif" />
+    <Content Include="WebManager\style\Icons\icon051a11.gif" />
+    <Content Include="WebManager\style\Icons\icon051a12.gif" />
+    <Content Include="WebManager\style\Icons\icon051a13.gif" />
+    <Content Include="WebManager\style\Icons\icon051a14.gif" />
+    <Content Include="WebManager\style\Icons\icon051a15.gif" />
+    <Content Include="WebManager\style\Icons\icon051a16.gif" />
+    <Content Include="WebManager\style\Icons\icon051a17.gif" />
+    <Content Include="WebManager\style\Icons\icon051a18.gif" />
+    <Content Include="WebManager\style\Icons\icon051a19.gif" />
+    <Content Include="WebManager\style\Icons\icon051a2.gif" />
+    <Content Include="WebManager\style\Icons\icon051a3.gif" />
+    <Content Include="WebManager\style\Icons\icon051a4.gif" />
+    <Content Include="WebManager\style\Icons\icon051a5.gif" />
+    <Content Include="WebManager\style\Icons\icon051a6.gif" />
+    <Content Include="WebManager\style\Icons\icon051a7.gif" />
+    <Content Include="WebManager\style\Icons\icon051a8.gif" />
+    <Content Include="WebManager\style\Icons\icon051a9.gif" />
+    <Content Include="WebManager\style\Icons\icon1.gif" />
+    <Content Include="WebManager\style\Icons\icon2.gif" />
+    <Content Include="WebManager\style\Icons\icon3.gif" />
+    <Content Include="WebManager\style\Icons\icon4.gif" />
+    <Content Include="WebManager\style\Icons\icon400a1.gif" />
+    <Content Include="WebManager\style\Icons\icon400a10.gif" />
+    <Content Include="WebManager\style\Icons\icon400a11.gif" />
+    <Content Include="WebManager\style\Icons\icon400a12.gif" />
+    <Content Include="WebManager\style\Icons\icon400a13.gif" />
+    <Content Include="WebManager\style\Icons\icon400a14.gif" />
+    <Content Include="WebManager\style\Icons\icon400a15.gif" />
+    <Content Include="WebManager\style\Icons\icon400a16.gif" />
+    <Content Include="WebManager\style\Icons\icon400a17.gif" />
+    <Content Include="WebManager\style\Icons\icon400a18.gif" />
+    <Content Include="WebManager\style\Icons\icon400a19.gif" />
+    <Content Include="WebManager\style\Icons\icon400a2.gif" />
+    <Content Include="WebManager\style\Icons\icon400a3.gif" />
+    <Content Include="WebManager\style\Icons\icon400a4.gif" />
+    <Content Include="WebManager\style\Icons\icon400a5.gif" />
+    <Content Include="WebManager\style\Icons\icon400a6.gif" />
+    <Content Include="WebManager\style\Icons\icon400a7.gif" />
+    <Content Include="WebManager\style\Icons\icon400a8.gif" />
+    <Content Include="WebManager\style\Icons\icon400a9.gif" />
+    <Content Include="WebManager\style\Icons\icon401a1.gif" />
+    <Content Include="WebManager\style\Icons\icon401a10.gif" />
+    <Content Include="WebManager\style\Icons\icon401a11.gif" />
+    <Content Include="WebManager\style\Icons\icon401a12.gif" />
+    <Content Include="WebManager\style\Icons\icon401a13.gif" />
+    <Content Include="WebManager\style\Icons\icon401a14.gif" />
+    <Content Include="WebManager\style\Icons\icon401a15.gif" />
+    <Content Include="WebManager\style\Icons\icon401a16.gif" />
+    <Content Include="WebManager\style\Icons\icon401a17.gif" />
+    <Content Include="WebManager\style\Icons\icon401a18.gif" />
+    <Content Include="WebManager\style\Icons\icon401a2.gif" />
+    <Content Include="WebManager\style\Icons\icon401a3.gif" />
+    <Content Include="WebManager\style\Icons\icon401a4.gif" />
+    <Content Include="WebManager\style\Icons\icon401a5.gif" />
+    <Content Include="WebManager\style\Icons\icon401a6.gif" />
+    <Content Include="WebManager\style\Icons\icon401a7.gif" />
+    <Content Include="WebManager\style\Icons\icon401a8.gif" />
+    <Content Include="WebManager\style\Icons\icon401a9.gif" />
+    <Content Include="WebManager\style\Icons\icon402a1.gif" />
+    <Content Include="WebManager\style\Icons\icon402a2.gif" />
+    <Content Include="WebManager\style\Icons\icon402a3.gif" />
+    <Content Include="WebManager\style\Icons\icon402a4.gif" />
+    <Content Include="WebManager\style\Icons\icon403a1.gif" />
+    <Content Include="WebManager\style\Icons\icon403a10.gif" />
+    <Content Include="WebManager\style\Icons\icon403a11.gif" />
+    <Content Include="WebManager\style\Icons\icon403a12.gif" />
+    <Content Include="WebManager\style\Icons\icon403a13.gif" />
+    <Content Include="WebManager\style\Icons\icon403a14.gif" />
+    <Content Include="WebManager\style\Icons\icon403a15.gif" />
+    <Content Include="WebManager\style\Icons\icon403a16.gif" />
+    <Content Include="WebManager\style\Icons\icon403a17.gif" />
+    <Content Include="WebManager\style\Icons\icon403a18.gif" />
+    <Content Include="WebManager\style\Icons\icon403a19.gif" />
+    <Content Include="WebManager\style\Icons\icon403a2.gif" />
+    <Content Include="WebManager\style\Icons\icon403a20.gif" />
+    <Content Include="WebManager\style\Icons\icon403a3.gif" />
+    <Content Include="WebManager\style\Icons\icon403a4.gif" />
+    <Content Include="WebManager\style\Icons\icon403a5.gif" />
+    <Content Include="WebManager\style\Icons\icon403a6.gif" />
+    <Content Include="WebManager\style\Icons\icon403a7.gif" />
+    <Content Include="WebManager\style\Icons\icon403a8.gif" />
+    <Content Include="WebManager\style\Icons\icon403a9.gif" />
+    <Content Include="WebManager\style\Icons\icon404a1.gif" />
+    <Content Include="WebManager\style\Icons\icon404a2.gif" />
+    <Content Include="WebManager\style\Icons\icon404a3.gif" />
+    <Content Include="WebManager\style\Icons\icon404a4.gif" />
+    <Content Include="WebManager\style\Icons\icon404a5.gif" />
+    <Content Include="WebManager\style\Icons\icon404a6.gif" />
+    <Content Include="WebManager\style\Icons\icon404a7.gif" />
+    <Content Include="WebManager\style\Icons\icon404a8.gif" />
+    <Content Include="WebManager\style\Icons\icon5.gif" />
+    <Content Include="WebManager\style\Icons\icon7.gif" />
+    <Content Include="WebManager\style\Icons\icon_adown.gif" />
+    <Content Include="WebManager\style\Icons\icon_board.gif" />
+    <Content Include="WebManager\style\Icons\icon_column.gif" />
+    <Content Include="WebManager\style\Icons\icon_key.gif" />
+    <Content Include="WebManager\style\Icons\icon_key_add.gif" />
+    <Content Include="WebManager\style\Icons\icon_key_delete.gif" />
+    <Content Include="WebManager\style\Icons\icon_key_go.gif" />
+    <Content Include="WebManager\style\Icons\icon_magazaine.gif" />
+    <Content Include="WebManager\style\Icons\icon_paper.gif" />
+    <Content Include="WebManager\style\Icons\icon_upwards.gif" />
+    <Content Include="WebManager\style\Icons\top.gif" />
+    <Content Include="WebManager\style\Icons\treeicon01.gif" />
+    <Content Include="WebManager\style\Icons\treeicon02.gif" />
+    <Content Include="WebManager\style\Icons\treeicon03.gif" />
+    <Content Include="WebManager\style\Icons\treeicon04.gif" />
+    <Content Include="WebManager\style\Icons\treeicon05.gif" />
+    <Content Include="WebManager\style\Icons\treeicon06.gif" />
+    <Content Include="WebManager\style\Icons\treeicon07.gif" />
+    <Content Include="WebManager\style\Icons\treeicon08.gif" />
+    <Content Include="WebManager\style\Icons\treeicon09.gif" />
+    <Content Include="WebManager\style\Icons\treeicon10.gif" />
+    <Content Include="WebManager\style\Icons\treeicon11.gif" />
+    <Content Include="WebManager\style\Icons\treeicon12.gif" />
+    <Content Include="WebManager\style\Icons\up.gif" />
+    <Content Include="WebManager\style\Icons\up2.gif" />
+    <Content Include="WebManager\style\images\arow.gif" />
+    <Content Include="WebManager\style\images\arrow.gif" />
+    <Content Include="WebManager\style\images\blank.gif" />
+    <Content Include="WebManager\style\images\btnout_bg_all.gif" />
+    <Content Include="WebManager\style\images\btnout_bg_left.gif" />
+    <Content Include="WebManager\style\images\btnout_bg_right.gif" />
+    <Content Include="WebManager\style\images\btnover_bg_left.gif" />
+    <Content Include="WebManager\style\images\btnover_bg_right.gif" />
+    <Content Include="WebManager\style\images\buttonBg.gif" />
+    <Content Include="WebManager\style\images\buttonBg.png" />
+    <Content Include="WebManager\style\images\Calendar.gif" />
+    <Content Include="WebManager\style\images\Date_bg.gif" />
+    <Content Include="WebManager\style\images\icon_drag.gif" />
+    <Content Include="WebManager\style\images\icon_sort.gif" />
+    <Content Include="WebManager\style\images\icon_up.gif" />
+    <Content Include="WebManager\style\images\jiao.gif" />
+    <Content Include="WebManager\style\images\jiao1.gif" />
+    <Content Include="WebManager\style\images\jiao2.gif" />
+    <Content Include="WebManager\style\images\jiao3.gif" />
+    <Content Include="WebManager\style\images\loginbg.jpg" />
+    <Content Include="WebManager\style\images\loginbutton.jpg" />
+    <Content Include="WebManager\style\images\logo.gif" />
+    <Content Include="WebManager\style\images\selectsitebg.gif" />
+    <Content Include="WebManager\style\images\selectsite_hide.gif" />
+    <Content Include="WebManager\style\images\selectsite_show.gif" />
+    <Content Include="WebManager\style\images\tabActiveBg_left.gif" />
+    <Content Include="WebManager\style\images\tabActiveBg_right.gif" />
+    <Content Include="WebManager\style\images\tabDsb_bg_left.gif" />
+    <Content Include="WebManager\style\images\tabDsb_bg_right.gif" />
+    <Content Include="WebManager\style\images\tableBg_left.gif" />
+    <Content Include="WebManager\style\images\tableBg_right.gif" />
+    <Content Include="WebManager\style\images\tabOutBg_left.gif" />
+    <Content Include="WebManager\style\images\tabOutBg_right.gif" />
+    <Content Include="WebManager\style\images\tabpageBar_bg.gif" />
+    <Content Include="WebManager\style\images\tabpageBar_bg1.gif" />
+    <Content Include="WebManager\style\images\text_bg.gif" />
+    <Content Include="WebManager\style\images\th.gif" />
+    <Content Include="WebManager\style\images\thbg.gif" />
+    <Content Include="WebManager\style\images\thbg_over.gif" />
+    <Content Include="WebManager\style\images\treeItem_bg.gif" />
+    <Content Include="WebManager\style\images\vistaBlue.jpg" />
+    <Content Include="WebManager\style\images\v_tabActiveBg.gif" />
+    <Content Include="WebManager\style\images\v_tabOutBg.gif" />
+    <Content Include="WebManager\style\images\v_tabOverBg.gif" />
+    <Content Include="WebManager\style\images\v_tabpageBar_bg.gif" />
+    <Content Include="WebManager\style\images\v_tabpageBar_bg1.gif" />
+    <Content Include="WebManager\style\images\zButtonBg-l.gif" />
+    <Content Include="WebManager\style\images\zButtonBg-r.gif" />
+    <Content Include="WebManager\style\images\zButtonBg.gif" />
+    <Content Include="WebManager\style\images\zButtonBg_over-l.gif" />
+    <Content Include="WebManager\style\images\zButtonBg_over-r.gif" />
+    <Content Include="WebManager\style\images\zButtonBg_over.gif" />
+    <Content Include="WebManager\style\images\zSelectBg_left.gif" />
+    <Content Include="WebManager\style\layout.css" />
+    <Content Include="WebManager\style\model.css" />
+    <Content Include="Wykd.aspx" />
+    <Content Include="Controls\SelectMonth.ashx" />
+    <None Include="files\DataDownload\dennis200712.zip" />
+    <None Include="files\ebook\0611ebook.chm" />
+    <None Include="files\ebook\0701ebook.chm" />
+    <None Include="files\ebook\2006xia00.CHM" />
+    <None Include="files\ebook\2006年下半年度上海市建筑工程常用要素价格汇编.CHM" />
+    <None Include="files\ebook\2007shang01.rar" />
+    <None Include="files\ebook\fix.reg" />
+    <None Include="files\ebook\上海市建设工程价格与指数2007年上半年度.rar" />
+    <None Include="files\ebook\信息大全升级程序制作过程.doc" />
+    <None Include="obj\Debug\build.force" />
+    <None Include="obj\Debug\ResolveAssemblyReference.cache" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="system_dntb\menuconfig\administrator.config" />
+    <Content Include="system_dntb\menuconfig\default.config" />
+    <Content Include="system_dntb\menuconfig\default_style1.config" />
+    <Content Include="system_dntb\menuconfig\default_style2.config" />
+    <Content Include="system_dntb\menuconfig\default_style3.config" />
+    <Content Include="system_dntb\menuconfig\default_style4.config" />
+    <Content Include="system_dntb\menuconfig\full.config" />
+    <Content Include="system_dntb\menuconfig\full_style2.config" />
+    <Content Include="system_dntb\menuconfig\full_style3.config" />
+    <Content Include="system_dntb\menuconfig\guest.config" />
+    <Content Include="system_dntb\menuconfig\user.config" />
+    <Content Include="system_dntb\uploadconfig\administrator.config" />
+    <Content Include="system_dntb\uploadconfig\default.config" />
+    <Content Include="system_dntb\uploadconfig\guest.config" />
+    <Content Include="system_dntb\uploadconfig\user.config" />
+    <None Include="uploads\djb.doc" />
+    <None Include="uploads\jdjc1001.chm" />
+    <None Include="uploads\《建定建材》期刊简介.doc" />
+    <None Include="uploads\我要刊登.rar" />
+    <None Include="webctrl_client\1_0\images\vssver2.scc" />
+    <None Include="webctrl_client\1_0\treeimages\rtl\vssver2.scc" />
+    <None Include="webctrl_client\1_0\treeimages\vssver2.scc" />
+    <None Include="webctrl_client\1_0\vssver2.scc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Components\" />
+    <Folder Include="style\icon\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>3448</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

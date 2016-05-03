@@ -1,0 +1,58 @@
+﻿/*网页顶部*/
+#top{ background:url(images/vistaBlue.jpg);}
+.top-1{ height:40px;}
+.top-2{ height:30px;}
+.logo{ height:40px; float:left; width: 300px;}
+.manager{ height:30px; float:right; padding-top:10px; padding-right:20px; color:#fff;}
+.manager a{ color:#FFFF99;}
+.SeachType{float:left; height:23px; padding-top:6px; margin-bottom:-3px; padding-right:20px; margin-top:4px; background:url(images/selectsitebg.gif) top right no-repeat;  }
+.menu{ float:left;}
+.seachinput{float:left; overflow:hidden; margin:0;  width:138px; height:18px; background:url(images/zSelectBg_left.gif); border:1px solid #9fb8c0;}
+
+/*顶部选项卡*/
+.TopBar{ list-style:none; margin:0; padding:0; margin-top:5px; display:none;}
+.TopBar li{ float:left; margin-right:-20px;}
+.TopBar li a{ text-decoration:none; height:30px; margin: 0 5px 0 0;background: url(images/tabOutBg_left.gif) no-repeat left center;float:left;}
+.TopBar li a img{margin: 6px 0px 0px 15px;float:left;}
+.TopBar li a b{cursor:pointer;white-space: nowrap;color: #666;font-weight: normal;height: 25px;line-height: 24px;padding: 5px 30px 0 5px;background: url(images/tabOutBg_right.gif) no-repeat right center;	display:inline-block;}
+.TopBar li a:hover {text-decoration: none;	background: url(images/tabActiveBg_left.gif) no-repeat left center;}
+.TopBar li a:hover b {color: #147;	background: url(images/tabActiveBg_right.gif) no-repeat right center;}
+/*内容页左右背景*/
+.left_Bg{  background:url(images/tableBg_left.gif) no-repeat;padding:6px; padding-right:4px;}
+.right_Bg{  width:2px;  background:url(images/tableBg_right.gif) top right no-repeat;}
+
+/*滚动框*/
+.Scrollbar{width:165px; height:500px;border:1px #ccd3d6 solid; background:#f9fcff url(images/treeItem_bg.gif) no-repeat;}
+.ScrollBody{overflow:auto;width:165px; height:500px;}
+
+/*图片按钮样式*/
+.zPushBtn {text-decoration:none; height:24px; margin: 0 5px 0 0;background: url(images/btnout_bg_left.gif) no-repeat left center;float:left;}
+.zPushBtn img {	margin: 1px 0px 0px 6px;float:left;}
+.zPushBtn b {cursor:pointer;white-space: nowrap;color: #666;font-weight: normal;height: 24px;line-height: 24px;padding: 0 7px 0 5px;background: url(images/btnout_bg_right.gif) no-repeat right center;	display:inline-block;}
+.zPushBtn:hover {text-decoration: none;	background: url(images/btnover_bg_left.gif) no-repeat left center;}
+.zPushBtn:hover b {color: #147;	background: url(images/btnover_bg_right.gif) no-repeat right center;}
+.dataTable {border: 1px solid #C6C6C6;border-collapse: collapse;background: url(images/thbg.gif) #FFFFFF repeat-x left top;table-layout: fixed;}
+.dataTable th{color: #555555;border-bottom: 1px solid #DDDDDD;line-height:16px;	padding: 3px 7px 3px 6px;white-space: nowrap;}
+.dataTable td{color:#555555;border-bottom: 1px solid #DDDDDD;line-height:16px; padding: 3px 7px 3px 6px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;-o-text-overflow: ellipsis;}
+.WebEditor td{border:0px;padding:0;white-space:normal; overflow:auto; text-overflow:clip;-o-text-overflow:clip;}
+.dataTableHead{color: #445055;	font-weight: bold;}
+.dataTableHead td{height:27px;	line-height:27px;padding: 0 7px 0 6px;border-left: #D6D6D6 0px solid;border-bottom: #C6C6C6 0px solid;background: url(images/th.gif) no-repeat left top;}
+.dataTableHead td.thOver { background: url(images/thbg_over.gif) repeat-x left top; }
+
+/*左边菜单*/
+.LeftTab{ margin:0; padding:0; list-style:none; margin-top:20px;}
+.LeftTab .unchecked img{margin: 4px 5px 0px 10px;float:left;}
+.LeftTab .checked img{margin: 8px 5px 0px 10px;float:left;}
+.LeftTab .unchecked a{ color:#444444; display:block; width:110px; height:32px; line-height:32px; background:url(images/v_tabOutBg.gif) right bottom no-repeat;}
+.LeftTab .unchecked a:hover{display:block; width:110px; height:32px;line-height:32px; background:url(images/v_tabOverBg.gif) right bottom no-repeat;}
+.LeftTab .checked a{color:#000; display:block; width:110px; height:40px;line-height:40px; background:url(images/v_tabActiveBg.gif) right bottom no-repeat;}
+
+/*按钮样式*/
+.zInputBtn{display:inline-block; height:21px; padding-right:2px; overflow:visible; background:url(images/zButtonBg-r.gif) top right ;}
+.zInputBtn .inputButton{height:21px; line-height:21px; border:0; background:transparent url(images/zButtonBg-l.gif) no-repeat;}
+.zInputBtn:hover {display:inline-block; height:21px;  padding-right:2px; overflow:visible; background:url(images/zButtonBg_over-r.gif) top right;}
+.zInputBtn:hover .inputButton{ height:21px; line-height:21px; border:0; background:transparent url(images/zButtonBg_over-l.gif) no-repeat;}
+
+/*登录*/
+.login{ width:620px; height:283px; margin:auto; padding-top:218px; background:url(images/loginbg.jpg) no-repeat;}
+.loginbar{ width:600px; margin:auto; height:55px; }

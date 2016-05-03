@@ -1,0 +1,39 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="ProMaster.master.cs" Inherits="JDJS.Web.ProjectGL.ProMaster" %>
+<%@ Register Src="Controls/ProGLTop.ascx" TagName="ProGLTop" TagPrefix="uc1" %>
+<%@ Register Src="Controls/ProGLleft.ascx" TagName="ProGLleft" TagPrefix="uc1" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+     <link href="style/base.css" type="text/css" rel="stylesheet" />
+    <link href="style/layout.css" type="text/css" rel="stylesheet" />
+    <link href="style/model.css" type="text/css" rel="stylesheet" />
+
+    <link href="../style/page.css" type="text/css" rel="stylesheet" />
+    <link rel="Stylesheet" href="../style/datePicker.css" type="text/css" />
+
+    <!--<link href="style/page.css" type="text/css" rel="stylesheet" />
+    <link rel="shortcut icon" href="style/images/favicon.ico" />-->
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+       <div id="main">
+            
+            <div id="main-right">
+            <uc1:ProGLTop id="ProGLTop" runat="server"></uc1:ProGLTop>
+            <asp:ContentPlaceHolder ID="Main" runat="server"></asp:ContentPlaceHolder>
+            <div id="main-left">
+            <uc1:ProGLleft id="ProGLleft" runat="server"></uc1:ProGLleft>
+   
+            </div>
+
+            </div>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<?xml version="1.0" standalone="yes"?>
+<Collection>
+  <Fields field="title">
+    <name>标题</name>
+    <type>varchar</type>
+    <maxlength>100</maxlength>
+    <c_rules>&lt;title&gt;{pa:collection}&lt;/title&gt;</c_rules>
+    <replace_rules>-PageAdmin网站管理系统</replace_rules>
+  </Fields>
+  <Fields field="thedate">
+    <name>发布时间</name>
+    <type>datetime</type>
+    <maxlength>20</maxlength>
+    <c_rules>发布日期：{pa:collection}&amp;nbsp;&amp;nbsp;浏览量</c_rules>
+    <replace_rules />
+  </Fields>
+  <Fields field="keywords">
+    <name>关键字</name>
+    <type>varchar</type>
+    <maxlength>100</maxlength>
+    <c_rules>&lt;meta name="keywords"    content="{pa:collection}" /&gt;&lt;meta name="Author"</c_rules>
+    <replace_rules />
+  </Fields>
+  <Fields field="description">
+    <name>描述</name>
+    <type>text</type>
+    <maxlength>250</maxlength>
+    <c_rules>&lt;meta name="description"  content="{pa:collection}" /&gt;&lt;meta name="keywords"</c_rules>
+    <replace_rules />
+  </Fields>
+  <Fields field="thumbnail">
+    <name>缩略图</name>
+    <type>varchar</type>
+    <maxlength>100</maxlength>
+    <c_rules />
+    <replace_rules />
+  </Fields>
+  <Fields field="upload">
+    <name>文章图片</name>
+    <type>varchar</type>
+    <maxlength>50</maxlength>
+    <c_rules />
+    <replace_rules />
+  </Fields>
+  <Fields field="introduction">
+    <name>简介</name>
+    <type>text</type>
+    <maxlength>500</maxlength>
+    <c_rules />
+    <replace_rules />
+  </Fields>
+  <Fields field="content">
+    <name>内容</name>
+    <type>text</type>
+    <maxlength>0</maxlength>
+    <c_rules>&lt;div id="Infor_Content"&gt;{pa:collection}&lt;/div&gt;&lt;script type="text/javascript" src="/js/internal_page.js"&gt;</c_rules>
+    <replace_rules />
+  </Fields>
+</Collection>

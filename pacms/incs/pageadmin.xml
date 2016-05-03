@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<PageAdminConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Thumbnail>
+    <Open>1</Open>
+    <Quality>80</Quality>
+    <MinWidth>400</MinWidth>
+    <MinHeight>400</MinHeight>
+  </Thumbnail>
+  <WaterMark>
+    <Open>0</Open>
+    <FontText>
+    </FontText>
+    <FontColor>#0938f7</FontColor>
+    <FontStyle>3</FontStyle>
+    <FontSize>16</FontSize>
+    <FontType>Arial Black</FontType>
+    <FontSite>9</FontSite>
+    <Alpha>153</Alpha>
+    <MinWidth>200</MinWidth>
+    <MinHeight>200</MinHeight>
+    <Quality>98</Quality>
+  </WaterMark>
+  <Search>
+    <PageSize>12</PageSize>
+    <Columns>4</Columns>
+  </Search>
+  <Member>
+    <PageSize>15</PageSize>
+  </Member>
+  <Upload>
+    <ImageType>.jpg,.gif,.jpeg</ImageType>
+    <UploadType>.jpg,.gif,.jpeg,.png,.bmp,.swf,.flv,.7z,.aiff,.asf,.avi,.bmp,.csv,.doc,.fla,.flv,.gif,.gz,.gzip,.jpeg,.jpg,.mid,.mov,.mp3,.mp4,.mpc,.mpeg,.mpg,.ods,.odt,.pdf,.png,.ppt,.pxd,.qt,.ram,.rar,.rm,.rmi,.rmvb,.rtf,.sdc,.sitd,.swf,.sxc,.sxw,.tar,.tgz,.tif,.tiff,.txt,.vsd,.wav,.wma,.wmv,.xls,.xml,.zip</UploadType>
+  </Upload>
+</PageAdminConfig>

@@ -1,0 +1,1 @@
+﻿<%@ Control language="c#" Inherits="PageAdmin.web_bottom"%><div class="bottom_box"><asp:Literal Id="L_Bt" runat="server"/></div></div></body></html>

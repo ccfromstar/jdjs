@@ -1,0 +1,118 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="dsMasterPage.master.cs" Inherits="JDJS.Web.zhenda.dsMasterPage" %>
+<%@ Register Src="dsControls/dstop2.ascx" TagName="dstop2" TagPrefix="uc1" %>
+<%@ Register Src="dsControls/dsfoot.ascx" TagName="dsfoot" TagPrefix="uc1" %>
+<%@ Register Src="dsControls/dsleft.ascx" TagName="dsleft" TagPrefix="uc1" %>
+<%@ Register Src="dsControls/dsbar.ascx" TagName="dsbar" TagPrefix="uc1" %>
+<%@ Register Src="dsControls/dsyqlinks.ascx" TagName="dsyqlinks" TagPrefix="uc1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+     <style type="text/css">
+
+        
+        
+        ul#topnav li {
+	            position: relative;
+	            overflow:visible;
+	            z-index:100000;
+            }
+
+            ul#topnav li .sub 
+            {
+            	z-index:100000;
+	            position: absolute;	
+	            top: 15px; 
+	            left: -24px;
+	            width: 110px;
+	            text-align:center;
+	            display:none;
+	            padding-top:5px;
+	            padding-bottom:5px;             
+            }
+            ul#topnav li .sub a{
+                color:#fff;
+            }
+            ul#topnav li .sub ul li
+            {
+	            float:left;
+	            line-height:22px;
+	            height:22px;
+	            overflow:visible;
+	            margin:0;
+	            padding:0;
+	            margin-top:2px;
+	            margin-bottom:2px;
+	            
+            }
+            ul#topnav li .sub ul li a
+            {
+            	 display:block;
+            	 height:22px;
+            	 width:110px;
+            	 margin:0;
+            	 padding:0;
+            }
+            ul#topnav li .sub ul li a:hover
+            {
+            	 background:url(../style/images/subInCk.gif);
+            	 color:#3670b7;
+            }
+            .subInTop
+            {
+            	width:110px;
+            	height:2px;
+                background:url(../style/images/subInTop.jpg);
+            }
+            .subInBody
+            {
+                width:110px;
+                background:url(../style/images/subInBody.jpg);
+            }
+            .subInFoot
+            {
+            	width:110px;
+            	height:2px;
+                background:url(../style/images/subInFoot.jpg);
+            }
+            .styleyqindex1
+            {
+                color: #0000FF;
+                font-weight: bold;
+                font-family: 隶书;
+                font-size: x-large;
+                font-style: italic;
+            }
+     </style>
+    <title><%=Settitle("")%></title>
+    <meta name="keywords" content="电子商务 产品介绍"/>
+    <meta name="Description" content="公司简介"/>
+    <link href="~/style/base.css" type="text/css" rel="stylesheet" />
+    <link href="~/style/layout.css" type="text/css" rel="stylesheet" />
+    <link href="~/style/model.css" type="text/css" rel="stylesheet" />
+    <link href="~/style/page.css" type="text/css" rel="stylesheet" />
+    <link rel="shortcut icon" href="~/style/images/favicon.ico" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <script type="text/javascript" src="~/js/jquery-1.4.2.js"></script>
+    <script type="text/javascript" src="~/js/hoverIntent.js"></script>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="content">
+        <uc1:dstop2 id="dstop" runat="server"></uc1:dstop2>
+
+        <div id="main">
+            <uc1:dsleft id="dsleft" runat="server"></uc1:dsleft>
+            <div id="main-right">
+                <uc1:dsbar id="dsbar" runat="server"></uc1:dsbar>
+                <asp:ContentPlaceHolder ID="Main" runat="server"></asp:ContentPlaceHolder>
+            </div>
+        </div>
+        <asp:ContentPlaceHolder ID="bottom" runat="server"></asp:ContentPlaceHolder>
+        <uc1:dsfoot id="dsfoot" runat="server"></uc1:dsfoot>
+    </div>
+    </form>
+</body>
+</html>

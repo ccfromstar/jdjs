@@ -1,0 +1,1 @@
+侧栏广告2在主题目录下INCLUDE/AD_LEFT02.ASP

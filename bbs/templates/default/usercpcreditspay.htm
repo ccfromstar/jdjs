@@ -1,0 +1,95 @@
+﻿<%template _header%>
+<div id="nav">
+	<div class="wrap s_clear">
+		<a href="{config.forumurl}" class="title">{config.forumtitle}</a> &raquo; <a href="usercpprofile.aspx">用户中心</a> &raquo; <strong>积分兑换</strong>
+	</div>
+</div>
+<div class="wrap with_side s_clear" id="wrap">
+	<%template _menu%>
+	<div class="cpmain">
+	<div class="cpcontent">
+		<h1>积分兑换</h1>
+		<%template _scoremenu%>	
+<%if page_err==0%>
+		{jscreditsratearray}
+	<%if ispost%>
+		<%template _usercpmsgbox%>
+	<%else%>
+		<form action="" method="post" id="postform">
+		<table cellspacing="0" cellpadding="0" class="formtable" summary="个人资料">
+			<tbody>
+			<tr>
+				<th><label for="paychange">当前帐户</label></th>
+				<td>
+					<%if {score[1]}!=""%>
+					{score[1]}: <em>{user.extcredits1}</em>&nbsp;&nbsp;
+					<%/if%>
+					<%if {score[2]}!=""%>
+					{score[2]}: <em>{user.extcredits2}</em>&nbsp;&nbsp;
+					<%/if%>
+					<%if {score[3]}!=""%>
+					{score[3]}: <em>{user.extcredits3}</em>&nbsp;&nbsp;
+					<%/if%>
+					<%if {score[4]}!=""%>
+					{score[4]}: <em>{user.extcredits4}</em>&nbsp;&nbsp;
+					<%/if%>
+					<%if {score[5]}!=""%>
+					{score[5]}: <em>{user.extcredits5}</em>&nbsp;&nbsp;
+					<%/if%>
+					<%if {score[6]}!=""%>
+					{score[6]}: <em>{user.extcredits6}</em>&nbsp;&nbsp;
+					<%/if%>
+					<%if {score[7]}!=""%>
+					{score[7]}: <em>{user.extcredits7}</em>&nbsp;&nbsp;
+					<%/if%>
+					<%if {score[8]}!=""%>
+					{score[8]}: <em>{user.extcredits8}</em>&nbsp;&nbsp;
+					<%/if%>
+				</td>
+			</tr>
+			<tr>
+				<th>进行兑换操作</th>
+				<td>将数量<input name="paynum" type="text" id="paynum" value="100" size="10" class="txt"/>&nbsp;的&nbsp;
+					<select name="extcredits1" id="extcredits1" style="width:120px;">
+					<option value="0">请选择</option>
+					<%loop extcredits Scoresets.GetScorePaySet(0)%>
+					<option value="{extcredits[id]}">{extcredits[name]}</option>
+					<%/loop%>
+					</select>&nbsp;转换为&nbsp;<select name="extcredits2" id="extcredits2"  style="width:120px;">
+					<option value="">请选择</option>
+					<%loop extcredits2 Scoresets.GetScorePaySet(0)%>
+					<option value="{extcredits2[id]}">{extcredits2[name]}</option>
+					<%/loop%>
+					</select>
+					<a href="###" onclick="if($('postform').extcredits1.options[$('postform').extcredits1.selectedIndex].value != 0 && $('postform').extcredits2.options[$('postform').extcredits2.selectedIndex].value != 0){alert('接收者的所得为 '+$('postform').extcredits2.options[$('postform').extcredits2.selectedIndex].text + ':'+Math.round($('postform').paynum.value*(creditsrate[$('postform').extcredits1.options[$('postform').extcredits1.selectedIndex].value]/creditsrate[$('postform').extcredits2.options[$('postform').extcredits2.selectedIndex].value] *(1-{creditstax}))*100)/100)}else{alert('请完整填写和选择进行兑换的积分!')}" >计算</a>
+				</td>
+			</tr>
+			<tr>
+				<th>验证用户密码</th>
+				<td><input name="password" type="password" id="password" size="20" class="txt"/></td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<div class="hintinfo">积分交易税 {creditstax}</div>
+					<div class="hintinfo">兑换最低余额 {Scoresets.GetExchangeMinCredits()}</div>
+					<div class="hintinfo">转账最低余额 {Scoresets.GetTransferMinCredits()}</div>				
+				</td>
+			</tr>
+			<tr>
+				<th></th>
+				<td>
+					<button type="submit" name="Submit" ID="Submit1"/>确定</button>
+				</td>
+			</tr>
+			</tbody>
+			</table>
+			</form>
+	<%/if%>
+<%else%>
+	<%template _usercperrmsgbox%>
+<%/if%>
+	</div>
+	</div>
+</div>
+<%template _copyright%>
+<%template _footer%>

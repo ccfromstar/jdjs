@@ -1,0 +1,158 @@
+<#TEMPLATE_INCLUDE_THEM_HEADER#>
+<div id="banner1">
+    <#TEMPLATE_INCLUDE_AD_TOP#>
+</div>
+<div id="content">
+    <#TEMPLATE_INCLUDE_FLADH_AD#>
+
+<div id="content_2">
+<div class="content_news">
+
+<div class="content_news_title">
+<div class="leftbox1">
+<div class="title">
+    <ul>
+        <li class="title1a" id="bb1" onclick="javascript:doClick1(this)"><b>最新</b></li>
+        <li class="title1b" id="bb2" onclick="javascript:doClick1(this)"><b>随机</b></li>
+        <li class="title1b" id="bb3" onclick="javascript:doClick1(this)"><b>热门</b></li>
+    </ul>
+</div>
+</div>
+</div>
+
+<div class="leftbox1_design">
+<div id="b1">
+<div class="album">
+    <UL>
+        <#CACHE_INCLUDE_RANDOMSORTNEW#>
+    </UL>
+</div>
+</div>
+<div id="b2">
+<div class="album">
+    <UL>
+        <#CACHE_INCLUDE_RANDOMSORTALLRAND#>
+    </UL>
+</div>
+</div>
+<div id="b3">
+<div class="album">
+    <UL>
+        <#CACHE_INCLUDE_RANDOMSORTTOPHOT#>
+    </UL>
+</div>
+</div>
+</div></div></div></div>
+
+<div id="new_content">
+<div id="new_1">
+<div class="table_3">
+<div class="content_news_title">
+<div class="leftbox2">
+<div class="title">
+<div class="content_1_title_2"><a href="javascript:void(0)">我要推荐</a></div>
+    <ul>
+        <li class="title1c" id="ee1" onclick="javascript:doClick2(this)"><b>酷站</b></li>
+        <li class="title3d" id="ee2" onclick="javascript:doClick2(this)"><b>作品</b></li>
+        <li class="title3d" id="ee3" onclick="javascript:doClick2(this)"><b>书刊</b></li>
+        <li class="title3d" id="ee4" onclick="javascript:doClick2(this)"><b>旅游</b></li>
+    </ul>
+</div>
+</div>
+</div>
+<div class="leftbox1_design">
+<div id="e1">
+<div class="album2">
+<div class="album_pic">
+    <#TEMPLATE_INCLUDE_COOLWEB#>
+</div>
+</div>
+</div>
+<div id="e2">
+<div class="album2">
+<div class="album_pic">
+    <#TEMPLATE_INCLUDE_MYDESIGN#>
+</div>
+</div>
+</div>
+<div id="e3">
+<div class="album2">
+<div class="album_pic">
+    <#TEMPLATE_INCLUDE_BOOK#>
+</div>
+</div>
+</div>
+<div id="e4">
+<div class="album2">
+<div class="album_pic">
+    <#TEMPLATE_INCLUDE_HAIBAO#>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="table_1">
+<div class="content_1_title">
+<div class="content_1_title_1">文章列表</div>
+<div class="content_1_title_3"><a href="javascript:void(0)" id="reg">网友投稿</a></div>
+</div>
+<div class="content_1_design">
+    <#template:article-multi#>
+    <div class=pager><#template:pagebar#></div>
+</div>
+</div>
+<div class="table_1">
+
+<div class="content_1_title">
+<div class="content_1_title_1">友情链接</div>
+<div class="content_1_title_3"><a href="#">连接申请</a> | <a href="#">更多..</a></div>
+</div>
+<div class="content_1_design friendlinks">
+    <UL>
+        <#CACHE_INCLUDE_LINK#>
+    </UL>
+</div>
+
+</div>
+</div>
+<div id="new_2">
+<div class="content_3_title">订阅空间</div>
+<div class="content_3_nr">
+    <#CACHE_INCLUDE_MISC#>
+</div>
+
+<div class="content_3_nr">
+    <#TEMPLATE_INCLUDE_AD_LEFT01#>
+</div>
+
+<div class="content_3_title">最新评论</div>
+<div class="content_3_nr">
+    <ul>
+        <#CACHE_INCLUDE_COMMENTS#>
+    </ul>    
+</div>
+
+<div class="content_3_title">最新留言</div>
+<div class="content_3_nr">
+    <ul>
+        <#CACHE_INCLUDE_GUESTCOMMENTS#>
+    </ul>
+</div>
+
+
+<div class="content_3_title">我的收藏</div>
+<div class="content_3_nr">
+    <#CACHE_INCLUDE_FAVORITE#>
+</div>
+
+
+
+<div class="content_3_title">站点信息</div>
+<div class="content_3_nr">
+    <ul>
+        <#CACHE_INCLUDE_STATISTICS#>
+    </ul>
+</div>
+</div></div></div></div>
+<#TEMPLATE_INCLUDE_THEM_FOOTER#>

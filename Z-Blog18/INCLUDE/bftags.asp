@@ -1,0 +1,1 @@
+﻿<li><a href="http://www.jdjs.com.cn/Z-Blog18/catalog.asp?tags=%E7%BA%A2%E5%A4%96%E6%84%9F%E5%BA%94%E5%BC%80%E5%85%B3%3B%E5%A3%B0%E5%85%89%E6%8E%A7%E5%BC%80%E5%85%B3%3B%E5%85%89%E6%8E%A7%E5%BC%80%E5%85%B3%3B%E8%A7%A6%E6%91%B8%E5%BC%80%E5%85%B3%3B%E8%B0%83%E5%85%89%E5%BC%80%E5%85%B3%3B">红外感应开关;声光控开关;光控开关;触摸开关;调光开关; (3)</a></li>

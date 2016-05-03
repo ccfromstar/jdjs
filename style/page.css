@@ -1,0 +1,14 @@
+﻿.number { padding:3px; text-align:center;}
+.number a { border:#9aafe5 1px solid; padding:2px; padding-left:5px; padding-right:5px; color:#2e6ab1;  text-decoration:none; margin-left:1px; margin-right:1px;}
+.number a:hover {border:#2b66a5 1px solid; color:#ffffff; background: #9aafe5;}
+.pagination A:active {border:#2b66a5 1px solid;color:#ffffff; background: #9aafe5;}
+.number span.current {border:navy 1px solid;  padding-right:5px;padding-left:5px; padding-bottom:2px; padding-top:2px; color:#ffffff; font-weight:bold; background:#2e6ab1; margin-right:2px; margin-left:2px;}
+.number span.disabled {border:#929292 1px solid;padding-right:5px;padding-left:5px; padding-bottom:2px; padding-top:2px;  color:#929292; margin-right:2px;}
+
+
+
+
+
+/* Mode 5 Style (Input) */
+.inputtext{background: #EEF3F7;border: 1px #9aafe5 solid;color:#000000; font-family:宋体; font-size: 14px; text-decoration:none;width:50px;height:18px;vertical-align: middle;}
+.smallbutton{ font-family:宋体;background-color:#cee3e9;border:#2C59AA 1px solid; font-size: 12px; cursor:hand; color: #2e6ab1; width:30px;height:22px;vertical-align: middle;}

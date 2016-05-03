@@ -1,0 +1,1 @@
+文章页顶部广告在主题的INCLUDE目录下的AD_MIDDLE_01.ASP

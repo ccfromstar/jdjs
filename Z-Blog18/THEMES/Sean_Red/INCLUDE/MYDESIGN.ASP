@@ -1,0 +1,2 @@
+﻿<a href="http://seanloo.cn/post/137.html" target="_blank" title="ZBlog模版"><img class='pic1' src='http://seanloo.cn/upload/2009/7/200907081527345865.jpg'></a>
+<a href="http://seanloo.cn/post/74.html" target="_blank" title="ZBlog模版"><img class='pic1' src='http://seanloo.cn/upload/2009/7/200907081523280640.jpg'></a>

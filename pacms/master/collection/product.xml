@@ -1,0 +1,91 @@
+﻿<?xml version="1.0"?>
+<Collection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Fields field="name">
+    <name>名称</name>
+    <type>varchar</type>
+    <maxlength>50</maxlength>
+    <c_rules></c_rules>
+    <replace_rules></replace_rules>
+  </Fields>
+
+  <Fields field="xinghao">
+    <name>型号</name>
+    <type>varchar</type>
+    <maxlength>50</maxlength>
+    <c_rules></c_rules>
+    <replace_rules></replace_rules>
+  </Fields>
+
+  <Fields field="price">
+    <name>价格</name>
+    <type>int</type>
+    <maxlength>10</maxlength>
+    <c_rules></c_rules>
+    <replace_rules></replace_rules>
+  </Fields>
+
+  <Fields field="price">
+    <name>价格单位</name>
+    <type>varchar</type>
+    <maxlength>50</maxlength>
+    <c_rules></c_rules>
+    <replace_rules></replace_rules>
+  </Fields>
+
+  <Fields field="thedate">
+    <name>发布时间</name>
+    <type>datetime</type>
+    <maxlength>20</maxlength>
+    <c_rules></c_rules>
+    <replace_rules></replace_rules>
+  </Fields>
+
+  <Fields field="keywords">
+    <name>关键字</name>
+    <type>varchar</type>
+    <maxlength>100</maxlength>
+    <c_rules></c_rules>
+    <replace_rules></replace_rules>
+  </Fields>
+
+  <Fields field="description">
+    <name>描述</name>
+    <type>text</type>
+    <maxlength>250</maxlength>
+    <c_rules></c_rules>
+    <replace_rules></replace_rules>
+  </Fields>
+
+  <Fields field="thumbnail">
+    <name>缩略图</name>
+    <type>varchar</type>
+    <maxlength>50</maxlength>
+    <c_rules></c_rules>
+    <replace_rules></replace_rules>
+  </Fields>
+
+  <Fields field="upload">
+    <name>产品图片</name>
+    <type>varchar</type>
+    <maxlength>50</maxlength>
+    <c_rules></c_rules>
+    <replace_rules></replace_rules>
+  </Fields>
+
+
+  <Fields field="introduct">
+    <name>简介</name>
+    <type>text</type>
+    <maxlength>0</maxlength>
+    <c_rules></c_rules>
+    <replace_rules></replace_rules>
+  </Fields>
+
+  <Fields field="content">
+    <name>详细介绍</name>
+    <type>text</type>
+    <maxlength>0</maxlength>
+    <c_rules></c_rules>
+    <replace_rules></replace_rules>
+  </Fields>
+</Collection>

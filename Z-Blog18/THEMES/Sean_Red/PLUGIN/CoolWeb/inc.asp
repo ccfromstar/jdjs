@@ -1,0 +1,1 @@
+﻿document.write('Mood : 木有心情,-_-!!')

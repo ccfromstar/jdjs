@@ -1,0 +1,39 @@
+﻿<DIV id=content_01>
+<DIV class=content_01_nr>
+<DIV class=content_01_title_bg>
+<A href="<#ZC_BLOG_HOST#>">首页</A> &gt; <A href="<#article/category/url#>"><#article/category/name#></A> &gt; 正文</DIV>
+<DIV class=content_01_page_title>
+<H1><#article/title#></H1>
+</DIV>
+<DIV class=content_01_auto>发布-<a href="<#article/author/homepage#>" target="_blank" style="color:red"><#article/author/name#></a> | 查看-<span id="spn<#article/id#>"></span><script language="JavaScript" type="text/javascript">strBatchCount+="spn<#article/id#>=<#article/id#>,"</script> | 发表时间-<#article/posttime/shortdate#></DIV>
+<DIV class=content_01_ad>
+<#TEMPLATE_INCLUDE_AD_MIDDLE_01#>
+</DIV>
+<DIV class=content_01_c_page_news1>
+<#article/content#>
+</DIV>
+<DIV class=content_01_ad1>
+<#TEMPLATE_INCLUDE_AD_MIDDLE_02#>
+</DIV>
+</DIV>
+
+<div class="table_100">
+<div class="content_100_title">
+<div class="content_1_title_1">或许你还对下面的文章感兴趣</div>
+<div class="content_1_title_3"></div>
+</div>
+<div class="content_30_nr">
+<UL>
+<#template:article_mutuality#>
+</UL>
+</div>
+</div>
+
+<DIV class=content_comment>
+<#template:article_commentpost#>
+</DIV>
+<DIV class=content_comment msg>
+<#TEMPLATE_INCLUDE_AD_BOTTOM#>
+<#template:article_comment#>
+</DIV>
+</DIV>

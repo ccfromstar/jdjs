@@ -1,0 +1,1 @@
+﻿<a href="http://seanloo.cn/post/34.html" target="_blank"><img class='pic1' src='http://seanloo.cn/upload/2009/4/200904241317467542.jpg'></a>

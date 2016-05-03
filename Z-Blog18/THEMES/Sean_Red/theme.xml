@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<theme version="1.0"><id>Sean_Red</id><name>Sean_Red红色系主题</name><url></url><note>Sean_Red红色系主题</note><author><name>Seanloo</name><url>http://www.seanloo.cn/</url><email>lx-super@163.com</email></author><source><name>Seanloo</name><url>http://www.seanloo.cn/</url><email>lx-super@163.com</email></source><plugin><name></name><note></note><type></type><path></path><include></include><level></level></plugin><adapted>Z-Blog 1.8</adapted><version>1.0</version><pubdate>2009-7-3</pubdate><modified>2009-7-3</modified><description><![CDATA[Sean_Red红色系主题
+航条是顶部横条，上面是tab标签切换，分是热门文章，最新文章，还有随机调用文章（需要有巴士飞扬提供的列表插件(文章排行)插件的支持），右侧是图片幻灯（开发中...）,还有酷站收藏，书刊推荐，设计图片欣赏，目前都是自定义的标签，相关插件还在开发中，因为工作太忙，有兴趣的朋友可以自己写，当然插件完成后还是会发布下载的。
+]]></description></theme>

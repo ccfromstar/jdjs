@@ -1,0 +1,54 @@
+﻿/*会员管理系统*/
+.member_table{width:98%;border-collapse:collapse;table-layout:fixed;word-break:break-all;border:1px solid #cccccc;}
+.member_table td{border:1px solid #cccccc;}
+.mem_idx_table{width:98%;border-collapse:collapse;table-layout:fixed;border:1px solid #cccccc;}
+.mem_idx_table td{height:25px;}
+
+.mem_message_table{width:98%;border-collapse:collapse;table-layout:fixed;border:0 solid #dddddd;}
+.mem_message_item{border:0 solid #dddddd;border-width:0 0 1px 0;height:25px;}
+.msg_bt{width:80px;height:20px;font-size:12px;padding:2px 0 0 0;border:0 solid #333333;border-width:0 1px 1px 0;background-color:#dddddd;cursor:pointer;}
+.msg_bt_1{width:80px;height:20px;font-size:12px;padding:2px 0 0 0;border:0 solid #333333;border-width:0 1px 1px 0;background-color:#dddddd;cursor:pointer;color:#ff0000}
+
+.memlist_header_item{border:0 solid #cccccc;border-width:1px 0 1px 1px;background-color:#E1F7FD;height:25px;}
+.memlist_header_item_last{border:0 solid #cccccc;border-width:1px 1px 1px 1px;background-color:#E1F7FD;}
+.memlist_item{border:0 solid #cccccc;border-width:0 0 1px 1px;height:25px;padding:3px 0 2px 5px}
+.memlist_item_last{border:0 solid #cccccc;border-width:0 1px 1px 1px;padding:3px 0 2px 0}
+
+
+.reg_box{clear:both;padding:15px 5px 10px 5px;width:98%;}
+.reg_item_1{float:left;text-align:right;width:100px;padding:5px 0 0 0;}
+.reg_item_2{float:left;padding:0 0 0 0;text-align:left;}
+.reg_item_jiange{clear:both;height:5px;line-height:0px;font-size:1px;}
+.reg_textbox{height:18px;border:1px solid #cccccc;text-align:left;width:180px}
+.reg_item_submit{padding:20px 0 20px 0;text-align:center;}
+
+.login_box{clear:both;padding:15px 5px 10px 5px;width:98%;}
+.login_item_1{float:left;text-align:right;width:150px;padding:5px 0 0 0;}
+.login_item_2{float:left;padding:0 0 0 0;text-align:left;}
+.login_item_jiange{clear:both;height:5px;line-height:0px;font-size:1px;}
+.login_textbox{height:18px;border:1px solid #cccccc;text-align:left;width:150px}
+.login_submit_box{float:left;text-align:right;width:220px;padding:5px 0 0 0;}
+.login_reg_box{float:left;padding:5px 0 0 20px;text-align:left;}
+
+.findpass_box{clear:both;padding:15px 5px 10px 5px;width:98%;}
+.findpass_item_1{float:left;text-align:right;width:150px;padding:5px 0 0 0;}
+.findpass_item_2{float:left;padding:0 0 0 0;text-align:left;}
+.findpass_item_jiange{clear:both;height:5px;line-height:0px;font-size:1px;}
+.findpass_textbox{height:18px;border:1px solid #cccccc;text-align:left;width:150px}
+.findpass_submit_box{float:left;text-align:right;width:250px;padding:5px 0 0 0;}
+.findpass_tishi_box{float:left;padding:5px 0 0 20px;text-align:left;}
+
+.order_state_image{width:17px;height:17px;cursor:pointer}
+
+.feedback_detail_item{border:0 solid #cccccc;border-width:1px 1px 1px 1px;padding:5px 5px 5px 5px;background-color:#E1F7FD;}
+.feedback_detail_item_last{border:0 solid #cccccc;border-width:1px 1px 1px 0;padding:5px 5px 5px 5px;}
+
+.feedback_replay_item{border:0 solid #cccccc;border-width:0px 1px 1px 1px;padding:5px 5px 5px 5px;background-color:#E1F7FD;}
+.feedback_replay_item_last{border:0 solid #cccccc;border-width:0px 1px 1px 0;padding:5px 5px 5px 5px;}
+
+
+.feedback_replay_style{border:0 solid #cccccc;border-width:1px 1px 1px 1px;padding:5px 5px 5px 5px;line-height:22px}
+.feedback_replay_style_1{border:0 solid #cccccc;border-width:0 1px 1px 1px;padding:5px 5px 5px 5px;line-height:22px}
+.feedback_replay_style_last{border:0 solid #cccccc;border-width:1px 1px 1px 0;padding:5px 5px 5px 5px;line-height:22px}
+
+.m_bt{width:80px;height:20px;font-size:12px;padding:2px 0 0 0;border:0 solid #333333;border-width:0 1px 1px 0;background-color:#dddddd;cursor:pointer;}

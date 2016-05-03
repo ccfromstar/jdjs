@@ -1,0 +1,67 @@
+﻿html,
+body 
+{ 
+	margin:0;
+	padding:0;
+	color: #444444;
+	font-size:12px;	
+	background-color: #FFFFFF;
+	/*滚动条样式设置*/
+	scrollbar-arrow-color: #6688AA;
+	scrollbar-3dlight-color: #AACCDD;
+	scrollbar-shadow-color: #99BBCC;
+	scrollbar-face-color: #DDEEFF;
+	scrollbar-darkshadow-color: #DDEEFF;
+	scrollbar-highlight-color: #FFFFFF;	
+	scrollbar-track-color: #EEEEEE;
+
+	}
+a
+{ 
+	text-decoration:none;
+	}
+a img
+{
+	border:0;
+	}
+.input
+{
+    color: #336699;
+	background:url(images/text_bg.gif);
+	border: 1px solid #6688AA;
+	border-color: #778899 #AABBCC #AABBCC #8899AA;
+	padding:2px 2px 3px;
+	vertical-align:middle;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	/*border:1px solid #9fb8c0; 
+	border-color:#acc2ca #9fb8c0 #9bb5be;*/
+	}
+.input:hover
+{
+    border-color: #00ccff; 
+    }    
+.Date
+{
+    width:90px;
+    color: #336699;
+	background:url(images/Date_bg.gif) top right;
+	border: 1px solid #6688AA;
+	border-color: #778899 #AABBCC #AABBCC #8899AA;
+	padding:2px 2px 3px;
+	vertical-align:middle;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;}	
+.Date:hover
+{
+    border-color: #00ccff; 
+    }	
+.Button
+{
+    height:23px; 
+    line-height:20px; 
+    padding:0; 
+    padding-left:5px; 
+    padding-right:5px;
+    }
+
