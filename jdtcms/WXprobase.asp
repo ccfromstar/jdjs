@@ -12,9 +12,9 @@ i = 1
 
 do While not rs.eof  	
     if i = 1 then
-    	Response.write(rs("proname")&"@"&rs("prostate")&"@"&rs("inforptime"))
+    	Response.write(rs("proname")&"@"&rs("prostate")&"@"&rs("inforptime")&"@"&rs("id"))
     else
-    	Response.write("*"&rs("proname")&"@"&rs("prostate")&"@"&rs("inforptime"))  
+    	Response.write("*"&rs("proname")&"@"&rs("prostate")&"@"&rs("inforptime")&"@"&rs("id"))  
     end if
     rs.MoveNext  
     i = i + 1

@@ -9,11 +9,11 @@ cnn.Open "Driver={SQL Server};Server=hds-076.hichina.com;Database=hds0760218_db;
 set rs= Server.CreateObject("ADODB.RecordSet")  
 rs.Open sql,cnn ,1,1   
 i = 1
-do While not rs.eof  	
-    if i = 1 then
-    	Response.write(rs("matname")&"@"&rs("proname")&"@"&rs("ptime")&"@"&rs("proid")&"@"&rs("id"))
+do While not rs.eof
+	if i = 1 then
+    	Response.write(rs("proname")&"@"&rs("inforptime")&"@"&rs("prostate")&"@"&rs("proid")) 
     else
-    	Response.write("*"&rs("matname")&"@"&rs("proname")&"@"&rs("ptime")&"@"&rs("proid")&"@"&rs("id"))  
+    	Response.write("*"&rs("proname")&"@"&rs("inforptime")&"@"&rs("prostate")&"@"&rs("proid"))  
     end if
     rs.MoveNext  
     i = i + 1

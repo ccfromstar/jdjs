@@ -10,11 +10,7 @@ set rs= Server.CreateObject("ADODB.RecordSet")
 rs.Open sql,cnn ,1,1   
 i = 1
 do While not rs.eof  	
-    if i = 1 then
-    	Response.write(rs("matname")&"@"&rs("proname")&"@"&rs("ptime")&"@"&rs("proid")&"@"&rs("id"))
-    else
-    	Response.write("*"&rs("matname")&"@"&rs("proname")&"@"&rs("ptime")&"@"&rs("proid")&"@"&rs("id"))  
-    end if
+    Response.write(rs("matname")&"@"&rs("ptime")&"@"&rs("proname")&"@"&rs("proid")&"@"&rs("matunit")&"@"&rs("matrek")&"@"&rs("stime")&"@"&rs("ftime")&"@"&rs("gycompany")&"@"&rs("linkman")&"@"&rs("pepid")&"@"&rs("company")&"@"&rs("pcid")) 
     rs.MoveNext  
     i = i + 1
 Loop  

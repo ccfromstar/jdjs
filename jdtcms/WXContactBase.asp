@@ -11,9 +11,9 @@ rs.Open sql,cnn ,1,1
 i = 1
 do While not rs.eof  	
     if i = 1 then
-    	Response.write(rs("linkman")&"@"&rs("companyname")&"@"&rs("job"))
+    	Response.write(rs("linkman")&"@"&rs("companyname")&"@"&rs("job")&"@"&rs("id")&"@"&rs("cid"))
     else
-    	Response.write("*"&rs("linkman")&"@"&rs("companyname")&"@"&rs("job"))  
+    	Response.write("*"&rs("linkman")&"@"&rs("companyname")&"@"&rs("job")&"@"&rs("id")&"@"&rs("cid"))  
     end if
     rs.MoveNext  
     i = i + 1
